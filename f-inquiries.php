@@ -331,12 +331,14 @@
           let em = childSnapshot.val().email;
           // if (String(em) == String(nameX)) {
 
-          let dateDue = childSnapshot.val().date;
-          let price = childSnapshot.val().price;
-          let stats = childSnapshot.val().status;
-          let unitz = childSnapshot.val().unit;
-          let spec = "||||||||||||||||||||||||||";
-          addItemsToList(childSnapshot.val().email, dateDue, unitz, price, stats);
+          if (em == nameX) {
+            let dateDue = childSnapshot.val().date;
+            let price = childSnapshot.val().price;
+            let stats = childSnapshot.val().status;
+            let unitz = childSnapshot.val().unit;
+            let spec = "||||||||||||||||||||||||||";
+            addItemsToList(childSnapshot.val().email, dateDue, unitz, price, stats);
+          }
           // }
           // ...
         });
