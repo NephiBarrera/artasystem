@@ -236,8 +236,14 @@
         <div class="a-login-container3">
           <h1 class="a-login-text5">Log In</h1>
           <!-- <input type="text" id="email" placeholder="Email" class="a-login-textinput input" /> -->
-          First Name: <input type="text" id="myText" placeholder="Email" class="a-login-textinput input">
-          <input type="text" id="password" placeholder="Password" class="a-login-textinput1 input" />
+          <input type="text" id="myText" placeholder="Email" class="a-login-textinput input">
+          
+          <label for="">
+
+            <input type="password" id="password" placeholder="Password" class="a-login-textinput1 input" />
+            <input type="checkbox" onclick="hide()"> Show
+          </label>
+            
           <div class="a-login-btn-group1">
             <button id="loginBtn" class="a-login-button button">Log In</button>
             <!-- <button class="a-login-button button" id="login">Log In</button> -->
@@ -253,6 +259,17 @@
     </div>
   </div>
   <script data-section-id="navbar" src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+
+<script>
+  function hide() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
 
   <script type="module">
     import {
