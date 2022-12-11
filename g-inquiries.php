@@ -353,7 +353,7 @@
             status: "APPROVED"
           })
 
-          //send to bills
+          //send to bills2
           set(ref(database, 'bills/'+dateTimedue), {
             email: em,
             date: duedate,
@@ -374,7 +374,7 @@
         decline.style.color = "black";
         decline.style.backgroundColor = "lightgrey";
         decline.style.marginLeft = "2px";
-
+        //if got declined
         decline.addEventListener("click", function(){
           set(ref(database, 'inquiries/'+duedate), {
             email: em,
@@ -417,8 +417,11 @@
           let approve = childSnapshot.val().unit;
 
           if (stats!="APPROVED"){
-            addItemsToList(em, dateDue, unitz, price, stats, app);
+            if(stats!="DECLINED"){
+              addItemsToList(em, dateDue, unitz, price, stats, app);
+            }
           }
+          
 
           // }
           // ...

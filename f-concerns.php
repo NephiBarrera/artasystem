@@ -226,7 +226,7 @@
           </div>
           <!-- <textarea placeholder="Write your message here..." class="f-concerns-textarea textarea" id="message"></textarea> -->
 
-          <input type="textarea" id="myText" class="f-concerns-textarea textarea">
+          <textarea type="textarea" id="myText" class="f-concerns-textarea textarea" rows="10" cols="30" placeholder="Write your message here" style="height: auto;"> </textarea>
           <button type="submit" id="trayas" class="f-concerns-button button">Send Concern</button>
           <!-- <button class="f-concerns-button button" id="trayas">Send&nbsp;</button> -->
         </div>
@@ -298,11 +298,13 @@
         // window.confirm(document.getElementById("myText").value);
 
         set(ref(database, 'concerns/'+dateTime), {
+          date: dateTime,
           email: nameX,
           message: document.getElementById("myText").value,
         })
 
         window.confirm("Concern successfully forwarded");
+        window.location.href="f-concerns.php"
 
 
       })

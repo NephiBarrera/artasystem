@@ -215,12 +215,12 @@
           </div>
         </div>
         <div class="f-browse-view-container05">
-          <div class="f-browse-view-hero1">
+          <div class="f-browse-view-hero1" style="margin-top: 100px;">
             <div class="f-browse-view-container06">
               <div class="f-browse-view-container07">
                 <img id="img1" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="f-browse-view-image3" />
               </div>
-              <div class="f-browse-view-container08">
+              <div class="f-browse-view-container08" style="margin-top: -100px;">
                 <img id="img2" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="f-browse-view-image4" />
                 <img id="img3" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="f-browse-view-image5" />
                 <img id="img4" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="f-browse-view-image6" />
@@ -294,7 +294,7 @@
   }
 
   if (unit == 3) {
-    document.getElementById("title").textContent = "Unit 1";
+    document.getElementById("title").textContent = "Unit 3";
     var st1 = "1 Master Bedroom";
     document.getElementById("info").textContent = "The unit has 2 small Bedrooms\n" +
       " sharing a single Shower. The area is \n" +
@@ -312,7 +312,7 @@
   }
 
   if (unit == 4) {
-    document.getElementById("title").textContent = "Unit 1";
+    document.getElementById("title").textContent = "Unit 4";
     var st1 = "1 Master Bedroom";
     document.getElementById("info").textContent = "A 1 Bedroom and \n" +
       "1 Shower unit. Spanning for \n" +
@@ -329,7 +329,7 @@
   }
 
   if (unit == 5) {
-    document.getElementById("title").textContent = "Unit 1";
+    document.getElementById("title").textContent = "Unit 5";
     var st1 = "1 Master Bedroom";
     document.getElementById("info").textContent = "A 2 Small Bedroom unit with \n" +
       "2 Shower. The area spans up to \n" +
@@ -406,7 +406,7 @@
           date: dateTime,
           // unit: unit;
           price: "Php 15,000 (monthly)",
-          status: "Inquiry was being processed by the landlordXR",
+          status: "Inquiry was being processed by the landlord",
           unit: "1"
         })
 

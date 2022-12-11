@@ -247,7 +247,10 @@
     child,
     get,
     set,
-    onValue
+    onValue,
+    orderByChild,
+    query,
+    push
   } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js";
 
   // import { } from 'firebase/database';
@@ -290,52 +293,76 @@
       var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
       var dateTimedue = date + ' ' + time;
 
-      function addItemsToList(em, message) {
+
+
+      function addItemsToList(date, em, message) {
         var ul = document.getElementById("list");
         // var non =
         var header = document.createElement("h2");
 
         // var email = document.createElement("li");
-        var date = document.createElement("p");
+        var datez = document.createElement("p");
+        var mes = document.createElement("p");
         var unit = document.createElement("p");
 
         header.innerHTML = em;
-        date.innerHTML = "Message: ";
+        datez.innerHTML = "Date: "+ date;
+        mes.innerHTML = "Message: ";
         unit.innerHTML = message;
 
         unit.style.marginBottom = "40px";
         unit.style.marginLeft = "10px";
 
         // decline.style.height="15px";
-
-
-
         ul.appendChild(header);
-        ul.appendChild(date);
+        ul.appendChild(datez);
+        ul.appendChild(mes);
         ul.appendChild(unit);
 
 
       }
 
-      const dbRef = ref(database, 'concerns');
+      const dbRef = query(ref(database, '/concerns'), orderByChild('date'));
+      // get(dbRef);
+
+      // get(dbRef)
+      // .then((snapshot)=>{
+      //   var dateX=[];
+      //   snapshot.forEach((childSnapshot) => {
+      //     // const childKey = childSnapshot.key;
+      //     // console.log(childSnapshot.val().date);
+      //     // const childData = childSnapshot.val();
+
+      //     dateX.push(childSnapshot.val().date);
+      //      let date = childSnapshot.val().date;
+      //     let em = childSnapshot.val().email;
+      //     let message = childSnapshot.val().message;
+
+      //       addItemsToList(dateX, em, message);
+        
+      // })
+      // const topUserPostsRef = query(ref(db, 'user-posts/' + myUserId), orderByChild('starCount'));
+
 
       onValue(dbRef, (snapshot) => {
+        var dateX=[];
         snapshot.forEach((childSnapshot) => {
           // const childKey = childSnapshot.key;
           // console.log(childSnapshot.val().date);
           // const childData = childSnapshot.val();
 
+          // dateX.push(childSnapshot.val().date);
+          let date = childSnapshot.val().date;
           let em = childSnapshot.val().email;
           let message = childSnapshot.val().message;
-
-
       
-            addItemsToList(em, message);
+            addItemsToList(date, em, message);
           
 
-          // }
-          // ...
         });
+
+          // ...
+        // });
       }, {
         onlyOnce: true
       });

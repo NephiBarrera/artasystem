@@ -307,7 +307,7 @@
 
 
 
-      function addItemsToList(em, date, unitno, price, stat, app) {
+      function addItemsToList(em, date, unitno, price, stat, app, dateDue) {
         var ul = document.getElementById("list");
         // var non =
         var header = document.createElement("h2");
@@ -325,7 +325,7 @@
 
         header.innerHTML = em;
         // date.innerHTML = "Date Approved: " + duedate;
-        date.innerHTML = "Due Date: " + dateTimedue;
+        date.innerHTML = "Due Date: " + dateDue;
         unit.innerHTML = "Unit No.: " + unitno;
         rent.innerHTML = "Rent Fee: " + price;
         status.innerHTML = "Status " + stat;
@@ -346,25 +346,26 @@
         approve.addEventListener("click", function() {
           // INSERT DATA INTO DB
           // window.confirm(duedate);
-          set(ref(database, 'bills/' + dateTimedue), {
+          set(ref(database, 'bills/' + dateDue), {
             email: em,
             date: date,
+            due_date: dateDue,
             unit: unitno,
             price: price,
             status: "PAID"
           })
 
           //send to payment hist
-          set(ref(database, 'pay_history/' + dateTimedue), {
+          set(ref(database, 'pay_history/' + dateDue), {
             email: em,
             paid_date: realDay,
-            due_date: dateTimedue,
+            due_date: dateDue,
             unit: unitno,
             price: price,
             status: "PAID"
           })
 
-          window.confirm("Inquiry for " + em + " successfully approved");
+          window.confirm("Payment for " + em + " successfully confirmed");
           window.location.href = "g-bills.php";
 
         })
@@ -398,14 +399,14 @@
           let em = childSnapshot.val().email;
           // if (String(em) == String(nameX)) {
           let date = childSnapshot.val().date;
-          // let dateDue = childSnapshot.val().due_date;
+          let dateDue = childSnapshot.val().due_date;
           let price = childSnapshot.val().price;
           let stats = childSnapshot.val().status;
           let unitz = childSnapshot.val().unit;
           let approve = childSnapshot.val().unit;
 
           if (stats != "PAID") {
-            addItemsToList(em, date, unitz, price, stats, app);
+            addItemsToList(em, date, unitz, price, stats, app, dateDue);
           }
 
           // }
