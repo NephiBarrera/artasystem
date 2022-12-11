@@ -407,7 +407,7 @@
           // unit: unit;
           price: "Php 15,000 (monthly)",
           status: "Inquiry was being processed by the landlord",
-          unit: "1"
+          unit: unit
         })
 
         window.confirm("Inquiry for Unit "+unit+ " was successfully forwarded");
