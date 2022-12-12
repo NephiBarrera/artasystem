@@ -320,7 +320,7 @@
                       String(email).endsWith("tenant5@gmail.com"))
                     {
                       window.alert("Welcome Tenant");
-                      window.location.href = "g-bills.php";
+                      window.location.href = "f-bills.php";
                     }
                     else {
                       window.alert("Cannot determine if user is tenant or landlord\n" +
