@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>aSignup - Well Worn Thirsty Mole</title>
+  <title>ARTA - Sign Up</title>
   <meta property="og:title" content="aSignup - Well Worn Thirsty Mole" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset="utf-8" />
@@ -148,37 +148,6 @@
             <button class="a-signup-register button">Sign Up</button>
           </a>
         </div>
-        <div data-thq="thq-burger-menu" class="a-signup-burger-menu">
-          <svg viewBox="0 0 1024 1024" class="a-signup-icon">
-            <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
-          </svg>
-        </div>
-        <div data-thq="thq-mobile-menu" class="a-signup-mobile-menu">
-          <div data-thq="thq-mobile-menu-nav" data-role="Nav" class="a-signup-nav1">
-            <div class="a-signup-container1">
-              <img alt="image" src="https://presentation-website-assets.teleporthq.io/logos/logo.png" class="a-signup-image1" />
-              <div data-thq="thq-close-menu" class="a-signup-menu-close">
-                <svg viewBox="0 0 1024 1024" class="a-signup-icon02">
-                  <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
-                </svg>
-              </div>
-            </div>
-            <nav data-thq="thq-mobile-menu-nav-links" data-role="Nav" class="a-signup-nav2">
-              <span class="a-signup-text">About</span>
-              <span class="a-signup-text1">Features</span>
-              <span class="a-signup-text2">Pricing</span>
-              <span class="a-signup-text3">Team</span>
-              <span class="a-signup-text4">Blog</span>
-            </nav>
-            <div class="a-signup-container2">
-              <button class="a-signup-login1 button">Login</button>
-              <button class="button">Register</button>
-            </div>
-          </div>
-          <div class="a-signup-icon-group">
-
-          </div>
-        </div>
       </header>
       <div class="a-signup-hero">
         <div class="a-signup-container3"></div>
@@ -196,11 +165,26 @@
           <!-- email and pass -->
           <input type="text" placeholder="Email" id="myText" class="a-signup-textinput4 input">
           <!-- <input type="text" placeholder="Email" class="a-signup-textinput4 input" name="email id="userEmail" value="hey" /> -->
-          <input type="text" placeholder="Password" class="a-signup-textinput5 input" name="password" id="password" />
+          <label for="showPass">
+            <input type="password" placeholder="Password" class="a-signup-textinput5 input" name="password" id="password" />
+            <br>
+            <input type="checkbox" onclick="hide()" name="showPass"> Show Password
+          </label>
           <div class="a-signup-btn-group1">
-            <button class="a-signup-button button" id="tryas">Try it</button>
+            <button class="a-signup-button button" id="tryas">Register</button>
             <!-- <button class="a-signup-button button" id="register" name="register">Register</button> -->
           </div>
+
+          <script>
+            function hide() {
+              var x = document.getElementById("password");
+              if (x.type === "password") {
+                x.type = "text";
+              } else {
+                x.type = "password";
+              }
+            }
+          </script>
 
 
 
@@ -261,29 +245,38 @@
               } else {
                 if (String(email).endsWith("@gmail.com")) {
 
-                  createUserWithEmailAndPassword(auth, email, password)
-                    .then((userCredential) => {
-                      // Signed in 
-                      const user = userCredential.user;
-                      // ...
+                  if (String(email).endsWith("tenant1@gmail.com") ||
+                    String(email).endsWith("tenant2@gmail.com") ||
+                    String(email).endsWith("tenant3@gmail.com") ||
+                    String(email).endsWith("tenant4@gmail.com") ||
+                    String(email).endsWith("tenant5@gmail.com")) {
 
-                      // INSERT DATA INTO DB
-                      set(ref(database, 'user_log'), {
-                        email: email,
-                        password: password
+                    createUserWithEmailAndPassword(auth, email, password)
+                      .then((userCredential) => {
+                        // Signed in 
+                        const user = userCredential.user;
+                        // ...
+
+                        // INSERT DATA INTO DB
+                        set(ref(database, 'user_log'), {
+                          email: email,
+                          password: password
+                        });
+
+                        window.alert("Account Created Successfully. Proceed to Log In");
+                        window.location.href = "a-login.php";
+
+
+                      })
+                      .catch((error) => {
+                        const errorCode = error.code;
+                        const errorMessage = error.message;
+                        // ..
+                        window.alert("Error occurred. Try again.");
                       });
-
-                      window.alert("Account Created Successfully. Proceed to Log In");
-                      window.location.href="a-login.php";
-
-
-                    })
-                    .catch((error) => {
-                      const errorCode = error.code;
-                      const errorMessage = error.message;
-                      // ..
-                      window.alert("Error occurred. Try again.");
-                    });
+                  } else {
+                    window.alert("Email should end with 'tenantX@gmail.com'");
+                  }
                 } else {
                   window.alert("Email should only end with '@gmail.com'");
                 }

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>gPaymentHistory - Well Worn Thirsty Mole</title>
+  <title>Landlord - Payment History</title>
   <meta property="og:title" content="gPaymentHistory - Well Worn Thirsty Mole" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset="utf-8" />
@@ -135,52 +135,11 @@
         <div data-thq="thq-navbar-nav" data-role="Nav" class="g-payment-history-desktop-menu">
           <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="g-payment-history-nav"></nav>
         </div>
-        <div data-thq="thq-navbar-btn-group" class="g-payment-history-btn-group1"></div>
-        <div data-thq="thq-burger-menu" class="g-payment-history-burger-menu">
-          <svg viewBox="0 0 1024 1024" class="g-payment-history-icon">
-            <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
-          </svg>
-        </div>
-        <div data-thq="thq-mobile-menu" class="g-payment-history-mobile-menu">
-          <div data-thq="thq-mobile-menu-nav" data-role="Nav" class="g-payment-history-nav1">
-            <div class="g-payment-history-container1">
-              <img alt="image" src="https://presentation-website-assets.teleporthq.io/logos/logo.png" class="g-payment-history-image1" />
-              <div data-thq="thq-close-menu" class="g-payment-history-menu-close">
-                <svg viewBox="0 0 1024 1024" class="g-payment-history-icon02">
-                  <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
-                </svg>
-              </div>
-            </div>
-            <nav data-thq="thq-mobile-menu-nav-links" data-role="Nav" class="g-payment-history-nav2">
-              <span class="g-payment-history-text">About</span>
-              <span class="g-payment-history-text01">Features</span>
-              <span class="g-payment-history-text02">Pricing</span>
-              <span class="g-payment-history-text03">Team</span>
-              <span class="g-payment-history-text04">Blog</span>
-            </nav>
-            <div class="g-payment-history-container2">
-              <button class="g-payment-history-login button">Login</button>
-              <button class="button">Register</button>
-            </div>
-          </div>
-          <div class="g-payment-history-icon-group">
-            <svg viewBox="0 0 950.8571428571428 1024" class="g-payment-history-icon04">
-              <path d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"></path>
-            </svg><svg viewBox="0 0 877.7142857142857 1024" class="g-payment-history-icon06">
-              <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
-            </svg><svg viewBox="0 0 602.2582857142856 1024" class="g-payment-history-icon08">
-              <path d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"></path>
-            </svg>
-          </div>
-        </div>
       </header>
       <div class="g-payment-history-hero">
-        <div class="g-payment-history-container3">
-          <div class="g-payment-history-sidebar">
-            <nav class="g-payment-history-nav3">
-              <svg viewBox="0 0 1024 1024" class="g-payment-history-icon10">
-                <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
-              </svg>
+        <div class="g-payment-history-container3" style="width: auto;">
+          <div class="g-payment-history-sidebar" style="width: auto;">
+            <nav class="g-payment-history-nav3" style="width: auto;">
               <span class="g-payment-history-text05"><a href="g-bills.php">BILLS</a></span>
               <span class="g-payment-history-text06"><a href="g-payment-history.php">PAYMENT HISTORY</a></span>
               <span class="g-payment-history-text07">
@@ -219,9 +178,9 @@
           <h1 class="g-payment-history-text22">&nbsp;PAYMENT HISTORY</h1>
           <div class="g-payment-history-container6">
 
-          <ul id="list" style="margin-left: 50px; margin-top: 20px; margin-bottom: 20px;">
+            <ul id="list" style="margin-left: 50px; margin-top: 20px; margin-bottom: 20px;">
             </ul>
-          <!-- <h1 id="email" class="g-payment-history-text23">Email</h1>
+            <!-- <h1 id="email" class="g-payment-history-text23">Email</h1>
             <span id="date" class="g-payment-history-text24">
               Due Date:&nbsp;
             </span>
@@ -320,7 +279,7 @@
         unit.innerHTML = "Unit No.: " + unitno;
         rent.innerHTML = "Rent Fee: " + price;
         status.innerHTML = "Status " + stat;
-       
+
         // decline.style.height="15px";
 
         ul.appendChild(header);
@@ -335,8 +294,31 @@
 
       }
 
-      const dbRef = ref(database, 'pay_history');
+      // GETTING THE LANDLORD NUMBER
+      var landlordNum = 0;
+      var tenantNum;
+      if (String(nameX) == "landlord_1@gmail.com") {
+        landlordNum = 1;
+        tenantNum = "_tenant1@gmail.com"
+      }
+      if (String(nameX) == "landlord_2@gmail.com") {
+        landlordNum = 2;
+        tenantNum = "_tenant2@gmail.com"
+      }
+      if (String(nameX) == "landlord_3@gmail.com") {
+        landlordNum = 3;
+        tenantNum = "_tenant3@gmail.com"
+      }
+      if (String(nameX) == "landlord_4@gmail.com") {
+        landlordNum = 4;
+        tenantNum = "_tenant4@gmail.com"
+      }
+      if (String(nameX) == "landlord_5@gmail.com") {
+        landlordNum = 5;
+        tenantNum = "_tenant5@gmail.com"
+      }
 
+      const dbRef = ref(database, 'pay_history');
       onValue(dbRef, (snapshot) => {
         snapshot.forEach((childSnapshot) => {
           // const childKey = childSnapshot.key;
@@ -344,16 +326,17 @@
           // const childData = childSnapshot.val();
 
           let em = childSnapshot.val().email;
-          // if (String(em) == String(nameX)) {
-          let paidDate = childSnapshot.val().paid_date;
-          let dateDue = childSnapshot.val().due_date;
-          let price = childSnapshot.val().price;
-          let stats = childSnapshot.val().status;
-          let unitz = childSnapshot.val().unit;
-          let approve = childSnapshot.val().unit;
+
+          if (String(em).endsWith(tenantNum)) {
+            let paidDate = childSnapshot.val().paid_date;
+            let dateDue = childSnapshot.val().due_date;
+            let price = childSnapshot.val().price;
+            let stats = childSnapshot.val().status;
+            let unitz = childSnapshot.val().unit;
+            let approve = childSnapshot.val().unit;
 
             addItemsToList(em, dateDue, unitz, price, stats, app);
-          
+          }
 
           // }
           // ...
