@@ -124,6 +124,33 @@
   <link rel="stylesheet" href="./style.css" />
 </head>
 
+<style>
+            @media (max-width: 600px) {
+              .a-browse-view-container8 {
+                margin-top: -450px;
+              }
+              #title {
+                text-align: center;
+                margin-left: 50px;
+              }
+              #info {
+                text-align: left;
+                
+              }
+              
+            /* .a-browse-view-container4 {
+              display: none;
+              visibility: hidden;
+            } */
+            .a-browse-view-image2 {
+              margin-top: 100px;
+            }
+            /* .a-browse-view-container5{
+              margin-top: -70px;
+            } */
+          }
+</style>
+
 <body>
   <div>
     <link href="./a-browse-view.css" rel="stylesheet" />
@@ -172,12 +199,19 @@
           </div>
         </div>
       </div>
-      <footer class="a-browse-view-footer">
+      <!-- <footer class="a-browse-view-footer">
         <span class="a-browse-view-text09">
           © 2022 Apartment Rental Tracking System
         </span>
         <div class="a-browse-view-icon-group1"></div>
-      </footer>
+      </footer> -->
+
+      <link rel="stylesheet" href="./a-home.css">
+      <header data-thq="thq-navbar" class="a-home-navbar-interactive" style="margin-top: 2em;">
+        <span class="a-home-text6">
+          © 2022 Apartment Rental Tracking System
+        </span>
+      </header>
     </div>
   </div>
   <script data-section-id="navbar" src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>

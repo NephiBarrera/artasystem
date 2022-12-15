@@ -193,7 +193,7 @@
             <button class="button">Sign Up</button>
           </a>
         </div>
-        
+
       </header>
       <div class="a-login-hero">
         <img alt="image" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/apartment-living-room-design-ideas-hbx040122nextwave-013-1656022467.jpg?crop=0.675xw:1.00xh;0,0&amp;resize=640:*" class="a-login-image2" />
@@ -201,40 +201,47 @@
           <h1 class="a-login-text5">Log In</h1>
           <!-- <input type="text" id="email" placeholder="Email" class="a-login-textinput input" /> -->
           <input type="text" id="myText" placeholder="Email" class="a-login-textinput input">
-          
+
           <label for="">
 
             <input type="password" id="password" placeholder="Password" class="a-login-textinput1 input" />
             <br>
             <input type="checkbox" onclick="hide()"> Show Password
           </label>
-            
+
           <div class="a-login-btn-group1">
             <button id="loginBtn" class="a-login-button button">Log In</button>
             <!-- <button class="a-login-button button" id="login">Log In</button> -->
           </div>
         </div>
       </div>
-      <footer class="a-login-footer">
+      <!-- <footer class="a-login-footer">
         <span class="a-login-text6">
           © 2022 Apartment Rental Tracking System
         </span>
         <div class="a-login-icon-group1"></div>
-      </footer>
+      </footer> -->
+
+      <link rel="stylesheet" href="./a-home.css">
+      <header data-thq="thq-navbar" class="a-home-navbar-interactive" style="margin-top: 22em;">
+        <span class="a-home-text6">
+          © 2022 Apartment Rental Tracking System
+        </span>
+      </header>
     </div>
   </div>
   <script data-section-id="navbar" src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
 
-<script>
-  function hide() {
-  var x = document.getElementById("password");
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
-    x.type = "password";
-  }
-}
-</script>
+  <script>
+    function hide() {
+      var x = document.getElementById("password");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+  </script>
 
   <script type="module">
     import {
@@ -292,7 +299,7 @@
 
       } else {
         if (String(email).endsWith("@gmail.com")) {
-          
+
           // INSERT DATA INTO DB
           set(ref(database, 'user_log'), {
             email: email,
@@ -305,29 +312,26 @@
               const user = userCredential.user;
               // ...
               if (String(email) == "landlord_1@gmail.com" ||
-                      String(email) == "landlord_2@gmail.com" ||
-                      String(email) == "landlord_3@gmail.com" ||
-                      String(email) == "landlord_4@gmail.com" ||
-                      String(email) == "landlord_5@gmail.com") {
-                      window.alert("Welcome Landlord");
-                      window.location.href = "g-bills.php";
-                    } 
-                    else if (
-                      String(email).endsWith("tenant1@gmail.com") ||
-                      String(email).endsWith("tenant2@gmail.com") ||
-                      String(email).endsWith("tenant3@gmail.com") ||
-                      String(email).endsWith("tenant4@gmail.com") ||
-                      String(email).endsWith("tenant5@gmail.com"))
-                    {
-                      window.alert("Welcome Tenant");
-                      window.location.href = "f-bills.php";
-                    }
-                    else {
-                      window.alert("Cannot determine if user is tenant or landlord\n" +
-                      "Landlord: has format 'landlord_num@gmail.com'\n" +
-                      "Tenant: ends with '_tenantX@gmail.com'");
-                      window.location.href = "a-login.php";
-                    }
+                String(email) == "landlord_2@gmail.com" ||
+                String(email) == "landlord_3@gmail.com" ||
+                String(email) == "landlord_4@gmail.com" ||
+                String(email) == "landlord_5@gmail.com") {
+                window.alert("Welcome Landlord");
+                window.location.href = "g-bills.php";
+              } else if (
+                String(email).endsWith("tenant1@gmail.com") ||
+                String(email).endsWith("tenant2@gmail.com") ||
+                String(email).endsWith("tenant3@gmail.com") ||
+                String(email).endsWith("tenant4@gmail.com") ||
+                String(email).endsWith("tenant5@gmail.com")) {
+                window.alert("Welcome Tenant");
+                window.location.href = "f-bills.php";
+              } else {
+                window.alert("Cannot determine if user is tenant or landlord\n" +
+                  "Landlord: has format 'landlord_num@gmail.com'\n" +
+                  "Tenant: ends with '_tenantX@gmail.com'");
+                window.location.href = "a-login.php";
+              }
 
               // checkWhere(email);
               // window.location.href = "g-bills.php";
@@ -348,8 +352,8 @@
     });
     // function myFunction() {
 
-      // function checkWhere (email) {
-      // }
+    // function checkWhere (email) {
+    // }
 
     // }
     // document.getElementById("register").addEventListener("click", function() {

@@ -149,6 +149,90 @@
         <div data-thq="thq-navbar-nav" data-role="Nav" class="f-logout-desktop-menu">
           <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="f-logout-nav"></nav>
         </div>
+
+
+        <style>
+          @media (max-width: 600px) {
+            .f-logout-banner {
+              width: 600px;
+            }
+
+            .f-logout-container3 {
+              display: none;
+              visibility: hidden;
+
+            }
+
+
+            .f-logout-container5 {
+              width: 500px;
+            }
+
+            .f-logout-container6 {
+              width: 400px;
+            }
+
+            .f-logout-text22 {
+              margin-left: -12px;
+            }
+
+            .f-logout-container7 {
+              margin-left: -200px;
+            }
+
+            .f-logout-container6 {
+              width: auto;
+              padding-right: 12px;
+              padding-left: -24px;
+            }
+          }
+        </style>
+        <div data-thq="thq-navbar-nav" data-role="Nav" class="f-logout-desktop-menu">
+          <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="f-logout-nav"></nav>
+        </div>
+        <div data-thq="thq-navbar-btn-group" class="f-logout-btn-group"></div>
+        <div data-thq="thq-burger-menu" class="f-logout-burger-menu">
+          <svg viewBox="0 0 1024 1024" class="f-logout-icon">
+            <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
+          </svg>
+        </div>
+        <div data-thq="thq-mobile-menu" class="f-logout-mobile-menu">
+          <div data-thq="thq-mobile-menu-nav" data-role="Nav" class="f-logout-nav1">
+            <div class="f-logout-container1">
+              <h2 id="titular">APARTMENT RENTAL <br>TRACKING SYSTEM</h2>
+              <div data-thq="thq-close-menu" class="f-logout-menu-close">
+                <svg viewBox="0 0 1024 1024" class="f-logout-icon02">
+                  <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
+                </svg>
+              </div>
+            </div>
+            <nav data-thq="thq-mobile-menu-nav-links" data-role="Nav" class="f-logout-nav2">
+              <a href="f-bills.php" style="padding: 15px 0px;">
+                <span class="f-logout-text">BILLS</span>
+              </a>
+              <a href="f-payment-history.php" style="padding: 15px 0px;">
+                <span class="f-logout-text01">PAYMENT HISTORY</span>
+              </a>
+              <a href="f-browse-apartments.php" style="padding: 15px 0px;">
+                <span class="f-logout-text02">BROWSE APARTMENTS</span>
+              </a>
+              <a href="f-inquiries.php" style="padding: 15px 0px;">
+                <span class="f-logout-text03">INQUIRIES</span>
+              </a>
+              <a href="f-concerns.php" style="padding: 15px 0px;">
+                <span class="f-logout-text04">CONCERNS</span>
+              </a>
+              <a href="f-logout.php" style="padding: 15px 0px;">
+                <span class="f-logout-text04">LOG OUT</span>
+              </a>
+            </nav>
+
+          </div>
+
+        </div>
+
+
+
       </header>
       <div class="f-logout-hero">
         <div class="f-logout-container3" style="width: auto;">
@@ -257,6 +341,7 @@
       console.log(snapshot.val());
       var nameX = snapshot.val();
       document.getElementById("name").textContent = nameX;
+      document.getElementById("titular").textContent = nameX + " (Tenant)";
       // document.getElementById("fromfrom").textContent = nameX;
       // var message = document.getElementById("message").value;
       // document.getElementById("name").style.fontSize = 10;

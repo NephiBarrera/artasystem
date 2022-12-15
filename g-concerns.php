@@ -262,12 +262,16 @@
         // var email = document.createElement("li");
         var datez = document.createElement("p");
         var mes = document.createElement("p");
-        var unit = document.createElement("p");
+        var unit = document.createElement("textarea");
 
         header.innerHTML = em;
         datez.innerHTML = "Date: " + date;
         mes.innerHTML = "Message: ";
         unit.innerHTML = message;
+
+        unit.style.height="70px";
+        // unit.style.width="400px";
+        unit.style.width="100%";
 
         unit.style.marginBottom = "40px";
         unit.style.marginLeft = "10px";

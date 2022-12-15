@@ -297,12 +297,19 @@
 
         </div>
       </div>
-      <footer class="a-signup-footer">
+      <!-- <footer class="a-signup-footer">
         <span class="a-signup-text6">
           © 2022 Apartment Rental Tracking System
         </span>
         <div class="a-signup-icon-group1"></div>
-      </footer>
+      </footer> -->
+
+      <link rel="stylesheet" href="./a-home.css">
+      <header data-thq="thq-navbar" class="a-home-navbar-interactive" style="margin-top: 22em;">
+        <span class="a-home-text6">
+          © 2022 Apartment Rental Tracking System
+        </span>
+      </header>
     </div>
   </div>
   <script data-section-id="navbar" src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>

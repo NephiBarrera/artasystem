@@ -354,6 +354,45 @@
     margin-right: var(--dl-space-space-unit);
   }
 }
+<div data-thq="thq-navbar-btn-group" class="f-bills-btn-group"></div>
+<div data-thq="thq-burger-menu" class="f-bills-burger-menu">
+  <svg viewBox="0 0 1024 1024" class="f-bills-icon">
+    <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
+  </svg>
+</div>
+<div data-thq="thq-mobile-menu" class="f-bills-mobile-menu">
+  <div data-thq="thq-mobile-menu-nav" data-role="Nav" class="f-bills-nav1">
+    <div class="f-bills-container1">
+      <img alt="image" src="https://presentation-website-assets.teleporthq.io/logos/logo.png" class="f-bills-image1" width="0" />
+      <div data-thq="thq-close-menu" class="f-bills-menu-close">
+        <svg viewBox="0 0 1024 1024" class="f-bills-icon02">
+          <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
+        </svg>
+      </div>
+    </div>
+    <nav data-thq="thq-mobile-menu-nav-links" data-role="Nav" class="f-bills-nav2">
+      <a href="f-bills.php">
+        <span class="f-bills-text">BILLS</span>
+      </a> <br>
+      <a href="f-payment-history.php">
+        <span class="f-bills-text01">PAYMENT HISTOR</span>
+      </a><br>
+      <a href="f-browse-apartments.php">
+        <span class="f-bills-text02">BROWSE APARTMENTS</span>
+      </a><br>
+      <a href="f-inquiries.php">
+        <span class="f-bills-text03">INQUIRIES</span>
+      </a><br>
+      <a href="f-concerns.php">
+        <span class="f-bills-text04">CONCERNS</span>
+      </a><br>
+      <a href="f-logout.php">
+        <span class="f-bills-text04">LOG OUT</span>
+      </a><br>
+    </nav>
+  </div>
+</div>
+
 @media(max-width: 479px) {
   .f-bills-navbar-interactive {
     padding: var(--dl-space-space-unit);

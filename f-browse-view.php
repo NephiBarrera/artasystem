@@ -123,11 +123,43 @@
   <!-- <style> ... </style> -->
   <link rel="stylesheet" href="./style.css" />
 </head>
-
 <body>
   <div>
     <link href="./f-browse-view.css" rel="stylesheet" />
 
+    <style>
+      
+      @media (max-width: 600px) {
+            .f-browse-view-container03 {
+              display: none;
+              visibility: hidden;
+            }
+            .f-browse-view-hero1{
+              width: 600px;
+            }
+            .f-browse-view-container11{
+              margin-top: -550px;
+              /* margin-left: -10px; */
+            }
+            .f-browse-view-text23{
+              text-align: left;
+              margin-left: -50px;
+            }
+            .f-browse-view-button button{
+            }
+            #inquire {
+              
+              margin-top: 600px;
+}
+            .f-browse-view-container07{
+              margin-top: 50px;
+              margin-left: -100px;
+            }
+            .f-browse-view-container08{
+              margin-left: -100px;
+            }
+          }
+    </style>
     <div class="f-browse-view-container">
       <header data-thq="thq-navbar" class="f-browse-view-navbar-interactive">
         <img alt="image" src="public/playground_assets/logo-200h.png" class="f-browse-view-image" />

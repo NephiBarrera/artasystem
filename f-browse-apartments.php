@@ -115,8 +115,8 @@
       line-height: 1.15;
       color: var(--dl-color-gray-black);
       background-color: var(--dl-color-gray-white);
-
     }
+
   </style>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" data-tag="font" />
   <!--This is the head section-->
@@ -134,6 +134,105 @@
         <div data-thq="thq-navbar-nav" data-role="Nav" class="f-browse-apartments-desktop-menu">
           <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="f-browse-apartments-nav"></nav>
         </div>
+        <div data-thq="thq-navbar-nav" data-role="Nav" class="f-browse-apartments-desktop-menu">
+          <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="f-browse-apartments-nav"></nav>
+        </div>
+
+        <style>
+          @media (max-width: 600px) {
+            .f-browse-apartments-container3 {
+              display: none;
+              visibility: hidden;
+            }
+
+            .f-browse-apartments-text22 {
+              margin-left: -12px;
+            }
+
+            .f-browse-apartments-container6 {
+              width: auto;
+              padding-right: 12px;
+              padding-left: -24px;
+            }
+
+            .f-browse-apartments-hero{
+              width: 500px;
+            }
+            
+            .f-browse-apartments-gallery{
+              display: block;
+              width: 400px;
+            }
+            .f-browse-apartments-text22{
+              font-size: 30px;
+            }
+            .gallery-card1-gallery-card gallery-card1-root-class-name{
+              width: 400px;
+              margin-bottom: 20px;
+            }
+            .gallery-card1-gallery-card gallery-card1-root-class-name1{
+              width: 400px;
+              margin-bottom: 20px;
+            }
+            .gallery-card1-gallery-card gallery-card1-root-class-name2{
+              width: 400px;
+              margin-bottom: 20px;
+            }
+            .gallery-card1-gallery-card gallery-card1-root-class-name3{
+              width: 400px;
+              margin-bottom: 20px;
+            }
+            .gallery-card1-text1{
+              margin-bottom: 50px;
+            }
+
+          }
+        </style>
+        <div data-thq="thq-navbar-nav" data-role="Nav" class="f-browse-apartments-desktop-menu">
+          <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="f-browse-apartments-nav"></nav>
+        </div>
+        <div data-thq="thq-navbar-btn-group" class="f-browse-apartments-btn-group"></div>
+        <div data-thq="thq-burger-menu" class="f-browse-apartments-burger-menu">
+          <svg viewBox="0 0 1024 1024" class="f-browse-apartments-icon">
+            <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
+          </svg>
+        </div>
+        <div data-thq="thq-mobile-menu" class="f-browse-apartments-mobile-menu">
+          <div data-thq="thq-mobile-menu-nav" data-role="Nav" class="f-browse-apartments-nav1">
+            <div class="f-browse-apartments-container1">
+            <h2 id="titular">APARTMENT RENTAL <br>TRACKING SYSTEM</h2>
+              <div data-thq="thq-close-menu" class="f-browse-apartments-menu-close">
+                <svg viewBox="0 0 1024 1024" class="f-browse-apartments-icon02">
+                  <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
+                </svg>
+              </div>
+            </div>
+            <nav data-thq="thq-mobile-menu-nav-links" data-role="Nav" class="f-browse-apartments-nav2">
+              <a href="f-bills.php" style="padding: 15px 0px;">
+                <span class="f-browse-apartments-text">BILLS</span>
+              </a>
+              <a href="f-payment-history.php" style="padding: 15px 0px;">
+                <span class="f-browse-apartments-text01">PAYMENT HISTORY</span>
+              </a>
+              <a href="f-browse-apartments.php" style="padding: 15px 0px;">
+                <span class="f-browse-apartments-text02">BROWSE APARTMENTS</span>
+              </a>
+              <a href="f-inquiries.php" style="padding: 15px 0px;">
+                <span class="f-browse-apartments-text03">INQUIRIES</span>
+              </a>
+              <a href="f-concerns.php" style="padding: 15px 0px;">
+                <span class="f-browse-apartments-text04">CONCERNS</span>
+              </a>
+              <a href="f-logout.php" style="padding: 15px 0px;">
+                <span class="f-browse-apartments-text04">LOG OUT</span>
+              </a>
+            </nav>
+
+          </div>
+
+        </div>
+
+
       </header>
       <div class="f-browse-apartments-hero">
         <div class="f-browse-apartments-container3" style="width: auto;">
@@ -277,8 +376,9 @@
     if (snapshot.exists()) {
       console.log(snapshot.val());
       var nameX = snapshot.val();
-      document.getElementById("name").textContent = nameX;
-      document.getElementById("fromfrom").textContent = nameX;
+      document.getElementById("name").textContent = nameX ;
+      document.getElementById("titular").textContent = nameX + " \n(Tenant)";
+      // document.getElementById("fromfrom").textContent = nameX ;
       // var message = document.getElementById("message").value;
       // document.getElementById("name").style.fontSize = 10;
 

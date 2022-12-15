@@ -134,9 +134,89 @@
     <div class="f-bills-container">
       <header data-thq="thq-navbar" class="f-bills-navbar-interactive">
         <img alt="image" src="public/playground_assets/logo-200h.png" class="f-bills-image" />
+        <div data-thq="thq-navbar-nav" data-role="Nav" class="f-browse-apartments-desktop-menu">
+          <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="f-browse-apartments-nav"></nav>
+        </div>
+
+        <style>
+                  @media (max-width: 600px) {
+                    .f-bills-banner {
+                      width: 600px;
+                    }
+            .f-bills-container3 {
+              display: none;
+              visibility: hidden;
+              
+            }
+            .f-bills-container5 {
+              width: 500px;
+            }
+            .f-bills-container6 {
+              width: 400px;
+            }
+
+            .f-bills-text22 {
+              margin-left: -12px;
+            }
+
+            .f-bills-container6 {
+              width: auto;
+              padding-right: 12px;
+              padding-left: -24px;
+            }
+          }
+        
+          </style>
         <div data-thq="thq-navbar-nav" data-role="Nav" class="f-bills-desktop-menu">
           <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="f-bills-nav"></nav>
         </div>
+        <div data-thq="thq-navbar-btn-group" class="f-bills-btn-group"></div>
+        <div data-thq="thq-burger-menu" class="f-bills-burger-menu">
+          <svg viewBox="0 0 1024 1024" class="f-bills-icon">
+            <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
+          </svg>
+        </div>
+        <div data-thq="thq-mobile-menu" class="f-bills-mobile-menu">
+          <div data-thq="thq-mobile-menu-nav" data-role="Nav" class="f-bills-nav1">
+            <div class="f-bills-container1">
+            <h2 id="titular">APARTMENT RENTAL <br>TRACKING SYSTEM</h2>
+              <div data-thq="thq-close-menu" class="f-bills-menu-close">
+                <svg viewBox="0 0 1024 1024" class="f-bills-icon02">
+                  <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
+                </svg>
+              </div>
+            </div>
+            <nav data-thq="thq-mobile-menu-nav-links" data-role="Nav" class="f-bills-nav2">
+              <a href="f-bills.php" style="padding: 15px 0px;">
+                <span class="f-bills-text">BILLS</span>
+              </a>
+              <a href="f-bills.php" style="padding: 15px 0px;">
+                <span class="f-bills-text01">PAYMENT HISTORY</span>
+              </a>
+              <a href="f-browse-apartments.php" style="padding: 15px 0px;">
+                <span class="f-bills-text02">BROWSE APARTMENTS</span>
+              </a>
+              <a href="f-inquiries.php" style="padding: 15px 0px;">
+                <span class="f-bills-text03">INQUIRIES</span>
+              </a>
+              <a href="f-concerns.php" style="padding: 15px 0px;">
+                <span class="f-bills-text04">CONCERNS</span>
+              </a>
+              <a href="f-logout.php" style="padding: 15px 0px;">
+                <span class="f-bills-text04">LOG OUT</span>
+              </a>
+            </nav>
+
+          </div>
+
+        </div>
+
+
+          </style>
+          
+
+
+
 
       </header>
       <div class="f-bills-banner">
@@ -173,20 +253,20 @@
               <div class="f-bills-profile">
                 <img alt="image" src="https://freepngimg.com/thumb/categories/3027.png" class="f-bills-image2" />
                 <div class="f-bills-container4">
-                  <span id="name" class="f-bills-text20" >Name</span>
+                  <span id="name" class="f-bills-text20">Name</span>
                   <span class="f-bills-text21">Tenant</span>
                 </div>
               </div>
             </div>
           </div>
           <div class="f-bills-container5" style=" margin-bottom: 20px;"">
-            <h1 class="f-bills-text22">&nbsp; BILLS</h1>
+            <h1 class=" f-bills-text22">&nbsp; BILLS</h1>
 
 
             <div class="f-bills-container6" style="height: auto;  margin-bottom: 20px;"">
-              <ul id="list" style="margin-left: 50px; margin-top: 20px; margin-bottom: 20px;">
-                <!-- <h1 id="header" class="f-bills-text23">Emal</h1> -->
-                <!-- <span id="date" class="f-bills-text24">Due Date:&nbsp;</span>
+              <ul id=" list" style="margin-left: 50px; margin-top: 20px; margin-bottom: 20px;">
+              <!-- <h1 id="header" class="f-bills-text23">Emal</h1> -->
+              <!-- <span id="date" class="f-bills-text24">Due Date:&nbsp;</span>
                 <span id="unit" class="f-bills-text25">Unit No.:</span>
                 <span id="rent" class="f-bills-text26">Rent Fee:</span>
                 <span id="status" class="f-bills-text27">Status:</span> -->
@@ -250,6 +330,7 @@
       console.log(snapshot.val());
       var nameX = snapshot.val();
       document.getElementById("name").textContent = nameX;
+      document.getElementById("titular").textContent = nameX + " (Tenant)";
       // document.getElementById("name").style.fontSize = 10;
 
 
@@ -259,7 +340,7 @@
       var today = new Date();
       // var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
       var date = today.getDate() + '-' + '1' + '-' + '2023';
-      var todaytoday = today.getDate() + '-' + (today.getMonth()+1) + '-' + today.getFullYear();
+      var todaytoday = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
       var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
       var dateTimedue = date + ' ' + time;
 
@@ -278,7 +359,7 @@
         var rent = document.createElement("p");
         var status = document.createElement("p");
         var space = document.createElement("p");
-         var approve = document.createElement("button");
+        var approve = document.createElement("button");
         // var decline = document.createElement("button");
 
         // header.innerHTML = 'Bills-' + (stdNo++);
@@ -330,8 +411,8 @@
         })
 
 
-       
-    
+
+
         // decline.style.height="15px";
 
 

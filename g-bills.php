@@ -23,8 +23,7 @@
       border-style: solid;
     }
 
-    p,
-    li,
+    p, li, 
     ul,
     pre,
     div,
