@@ -145,7 +145,7 @@
 
     <div class="f-logout-container">
       <header data-thq="thq-navbar" class="f-logout-navbar-interactive">
-        <img alt="image" src="public/playground_assets/logo-200h.png" class="f-logout-image" />
+        <img alt="image" src="logo-200h.png" class="f-logout-image" />
         <div data-thq="thq-navbar-nav" data-role="Nav" class="f-logout-desktop-menu">
           <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="f-logout-nav"></nav>
         </div>

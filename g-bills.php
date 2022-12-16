@@ -130,7 +130,7 @@
 
     <div class="g-bills-container">
       <header data-thq="thq-navbar" class="g-bills-navbar-interactive">
-        <img alt="image" src="public/playground_assets/logo-200h.png" class="g-bills-image" />
+        <img alt="image" src="logo-200h.png" class="g-bills-image" />
         <div data-thq="thq-navbar-nav" data-role="Nav" class="g-bills-desktop-menu">
           <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="g-bills-nav"></nav>
         </div>
@@ -349,6 +349,7 @@
       var nameX = snapshot.val();
       // window.confirm(nameX);
       document.getElementById("name").textContent = nameX;
+      document.getElementById("titular").textContent = nameX + " \n(Landlord)";
       // document.getElementById("name").style.fontSize = 10;
 
 
@@ -394,6 +395,14 @@
         status.innerHTML = "Status " + stat;
         approve.innerHTML = "CONFIRM PAYMENT";
 
+        approve.style.width="250px";
+        approve.style.marginLeft="-25px";
+        approve.style.paddingLeft="0px";
+        approve.style.paddingRight="0px";
+        approve.style.paddingTop="10px";
+        approve.style.paddingBottom="10px";
+
+
         // space.innerHTML = "     " + space.value;
         status.style.color = "maroon";
         status.style.fontWeight = "700";
@@ -437,9 +446,6 @@
 
 
         // decline.style.height="15px";
-
-
-
         ul.appendChild(header);
         // ul.appendChild(email);
         ul.appendChild(date);
@@ -456,27 +462,67 @@
 
       // GETTING THE LANDLORD NUMBER
       var landlordNum = 0;
-      var tenantNum;
-      if (String(nameX) == "landlord_1@gmail.com") {
-        landlordNum = 1;
-        tenantNum = "_tenant1@gmail.com"
-      }
-      if (String(nameX) == "landlord_2@gmail.com") {
-        landlordNum = 2;
-        tenantNum = "_tenant2@gmail.com"
-      }
-      if (String(nameX) == "landlord_3@gmail.com") {
-        landlordNum = 3;
-        tenantNum = "_tenant3@gmail.com"
-      }
-      if (String(nameX) == "landlord_4@gmail.com") {
-        landlordNum = 4;
-        tenantNum = "_tenant4@gmail.com"
-      }
-      if (String(nameX) == "landlord_5@gmail.com") {
-        landlordNum = 5;
-        tenantNum = "_tenant5@gmail.com"
-      }
+      if (nameX.endsWith("1landlord@gmail.com")) {
+            landlordNum = 1;
+          };
+          if (nameX.endsWith("2landlord@gmail.com")) {
+            landlordNum = 2;
+          };
+          if (nameX.endsWith("3landlord@gmail.com")) {
+            landlordNum = 3;
+          };
+          if (nameX.endsWith("4landlord@gmail.com")) {
+            landlordNum = 4;
+          };
+          if (nameX.endsWith("5landlord@gmail.com")) {
+            landlordNum = 5;
+          };
+          if (nameX.endsWith("6landlord@gmail.com")) {
+            landlordNum = 6;
+          };
+          if (nameX.endsWith("7landlord@gmail.com")) {
+            landlordNum = 7;
+          };
+          if (nameX.endsWith("8landlord@gmail.com")) {
+            landlordNum = 8;
+          };
+          if (nameX.endsWith("9landlord@gmail.com")) {
+            landlordNum = 9;
+          };
+          if (nameX.endsWith("10landlord@gmail.com")) {
+            landlordNum = 10;
+          };
+          if (nameX.endsWith("11landlord@gmail.com")) {
+            landlordNum = 11;
+          };
+          if (nameX.endsWith("12landlord@gmail.com")) {
+            landlordNum = 12;
+          };
+          if (nameX.endsWith("13landlord@gmail.com")) {
+            landlordNum = 13;
+          };
+          if (nameX.endsWith("14landlord@gmail.com")) {
+            landlordNum = 14;
+          };
+          if (nameX.endsWith("15landlord@gmail.com")) {
+            landlordNum = 15;
+          };
+          if (nameX.endsWith("16landlord@gmail.com")) {
+            landlordNum = 16;
+          };
+          if (nameX.endsWith("17landlord@gmail.com")) {
+            landlordNum = 17;
+          };
+          if (nameX.endsWith("18landlord@gmail.com")) {
+            landlordNum = 18;
+          };
+          if (nameX.endsWith("19landlord@gmail.com")) {
+            landlordNum = 19;;
+          };
+          if (nameX.endsWith("20landlord@gmail.com")) {
+            landlordNum = 20;
+          };
+
 
       const dbRef = ref(database, 'bills');
 
@@ -485,15 +531,15 @@
           // const childKey = childSnapshot.key;
           // console.log(childSnapshot.val().date);
           // const childData = childSnapshot.val();
-          let em = childSnapshot.val().email;
+          let unitz = childSnapshot.val().unit;
           // if (String(em) == String(nameX)) {
-          if (String(em).endsWith(tenantNum)) {
+            if (unitz == landlordNum) {
 
+              let em = childSnapshot.val().email;
             let date = childSnapshot.val().date;
             let dateDue = childSnapshot.val().due_date;
             let price = childSnapshot.val().price;
             let stats = childSnapshot.val().status;
-            let unitz = childSnapshot.val().unit;
             let approve = childSnapshot.val().unit;
 
             if (stats != "PAID") {
@@ -515,5 +561,27 @@
     console.error(error);
   });
 </script>
+
+
+<style>
+  @media (max-width: 600px) {
+    /* f-inquiries-text22 */
+    #titular {
+      font-size: 20px;
+    }
+    p {
+      font-size: 12px;
+      padding-right: 100px
+    }
+    h2{
+      font-size: 14px;
+    }
+    button{
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-left: -100px;
+    }
+  }
+</style>
 
 </html>

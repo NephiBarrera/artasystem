@@ -130,7 +130,7 @@
 
     <div class="g-browse-apartments-container">
       <header data-thq="thq-navbar" class="g-browse-apartments-navbar-interactive">
-        <img alt="image" src="public/playground_assets/logo-200h.png" class="g-browse-apartments-image" />
+        <img alt="image" src="logo-200h.png" class="g-browse-apartments-image" />
         <div data-thq="thq-navbar-nav" data-role="Nav" class="g-browse-apartments-desktop-menu">
           <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="g-browse-apartments-nav"></nav>
         </div>
@@ -385,6 +385,7 @@
       console.log(snapshot.val());
       var nameX = snapshot.val();
       document.getElementById("name").textContent = nameX;
+      document.getElementById("titular").textContent = nameX + " \n(Landlord)";
       // var message = document.getElementById("message").value;
       // document.getElementById("name").style.fontSize = 10;
 
@@ -396,5 +397,21 @@
   });
 </script>
 
+
+<style>
+  @media (max-width: 600px) {
+    /* f-inquiries-text22 */
+    #titular {
+      font-size: 20px;
+    }
+    p {
+      font-size: 12px;
+      padding-right: 100px
+    }
+    h2{
+      font-size: 14px;
+    }
+  }
+</style>
 
 </html>

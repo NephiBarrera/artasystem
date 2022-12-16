@@ -130,7 +130,7 @@
 
     <div class="f-concerns-container">
       <header data-thq="thq-navbar" class="f-concerns-navbar-interactive">
-        <img alt="image" src="public/playground_assets/logo-200h.png" class="f-concerns-image" />
+        <img alt="image" src="logo-200h.png" class="f-concerns-image" />
         <div data-thq="thq-navbar-nav" data-role="Nav" class="f-concerns-desktop-menu">
           <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="f-concerns-nav"></nav>
         </div>
@@ -266,8 +266,9 @@
         <div class="f-concerns-container5">
           <h1 class="f-concerns-text22">&nbsp;CONCERNS</h1>
           <span id="date" class="f-concerns-text23">
-            <span class="f-concerns-text24">To:</span>
-            <span id="toLandlord">landlord.arta@gmail.com</span>
+            <span class="f-concerns-text24">Apartment Unit Concern: </span>
+            <input type="number" name="unitConcerned" id="unitConcerned" style="width: 50px; border: 2px solid black; border-radius: 5px;" required>
+            <!-- <span id="toLandlord">landlord.arta@gmail.com</span> -->
           </span>
           <div class="f-concerns-container6" style="height: auto;">
             <span id="date" class="f-concerns-text26">From:</span>
@@ -278,8 +279,7 @@
 
             <textarea cols="30" style="height: 500px; border: 2px solid black;
             margin: 2px 50px ; border-radius:5px;
-            max-height:600px; max-width: 500px">
-  At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
+            max-height:600px; max-width: 500px" id="myText" required>
 </textarea>
           </div>
 
@@ -367,28 +367,33 @@
       }
 
 
-
-
       var today = new Date();
       var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
       var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
       var dateTime = date + ' ' + time;
 
+      // Getting Unit and Message
       document.getElementById("trayas").addEventListener("click", function() {
+        var unit = document.getElementById("unitConcerned").value;
+      var mess = document.getElementById("myText").value;
         // window.confirm(document.getElementById("myText").value);
+        if(unit == "" || mess == ""){
+          window.alert("Please input necessary information");
+        }
+        else{
+          set(ref(database, 'concerns/' + dateTime), {
+            date: dateTime,
+            email: nameX,
+            unit: document.getElementById("unitConcerned").value,
+            message: document.getElementById("myText").value,
+          })
+          
+          window.confirm("Concern successfully forwarded");
+          window.location.href = "f-concerns.php";
 
-        set(ref(database, 'concerns/' + dateTime), {
-          date: dateTime,
-          email: nameX,
-          message: document.getElementById("myText").value,
-        })
-
-        window.confirm("Concern successfully forwarded");
-        window.location.href = "f-concerns.php"
-
-
+        }
       })
-
+      
     } else {
       console.log("No data available");
     }

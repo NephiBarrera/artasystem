@@ -133,7 +133,7 @@
 
     <div class="f-bills-container">
       <header data-thq="thq-navbar" class="f-bills-navbar-interactive">
-        <img alt="image" src="public/playground_assets/logo-200h.png" class="f-bills-image" />
+        <img alt="image" src="logo-200h.png" class="f-bills-image" />
         <div data-thq="thq-navbar-nav" data-role="Nav" class="f-browse-apartments-desktop-menu">
           <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="f-browse-apartments-nav"></nav>
         </div>
@@ -481,6 +481,22 @@
     console.error(error);
   });
 </script>
+
+<style>
+  @media (max-width: 600px) {
+    /* f-inquiries-text22 */
+    #titular {
+      font-size: 20px;
+    }
+    p {
+      font-size: 12px;
+      padding-right: 100px
+    }
+    h2{
+      font-size: 14px;
+    }
+  }
+</style>
 
 
 </html>

@@ -132,7 +132,7 @@
 
     <div class="g-inquiries-container">
       <header data-thq="thq-navbar" class="g-inquiries-navbar-interactive">
-        <img alt="image" src="public/playground_assets/logo-200h.png" class="g-inquiries-image" />
+        <img alt="image" src="logo-200h.png" class="g-inquiries-image" />
         <div data-thq="thq-navbar-nav" data-role="Nav" class="g-inquiries-desktop-menu">
           <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="g-inquiries-nav"></nav>
         </div>
@@ -308,6 +308,7 @@
       console.log(snapshot.val());
       var nameX = snapshot.val();
       document.getElementById("name").textContent = nameX;
+      document.getElementById("titular").textContent = nameX + " \n(Landlord)";
       // document.getElementById("name").style.fontSize = 10;
 
 

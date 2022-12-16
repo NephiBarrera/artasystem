@@ -128,6 +128,18 @@
   <link rel="stylesheet" href="./style.css" />
 </head>
 
+<style>
+  @media (max-width: 600px) {
+    input[type=text] {
+      width: 200px;
+    }
+
+    input[type=password] {
+      width: 150px;
+    }
+  }
+</style>
+
 <body>
   <div>
     <link href="./a-signup.css" rel="stylesheet" />
@@ -135,7 +147,7 @@
     <div class="a-signup-container">
       <header data-thq="thq-navbar" class="a-signup-navbar-interactive">
         <a href="index.php">
-          <img alt="image" src="public/playground_assets/logo-200h.png" class="a-signup-image" />
+          <img alt="image" src="logo-200h.png" class="a-signup-image" />
         </a>
         <div data-thq="thq-navbar-nav" data-role="Nav" class="a-signup-desktop-menu">
           <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="a-signup-nav"></nav>
@@ -148,28 +160,71 @@
             <button class="a-signup-register button">Sign Up</button>
           </a>
         </div>
+
+        <div data-thq="thq-navbar-nav" data-role="Nav" class="a-signup-desktop-menu">
+            <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="a-signup-nav"></nav>
+          </div>
+          <div data-thq="thq-navbar-btn-group" class="a-signup-btn-group"></div>
+          <div data-thq="thq-burger-menu" class="a-signup-burger-menu">
+            <svg viewBox="0 0 1024 1024" class="a-signup-icon">
+              <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
+            </svg>
+          </div>
+          <div data-thq="thq-mobile-menu" class="a-signup-mobile-menu">
+            <div data-thq="thq-mobile-menu-nav" data-role="Nav" class="a-signup-nav1">
+              <div class="a-signup-container1">
+                <h2>APARTMENT RENTAL <br>TRACKING SYSTEM</h2>
+                <div data-thq="thq-close-menu" class="a-signup-menu-close">
+                  <svg viewBox="0 0 1024 1024" class="a-signup-icon02">
+                    <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
+                  </svg>
+                </div>
+              </div>
+              
+              <nav data-thq="thq-mobile-menu-nav-links" data-role="Nav" class="a-signup-nav2">
+                <a href="a-login.php" style="padding: 15px 0px;">
+                  <span class="a-signup-text">LOG IN</span>
+                </a>
+                <a href="a-signup.php" style="padding: 15px 0px;">
+                  <span class="a-signup-text01">SIGN UP</span>
+                </a>
+              </nav>
+
+            </div>
+
+
+
+
       </header>
       <div class="a-signup-hero">
         <div class="a-signup-container3"></div>
         <div class="a-signup-container4">
           <!-- <form style="display: in-line;"> -->
           <h1 class="a-signup-text5">Sign Up</h1>
-          <input type="text" placeholder="Name" class="a-signup-textinput input" />
+          <input type="text" placeholder="Name" class="a-signup-textinput input" id="name" />
           <div class="a-signup-container5">
-            <input type="text" placeholder="Age" class="a-signup-textinput1 input" />
-            <input type="text" placeholder="Phone Number" class="a-signup-textinput2 input" />
+            <input type="text" placeholder="Age" class="a-signup-textinput1 input" id="age" />
+            <input type="text" placeholder="Phone Number" class="a-signup-textinput2 input" id="phone" />
           </div>
           <br>
-          <input type="text" placeholder="Address" class="a-signup-textinput3 input" />
+          <input type="text" placeholder="Address" class="a-signup-textinput3 input" id="address" />
 
           <!-- email and pass -->
           <input type="text" placeholder="Email" id="myText" class="a-signup-textinput4 input">
           <!-- <input type="text" placeholder="Email" class="a-signup-textinput4 input" name="email id="userEmail" value="hey" /> -->
-          <label for="showPass">
-            <input type="password" placeholder="Password" class="a-signup-textinput5 input" name="password" id="password" />
-            <br>
-            <input type="checkbox" onclick="hide()" name="showPass"> Show Password
-          </label>
+          <div style="display: flex;">
+            <label for="showPass">
+              <input type="password" placeholder="Password" class="a-signup-textinput5 input" name="password" id="password" />
+              <br>
+              <input type="checkbox" onclick="hide()" name="showPass"> Show
+            </label>
+            <label for="showPass">
+              <input type="password" placeholder="Confirm Password" class="a-signup-textinput5 input" name="password" id="password2" />
+              <br>
+              <input type="checkbox" onclick="hide2()" name="showPass"> Show
+            </label>
+          </div>
+
           <div class="a-signup-btn-group1">
             <button class="a-signup-button button" id="tryas">Register</button>
             <!-- <button class="a-signup-button button" id="register" name="register">Register</button> -->
@@ -178,6 +233,15 @@
           <script>
             function hide() {
               var x = document.getElementById("password");
+              if (x.type === "password") {
+                x.type = "text";
+              } else {
+                x.type = "password";
+              }
+            }
+
+            function hide2() {
+              var x = document.getElementById("password2");
               if (x.type === "password") {
                 x.type = "text";
               } else {
@@ -235,50 +299,55 @@
 
               var email = document.getElementById("myText").value;
               var password = document.getElementById("password").value;
+              var password2 = document.getElementById("password2").value;
               // document.getElementById("demo").innerHTML = x;
 
               //  confirm(String(email).endsWith("@gmail.com") + " akdhs");
 
-              if (String(email).length == 0 || String(password).length == 0) {
-                window.alert("Input " + email + " necessary information." + password);
-
+              //CHECKING INFORMATION VALIDITY
+              if (email == "" || password == "" || password2 == "" ||
+                document.getElementById("name").value == "" ||
+                document.getElementById("age").value == "" ||
+                document.getElementById("phone").value == "" ||
+                document.getElementById("address").value == "") {
+                window.alert("Please input all necessary information." + password);
               } else {
-                if (String(email).endsWith("@gmail.com")) {
-
-                  if (String(email).endsWith("tenant1@gmail.com") ||
-                    String(email).endsWith("tenant2@gmail.com") ||
-                    String(email).endsWith("tenant3@gmail.com") ||
-                    String(email).endsWith("tenant4@gmail.com") ||
-                    String(email).endsWith("tenant5@gmail.com")) {
-
-                    createUserWithEmailAndPassword(auth, email, password)
-                      .then((userCredential) => {
-                        // Signed in 
-                        const user = userCredential.user;
-                        // ...
-
-                        // INSERT DATA INTO DB
-                        set(ref(database, 'user_log'), {
-                          email: email,
-                          password: password
-                        });
-
-                        window.alert("Account Created Successfully. Proceed to Log In");
-                        window.location.href = "a-login.php";
-
-
-                      })
-                      .catch((error) => {
-                        const errorCode = error.code;
-                        const errorMessage = error.message;
-                        // ..
-                        window.alert("Error occurred. Try again.");
-                      });
+                if (password == password2) {
+                  if (String(email).length == 0 || String(password).length == 0) {
+                    window.alert("Input " + email + " necessary information.");
                   } else {
-                    window.alert("Email should end with 'tenantX@gmail.com'");
+                    if (String(email).endsWith("@gmail.com")) {
+                      if (String(email).endsWith("tenant@gmail.com") || String(email).endsWith("landlord@gmail.com") ) {
+                        createUserWithEmailAndPassword(auth, email, password)
+                          .then((userCredential) => {
+                            // Signed in 
+                            const user = userCredential.user;
+                            // ...
+
+                            // INSERT DATA INTO DB
+                            set(ref(database, 'user_log'), {
+                              email: email,
+                              password: password
+                            });
+
+                            window.alert("Account Created Successfully. Proceed to Log In");
+                            window.location.href = "a-login.php";
+                          })
+                          .catch((error) => {
+                            const errorCode = error.code;
+                            const errorMessage = error.message;
+                            // ..
+                            window.alert("Error occurred. Try again.");
+                          });
+                      } else {
+                        window.alert("Email should end with 'tenant@gmail.com'");
+                      }
+                    } else {
+                      window.alert("Email should only end with '@gmail.com'");
+                    }
                   }
                 } else {
-                  window.alert("Email should only end with '@gmail.com'");
+                  window.alert("Passwords do not match")
                 }
               }
             });

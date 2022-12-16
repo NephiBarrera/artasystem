@@ -180,7 +180,7 @@
     <div class="a-login-container">
       <header data-thq="thq-navbar" class="a-login-navbar-interactive">
         <a href="index.php">
-          <img alt="image" src="public/playground_assets/logo-200h.png" class="a-login-image" />
+          <img alt="image" src="logo-200h.png" class="a-login-image" />
         </a>
         <div data-thq="thq-navbar-nav" data-role="Nav" class="a-login-desktop-menu">
           <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="a-login-nav"></nav>
@@ -193,6 +193,42 @@
             <button class="button">Sign Up</button>
           </a>
         </div>
+
+
+
+        <div data-thq="thq-navbar-nav" data-role="Nav" class="a-login-desktop-menu">
+          <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="a-login-nav"></nav>
+        </div>
+        <div data-thq="thq-navbar-btn-group" class="a-login-btn-group"></div>
+        <div data-thq="thq-burger-menu" class="a-login-burger-menu">
+          <svg viewBox="0 0 1024 1024" class="a-login-icon">
+            <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
+          </svg>
+        </div>
+        <div data-thq="thq-mobile-menu" class="a-login-mobile-menu">
+          <div data-thq="thq-mobile-menu-nav" data-role="Nav" class="a-login-nav1">
+            <div class="a-login-container1">
+              <h2>APARTMENT RENTAL <br>TRACKING SYSTEM</h2>
+              <div data-thq="thq-close-menu" class="a-login-menu-close">
+                <svg viewBox="0 0 1024 1024" class="a-login-icon02">
+                  <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
+                </svg>
+              </div>
+            </div>
+
+            <nav data-thq="thq-mobile-menu-nav-links" data-role="Nav" class="a-login-nav2">
+              <a href="a-login.php" style="padding: 15px 0px;">
+                <span class="a-login-text">LOG IN</span>
+              </a>
+              <a href="a-signup.php" style="padding: 15px 0px;">
+                <span class="a-login-text01">SIGN UP</span>
+              </a>
+            </nav>
+
+          </div>
+
+
+
 
       </header>
       <div class="a-login-hero">
@@ -290,20 +326,78 @@
 
       var email = document.getElementById("myText").value;
       var password = document.getElementById("password").value;
-      // document.getElementById("demo").innerHTML = x;
-
-      //  confirm(String(email).endsWith("@gmail.com") + " akdhs");
+      var landlordNum = 0;
 
       if (String(email).length == 0 || String(password).length == 0) {
         window.alert("Input " + email + " necessary information." + password);
-
       } else {
         if (String(email).endsWith("@gmail.com")) {
+          if (email.endsWith("1landlord@gmail.com")) {
+            landlordNum = 1;
+          };
+          if (email.endsWith("2landlord@gmail.com")) {
+            landlordNum = 2;
+          };
+          if (email.endsWith("3landlord@gmail.com")) {
+            landlordNum = 3;
+          };
+          if (email.endsWith("4landlord@gmail.com")) {
+            landlordNum = 4;
+          };
+          if (email.endsWith("5landlord@gmail.com")) {
+            landlordNum = 5;
+          };
+          if (email.endsWith("6landlord@gmail.com")) {
+            landlordNum = 6;
+          };
+          if (email.endsWith("7landlord@gmail.com")) {
+            landlordNum = 7;
+          };
+          if (email.endsWith("8landlord@gmail.com")) {
+            landlordNum = 8;
+          };
+          if (email.endsWith("9landlord@gmail.com")) {
+            landlordNum = 9;
+          };
+          if (email.endsWith("10landlord@gmail.com")) {
+            landlordNum = 10;
+          };
+          if (email.endsWith("11landlord@gmail.com")) {
+            landlordNum = 11;
+          };
+          if (email.endsWith("12landlord@gmail.com")) {
+            landlordNum = 12;
+          };
+          if (email.endsWith("13landlord@gmail.com")) {
+            landlordNum = 13;
+          };
+          if (email.endsWith("14landlord@gmail.com")) {
+            landlordNum = 14;
+          };
+          if (email.endsWith("15landlord@gmail.com")) {
+            landlordNum = 15;
+          };
+          if (email.endsWith("16landlord@gmail.com")) {
+            landlordNum = 16;
+          };
+          if (email.endsWith("17landlord@gmail.com")) {
+            landlordNum = 17;
+          };
+          if (email.endsWith("18landlord@gmail.com")) {
+            landlordNum = 18;
+          };
+          if (email.endsWith("19landlord@gmail.com")) {
+            landlordNum = 19;;
+          };
+          if (email.endsWith("20landlord@gmail.com")) {
+            landlordNum = 20;
+          };
 
           // INSERT DATA INTO DB
           set(ref(database, 'user_log'), {
             email: email,
-            password: password
+            password: password,
+            landlordNum: landlordNum
           })
 
           signInWithEmailAndPassword(auth, email, password)
@@ -311,25 +405,16 @@
               // Signed in 
               const user = userCredential.user;
               // ...
-              if (String(email) == "landlord_1@gmail.com" ||
-                String(email) == "landlord_2@gmail.com" ||
-                String(email) == "landlord_3@gmail.com" ||
-                String(email) == "landlord_4@gmail.com" ||
-                String(email) == "landlord_5@gmail.com") {
+              if (String(email).endsWith("landlord@gmail.com")) {
                 window.alert("Welcome Landlord");
                 window.location.href = "g-bills.php";
-              } else if (
-                String(email).endsWith("tenant1@gmail.com") ||
-                String(email).endsWith("tenant2@gmail.com") ||
-                String(email).endsWith("tenant3@gmail.com") ||
-                String(email).endsWith("tenant4@gmail.com") ||
-                String(email).endsWith("tenant5@gmail.com")) {
+              } else if (String(email).endsWith("tenant@gmail.com")) {
                 window.alert("Welcome Tenant");
                 window.location.href = "f-bills.php";
               } else {
                 window.alert("Cannot determine if user is tenant or landlord\n" +
-                  "Landlord: has format 'landlord_num@gmail.com'\n" +
-                  "Tenant: ends with '_tenantX@gmail.com'");
+                  "Landlord: has format 'Xlandlord@gmail.com'\n" +
+                  "Tenant: ends with 'Xtenant@gmail.com'");
                 window.location.href = "a-login.php";
               }
 

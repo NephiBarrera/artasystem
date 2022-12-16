@@ -115,7 +115,6 @@
       line-height: 1.15;
       color: var(--dl-color-gray-black);
       background-color: var(--dl-color-gray-white);
-
     }
   </style>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" data-tag="font" />
@@ -126,25 +125,41 @@
 
 <style>
             @media (max-width: 600px) {
+              .f-browse-view-container{
+                width: 100%;
+              }
               .a-browse-view-container8 {
                 margin-top: -450px;
               }
               #title {
                 text-align: center;
+                margin-top: -200px;
                 margin-left: 50px;
+                width: 80%;
               }
               #info {
-                text-align: left;
-                
+                text-align: center;
+                width: 70%;
+                margin-bottom: -500px;
               }
               
             /* .a-browse-view-container4 {
               display: none;
               visibility: hidden;
             } */
-            .a-browse-view-image2 {
-              margin-top: 100px;
+            .a-browse-view-container4{
+              margin-top: 300px;
             }
+
+            /* .a-browse-view-hero{
+              margin-top: 200px;
+              margin-top: 200px;
+              margin-top: 200px;
+              margin-top: 200px;
+              margin-top: 200px;
+              margin-top: 200px;
+              margin-top: 200px;
+            } */
             /* .a-browse-view-container5{
               margin-top: -70px;
             } */
@@ -158,21 +173,12 @@
     <div class="a-browse-view-container">
       <header data-thq="thq-navbar" class="a-browse-view-navbar-interactive">
         <a href="index.php">
-          <img alt="image" src="public/playground_assets/logo-200h.png" class="a-browse-view-image" />
+          <img alt="image" src="logo-200h.png" class="a-browse-view-image" />
         </a>
-        <div data-thq="thq-navbar-nav" data-role="Nav" class="a-browse-view-desktop-menu">
-          <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="a-browse-view-nav"></nav>
-        </div>
-        <div data-thq="thq-navbar-btn-group" class="a-browse-view-btn-group">
-          <a href="a-login.php">
-            <button class="a-browse-view-login button">Login</button>
-          </a>
-          <a href="a-signup.php">
-            <button class="button">Sign Up</button>
-          </a>
-        </div>
-       
-      </header>
+        <a href="a-browse-apartments.php">
+          <button style="background-color: aliceblue; border-radius: 5px;">Back</button>
+        </a>
+</header>
       <div class="a-browse-view-banner">
         <div class="a-browse-view-btn-group1"></div>
         <div class="a-browse-view-hero">
@@ -220,6 +226,18 @@
 <script>
   var unit = innerHTML = localStorage.getItem("unit");
 
+  var path = "a-browse-view.php";
+  function viewImg(src, path) {
+    localStorage.setItem("source", src);
+    localStorage.setItem("from", path);
+    window.location.href = "z-image-view.html";
+    // window.alert(num);
+    return false;
+  }
+
+
+
+  
   if (unit == 1) {
     document.getElementById("title").textContent = "Unit 1";
     var st1 = "1 Master Bedroom";
@@ -235,6 +253,12 @@
     document.getElementById("img3").src = "./assets/img/unit1c.jpg"
     document.getElementById("img4").src = "./assets/img/unit1d.jpg"
 
+    // setting view image
+    document.getElementById("img1").addEventListener("click", function(){viewImg("./assets/img/unit1a.jpg",path)});
+    document.getElementById("img2").addEventListener("click", function(){viewImg("./assets/img/unit1b.jpg",path)});
+    document.getElementById("img3").addEventListener("click", function(){viewImg("./assets/img/unit1c.jpg",path)});
+    document.getElementById("img4").addEventListener("click", function(){viewImg("./assets/img/unit1d.jpg",path)});
+  
   }
 
   if (unit == 2) {
@@ -252,10 +276,17 @@
     document.getElementById("img2").src = "./assets/img/unit2b.jpg"
     document.getElementById("img3").src = "./assets/img/unit2c.jpg"
     document.getElementById("img4").src = "./assets/img/unit2d.jpg"
+
+    // setting view image
+    document.getElementById("img1").addEventListener("click", function(){viewImg("./assets/img/unit2a.jpg",path)});
+    document.getElementById("img2").addEventListener("click", function(){viewImg("./assets/img/unit2b.jpg",path)});
+    document.getElementById("img3").addEventListener("click", function(){viewImg("./assets/img/unit2c.jpg",path)});
+    document.getElementById("img4").addEventListener("click", function(){viewImg("./assets/img/unit2d.jpg",path)});
+  
   }
 
   if (unit == 3) {
-    document.getElementById("title").textContent = "Unit 1";
+    document.getElementById("title").textContent = "Unit 3";
     var st1 = "1 Master Bedroom";
     document.getElementById("info").textContent = "The unit has 2 small Bedrooms\n" +
       " sharing a single Shower. The area is \n" +
@@ -269,10 +300,17 @@
     document.getElementById("img2").src = "./assets/img/unit3b.jpg"
     document.getElementById("img3").src = "./assets/img/unit3c.jpg"
     document.getElementById("img4").src = "./assets/img/unit3d.jpg"
+
+    // setting view image
+    document.getElementById("img1").addEventListener("click", function(){viewImg("./assets/img/unit3a.jpg",path)});
+    document.getElementById("img2").addEventListener("click", function(){viewImg("./assets/img/unit3b.jpg",path)});
+    document.getElementById("img3").addEventListener("click", function(){viewImg("./assets/img/unit3c.jpg",path)});
+    document.getElementById("img4").addEventListener("click", function(){viewImg("./assets/img/unit3d.jpg",path)});
+  
   }
 
   if (unit == 4) {
-    document.getElementById("title").textContent = "Unit 1";
+    document.getElementById("title").textContent = "Unit 4";
     var st1 = "1 Master Bedroom";
     document.getElementById("info").textContent = "A 1 Bedroom and \n" +
       "1 Shower unit. Spanning for \n" +
@@ -286,10 +324,16 @@
     document.getElementById("img2").src = "./assets/img/unit4b.jpg"
     document.getElementById("img3").src = "./assets/img/unit4c.jpg"
     document.getElementById("img4").src = "./assets/img/unit4d.jpg"
+
+    // setting view image
+    document.getElementById("img1").addEventListener("click", function(){viewImg("./assets/img/unit4a.jpg",path)});
+    document.getElementById("img2").addEventListener("click", function(){viewImg("./assets/img/unit4b.jpg",path)});
+    document.getElementById("img3").addEventListener("click", function(){viewImg("./assets/img/unit4c.jpg",path)});
+    document.getElementById("img4").addEventListener("click", function(){viewImg("./assets/img/unit4d.jpg",path)});
   }
 
   if (unit == 5) {
-    document.getElementById("title").textContent = "Unit 1";
+    document.getElementById("title").textContent = "Unit 5";
     var st1 = "1 Master Bedroom";
     document.getElementById("info").textContent = "A 2 Small Bedroom unit with \n" +
       "2 Shower. The area spans up to \n" +
@@ -303,7 +347,14 @@
     document.getElementById("img2").src = "./assets/img/unit5b.jpg"
     document.getElementById("img3").src = "./assets/img/unit5c.jpg"
     document.getElementById("img4").src = "./assets/img/unit5d.jpg"
+
+    // setting view image
+    document.getElementById("img1").addEventListener("click", function(){viewImg("./assets/img/unit5a.jpg",path)});
+    document.getElementById("img2").addEventListener("click", function(){viewImg("./assets/img/unit5b.jpg",path)});
+    document.getElementById("img3").addEventListener("click", function(){viewImg("./assets/img/unit5c.jpg",path)});
+    document.getElementById("img4").addEventListener("click", function(){viewImg("./assets/img/unit5d.jpg",path)});
   }
+
 </script>
 
 </html>

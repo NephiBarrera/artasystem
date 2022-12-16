@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-  <title>Landlord - View Apartments</title>
-  <meta property="og:title" content="gBrowseView - Well Worn Thirsty Mole" />
+  <title>Tenant - View Apartments</title>
+  <meta property="og:title" content="fBrowseView - Well Worn Thirsty Mole" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta charset="utf-8" />
+  <meta charset="utg-8" />
   <meta property="twitter:card" content="summary_large_image" />
 
   <style data-tag="reset-style-sheet">
@@ -129,47 +129,76 @@
     <link href="./g-browse-view.css" rel="stylesheet" />
 
     <style>
-      
       @media (max-width: 600px) {
-            .g-browse-view-container03 {
-              display: none;
-              visibility: hidden;
-            }
-            .g-browse-view-hero1{
-              width: 600px;
-            }
-            .g-browse-view-container11{
-              margin-top: -450px;
-              /* margin-left: -10px; */
-            }
-            .g-browse-view-text23{
-              text-align: left;
-              margin-left: -50px;
-            }
-            .g-browse-view-button button{
-            }
-            .g-browse-view-image3{
-              margin-top: 100px;
-            }
-            #inquire {
-              margin-top: 600px;
-}
-            .g-browse-view-container07{
-              margin-top: 50px;
-              margin-left: -100px;
-            }
-            .g-browse-view-container08{
-              margin-left: -100px;
-            }
-          }
-    </style>
+        .g-browse-view-container03 {
+          display: none;
+          visibility: hidden;
+        }
 
+        .g-browse-view-container03,
+        .g-browse-view-container09,
+        g-browse-view-container10,
+        g-browse-view-container11 {
+          width: 400px;
+        }
+
+        .g-browse-view-hero {
+          height: auto;
+          width: 400px;
+        }
+
+        .g-browse-view-hero1 {
+          width: 400px;
+        }
+
+        #title {
+          margin-top: 130%;
+          margin-left: 0px;
+          margin-right: 0px;
+          text-align: center;
+        }
+
+        #info {
+          width: max-content;
+          margin-left: -120px;
+        }
+
+        #inquire {
+          width: 100%;
+          margin-left: -90px;
+        }
+
+        .g-browse-view-container07 {
+          margin-top: 50px;
+          margin-left: -100px;
+        }
+
+        .g-browse-view-container08 {
+          margin-left: -100px;
+        }
+
+        .g-browse-view-image3 {
+          width: 330px;
+          margin-left: 120px;
+        }
+
+        .g-browse-view-container08 {
+          margin-left: 20px;
+        }
+
+        #img2,
+        #img3,
+        #img4 {
+          width: 110px;
+        }
+      }
+    </style>
     <div class="g-browse-view-container">
       <header data-thq="thq-navbar" class="g-browse-view-navbar-interactive">
-        <img alt="image" src="public/playground_assets/logo-200h.png" class="g-browse-view-image" />
-        <div data-thq="thq-navbar-nav" data-role="Nav" class="g-browse-view-desktop-menu">
-          <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="g-browse-view-nav"></nav>
-        </div>
+        <img alt="image" src="logo-200h.png" class="g-browse-view-image" />
+        <a href="g-browse-apartments.php">
+          <button style="background-color: aliceblue; border-radius: 5px;">Back</button>
+        </a>
       </header>
       <div class="g-browse-view-hero">
         <div class="g-browse-view-container03" style="width: auto;">
@@ -192,7 +221,7 @@
                 </a>
               </span>
               <span>
-                <a href="g-concerns.php">
+                <a href="g-browse-view.php">
                   <span>CONCERNS</span>
                   <br />
                   <br />
@@ -202,58 +231,73 @@
               <span><a href="g-logout.php">LOG OUT</a></span>
             </nav>
             <div class="g-browse-view-profile">
-              <img alt="image" src="https://w7.pngwing.com/pngs/526/292/png-transparent-building-management-house-apartment-kisumu-building-building-company-service.png" class="g-browse-view-image2" />
+              <img alt="image" src="https://freepngimg.com/thumb/categories/3027.png" class="g-browse-view-image2" />
               <div class="g-browse-view-container04">
                 <span id="name" class="g-browse-view-text20">Name</span>
-                <span class="g-browse-view-text21">Landlord</span>
+                <span class="g-browse-view-text21">Tenant</span>
               </div>
             </div>
           </div>
         </div>
+
         <div class="g-browse-view-container09" style="width: 250px; margin-right:-40px;">
-              <div class="g-browse-view-container10" style="width: 250px; margin-right:-40px;">
-                <div class="g-browse-view-container11" style="width: 250px; margin-right:-40px;">
-                  <h1 id="title" class="g-browse-view-text22">Title</h1>
-                  <span id="info" class="g-browse-view-text23" style="width: 250px; margin-right:-40px;">
-                    <span>Details</span>
-                    <br />
-                  </span>
-                  <button id="inquire" class="g-browse-view-button button">
-                    INQUIRE
-                  </button>
-                </div>
-              </div>
+          <div class="g-browse-view-container10" style="width: 250px; margin-right:-40px;">
+            <div class="g-browse-view-container11" style="width: 250px; margin-right:-40px;">
+              <h1 id="title" class="g-browse-view-text22">Title</h1>
+              <span id="info" class="g-browse-view-text23" style="width: 250px; margin-right:-40px;">
+                <span>Details</span>
+                <br />
+              </span>
+              <button id="inquire" class="g-browse-view-button button" style="width: 200px;">
+                INQUIRE
+              </button>
             </div>
+          </div>
+        </div>
+
+
         <div class="g-browse-view-container05">
           <div class="g-browse-view-hero1">
             <div class="g-browse-view-container06">
               <div class="g-browse-view-container07">
-                <img id="img1" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="g-browse-view-image3" />
+                <img  data-enlargable  id="img1" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="g-browse-view-image3"/>
               </div>
-              <div class="g-browse-view-container08">
-                <img id="img2" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="g-browse-view-image4" />
-                <img id="img3" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="g-browse-view-image5" />
-                <img id="img4" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="g-browse-view-image6" />
+              <div class="g-browse-view-container08" style="margin-top: -100px;">
+                <img id="img2" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="g-browse-view-image4"  />
+                <img id="img3" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="g-browse-view-image5"  />
+                <img id="img4" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="g-browse-view-image6"  />
+
+
               </div>
             </div>
-            
+
           </div>
         </div>
       </div>
-      <!-- <footer class="g-browse-view-footer">
+    </div>
+    <!-- <footer class="g-browse-view-footer">
         <span class="g-browse-view-text26">
           © 2022 Apartment Rental Tracking System
         </span>
         <div class="g-browse-view-icon-group1"></div>
       </footer> -->
-      <div class="g-browse-view-btn-group1"></div>
-    </div>
+    <div class="g-browse-view-btn-group1"></div>
+  </div>
   </div>
   <script data-section-id="navbar" src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
 </body>
 
 <script>
   var unit = innerHTML = localStorage.getItem("unit");
+
+  var path = "g-browse-view.php";
+  function viewImg(src, path) {
+    localStorage.setItem("source", src);
+    localStorage.setItem("from", path);
+    window.location.href = "z-image-view.html";
+    // window.alert(num);
+    return false;
+  }
 
   if (unit == 1) {
     document.getElementById("title").textContent = "Unit 1";
@@ -270,6 +314,17 @@
     document.getElementById("img3").src = "./assets/img/unit1c.jpg"
     document.getElementById("img4").src = "./assets/img/unit1d.jpg"
 
+    document.getElementById("img1").src = "./assets/img/unit1a.jpg"
+    document.getElementById("img2").src = "./assets/img/unit1b.jpg"
+    document.getElementById("img3").src = "./assets/img/unit1c.jpg"
+    document.getElementById("img4").src = "./assets/img/unit1d.jpg"
+
+    // setting view image
+    document.getElementById("img1").addEventListener("click", function(){viewImg("./assets/img/unit1a.jpg",path)});
+    document.getElementById("img2").addEventListener("click", function(){viewImg("./assets/img/unit1b.jpg",path)});
+    document.getElementById("img3").addEventListener("click", function(){viewImg("./assets/img/unit1c.jpg",path)});
+    document.getElementById("img4").addEventListener("click", function(){viewImg("./assets/img/unit1d.jpg",path)});
+  
   }
 
   if (unit == 2) {
@@ -287,6 +342,13 @@
     document.getElementById("img2").src = "./assets/img/unit2b.jpg"
     document.getElementById("img3").src = "./assets/img/unit2c.jpg"
     document.getElementById("img4").src = "./assets/img/unit2d.jpg"
+
+    // setting view image
+    document.getElementById("img1").addEventListener("click", function(){viewImg("./assets/img/unit2a.jpg",path)});
+    document.getElementById("img2").addEventListener("click", function(){viewImg("./assets/img/unit2b.jpg",path)});
+    document.getElementById("img3").addEventListener("click", function(){viewImg("./assets/img/unit2c.jpg",path)});
+    document.getElementById("img4").addEventListener("click", function(){viewImg("./assets/img/unit2d.jpg",path)});
+  
   }
 
   if (unit == 3) {
@@ -305,6 +367,12 @@
     document.getElementById("img3").src = "./assets/img/unit3c.jpg"
     document.getElementById("img4").src = "./assets/img/unit3d.jpg"
 
+    // setting view image
+    document.getElementById("img1").addEventListener("click", function(){viewImg("./assets/img/unit3a.jpg",path)});
+    document.getElementById("img2").addEventListener("click", function(){viewImg("./assets/img/unit3b.jpg",path)});
+    document.getElementById("img3").addEventListener("click", function(){viewImg("./assets/img/unit3c.jpg",path)});
+    document.getElementById("img4").addEventListener("click", function(){viewImg("./assets/img/unit3d.jpg",path)});
+  
   }
 
   if (unit == 4) {
@@ -322,6 +390,12 @@
     document.getElementById("img2").src = "./assets/img/unit4b.jpg"
     document.getElementById("img3").src = "./assets/img/unit4c.jpg"
     document.getElementById("img4").src = "./assets/img/unit4d.jpg"
+
+    // setting view image
+    document.getElementById("img1").addEventListener("click", function(){viewImg("./assets/img/unit5a.jpg",path)});
+    document.getElementById("img2").addEventListener("click", function(){viewImg("./assets/img/unit4b.jpg",path)});
+    document.getElementById("img3").addEventListener("click", function(){viewImg("./assets/img/unit4c.jpg",path)});
+    document.getElementById("img4").addEventListener("click", function(){viewImg("./assets/img/unit4d.jpg",path)});
   }
 
   if (unit == 5) {
@@ -339,6 +413,12 @@
     document.getElementById("img2").src = "./assets/img/unit5b.jpg"
     document.getElementById("img3").src = "./assets/img/unit5c.jpg"
     document.getElementById("img4").src = "./assets/img/unit5d.jpg"
+
+    // setting view image
+    document.getElementById("img1").addEventListener("click", function(){viewImg("./assets/img/unit5a.jpg",path)});
+    document.getElementById("img2").addEventListener("click", function(){viewImg("./assets/img/unit5b.jpg",path)});
+    document.getElementById("img3").addEventListener("click", function(){viewImg("./assets/img/unit5c.jpg",path)});
+    document.getElementById("img4").addEventListener("click", function(){viewImg("./assets/img/unit5d.jpg",path)});
   }
 </script>
 
@@ -385,13 +465,11 @@
       // document.getElementById("name").style.fontSize = 10;
 
 
-
       var today = new Date();
       // var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
       var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
       var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
       var dateTime = date + ' ' + time;
-
 
       document.getElementById("inquire").addEventListener("click", function() {
         // window.confirm(dateTime);
@@ -402,12 +480,12 @@
           date: dateTime,
           // unit: unit;
           price: "Php 15,000 (monthly)",
-          status: "Inquiry was being processed by the landlordXR",
-          unit: "1"
+          status: "Inquiry was being processed by the landlord",
+          unit: unit
         })
 
         window.confirm("Inquiry for Unit " + unit + " was successfully forwarded");
-        window.location.href = "f-inquiries.php";
+        window.location.href = "g-inquiries.php";
 
         // set(ref(database, 'inquiries' + dateTime), {
         //   email: nameX,
@@ -416,7 +494,6 @@
         //   status: "Inquiry was being processed by the landlordRR",
         //   unit: "1"
         // });
-
 
       })
     } else {

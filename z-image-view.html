@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Image</title>
+
+    <script>
+      var source = (innerHTML = localStorage.getItem("source"));
+      var from = (innerHTML = localStorage.getItem("from"));
+      // alert(source);
+    </script>
+  </head>
+    <style>
+      body {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      #img {
+        width: 100%;
+        margin-top: 250px;
+      }
+    </style>
+  <body>
+      
+      <img src="" alt="" id="img" />
+      <button style="background-color: darkred; color: white; border-radius: 5px;
+        padding: 6px; margin-top: 10px;" id="exit">EXIT</button>
+  </body>
+
+  <script>
+    document.getElementById("img").src = source;
+    // alert(from);
+    document.getElementById("exit").addEventListener("click", function(){
+        window.location = from;
+    })
+  </script>
+</html>

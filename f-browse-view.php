@@ -134,6 +134,7 @@
           display: none;
           visibility: hidden;
         }
+
         .f-browse-view-container03,
         .f-browse-view-container09,
         f-browse-view-container10,
@@ -195,7 +196,10 @@
     </style>
     <div class="f-browse-view-container">
       <header data-thq="thq-navbar" class="f-browse-view-navbar-interactive">
-        <img alt="image" src="public/playground_assets/logo-200h.png" class="f-browse-view-image" />
+        <img alt="image" src="logo-200h.png" class="f-browse-view-image" />
+        <a href="f-browse-apartments.php">
+          <button style="background-color: aliceblue; border-radius: 5px;">Back</button>
+        </a>
       </header>
       <div class="f-browse-view-hero">
         <div class="f-browse-view-container03" style="width: auto;">
@@ -238,55 +242,68 @@
         </div>
 
 
-            <div class="f-browse-view-container09" style="width: 250px; margin-right:-40px;">
-              <div class="f-browse-view-container10" style="width: 250px; margin-right:-40px;">
-                <div class="f-browse-view-container11" style="width: 250px; margin-right:-40px;">
-                  <h1 id="title" class="f-browse-view-text22">Title</h1>
-                  <span id="info" class="f-browse-view-text23" style="width: 250px; margin-right:-40px;">
-                    <span>Details</span>
-                    <br />
-                  </span>
-                  <button id="inquire" class="f-browse-view-button button" style="width: 200px;">
-                    INQUIRE
-                  </button>
-                </div>
-              </div>
-            </div>
-        
-
-          <div class="f-browse-view-container05">
-            <div class="f-browse-view-hero1">
-              <div class="f-browse-view-container06">
-                <div class="f-browse-view-container07">
-                  <img id="img1" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="f-browse-view-image3" />
-                </div>
-                <div class="f-browse-view-container08" style="margin-top: -100px;">
-                  <img id="img2" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="f-browse-view-image4" />
-                  <img id="img3" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="f-browse-view-image5" />
-                  <img id="img4" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="f-browse-view-image6" />
-                </div>
-              </div>
-
+        <div class="f-browse-view-container09" style="width: 250px; margin-right:-40px;">
+          <div class="f-browse-view-container10" style="width: 250px; margin-right:-40px;">
+            <div class="f-browse-view-container11" style="width: 250px; margin-right:-40px;">
+              <h1 id="title" class="f-browse-view-text22">Title</h1>
+              <span id="info" class="f-browse-view-text23" style="width: 250px; margin-right:-40px;">
+                <span>Details</span>
+                <br />
+              </span>
+              <button id="inquire" class="f-browse-view-button button" style="width: 200px;">
+                INQUIRE
+              </button>
             </div>
           </div>
         </div>
+
+
+        <div class="f-browse-view-container05">
+          <div class="f-browse-view-hero1">
+            <div class="f-browse-view-container06">
+              <div class="f-browse-view-container07">
+                <img id="img1" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="f-browse-view-image3" />
+              </div>
+              <div class="f-browse-view-container08" style="margin-top: -100px;">
+                <img id="img2" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="f-browse-view-image4" />
+                <img id="img3" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="f-browse-view-image5" />
+                <img id="img4" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="f-browse-view-image6" />
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
-      <!-- <footer class="f-browse-view-footer">
+    </div>
+    <!-- <footer class="f-browse-view-footer">
         <span class="f-browse-view-text26">
           © 2022 Apartment Rental Tracking System
         </span>
         <div class="f-browse-view-icon-group1"></div>
       </footer> -->
-      <div class="f-browse-view-btn-group1"></div>
-    </div>
+    <div class="f-browse-view-btn-group1"></div>
+  </div>
   </div>
   <script data-section-id="navbar" src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
 </body>
 
 
+
 <script>
   var unit = innerHTML = localStorage.getItem("unit");
 
+  var path = "f-browse-view.php";
+  function viewImg(src, path) {
+    localStorage.setItem("source", src);
+    localStorage.setItem("from", path);
+    window.location.href = "z-image-view.html";
+    // window.alert(num);
+    return false;
+  }
+
+
+
+  
   if (unit == 1) {
     document.getElementById("title").textContent = "Unit 1";
     var st1 = "1 Master Bedroom";
@@ -302,6 +319,12 @@
     document.getElementById("img3").src = "./assets/img/unit1c.jpg"
     document.getElementById("img4").src = "./assets/img/unit1d.jpg"
 
+    // setting view image
+    document.getElementById("img1").addEventListener("click", function(){viewImg("./assets/img/unit1a.jpg",path)});
+    document.getElementById("img2").addEventListener("click", function(){viewImg("./assets/img/unit1b.jpg",path)});
+    document.getElementById("img3").addEventListener("click", function(){viewImg("./assets/img/unit1c.jpg",path)});
+    document.getElementById("img4").addEventListener("click", function(){viewImg("./assets/img/unit1d.jpg",path)});
+  
   }
 
   if (unit == 2) {
@@ -319,6 +342,13 @@
     document.getElementById("img2").src = "./assets/img/unit2b.jpg"
     document.getElementById("img3").src = "./assets/img/unit2c.jpg"
     document.getElementById("img4").src = "./assets/img/unit2d.jpg"
+
+    // setting view image
+    document.getElementById("img1").addEventListener("click", function(){viewImg("./assets/img/unit2a.jpg",path)});
+    document.getElementById("img2").addEventListener("click", function(){viewImg("./assets/img/unit2b.jpg",path)});
+    document.getElementById("img3").addEventListener("click", function(){viewImg("./assets/img/unit2c.jpg",path)});
+    document.getElementById("img4").addEventListener("click", function(){viewImg("./assets/img/unit2d.jpg",path)});
+  
   }
 
   if (unit == 3) {
@@ -337,6 +367,12 @@
     document.getElementById("img3").src = "./assets/img/unit3c.jpg"
     document.getElementById("img4").src = "./assets/img/unit3d.jpg"
 
+    // setting view image
+    document.getElementById("img1").addEventListener("click", function(){viewImg("./assets/img/unit3a.jpg",path)});
+    document.getElementById("img2").addEventListener("click", function(){viewImg("./assets/img/unit3b.jpg",path)});
+    document.getElementById("img3").addEventListener("click", function(){viewImg("./assets/img/unit3c.jpg",path)});
+    document.getElementById("img4").addEventListener("click", function(){viewImg("./assets/img/unit3d.jpg",path)});
+  
   }
 
   if (unit == 4) {
@@ -354,6 +390,12 @@
     document.getElementById("img2").src = "./assets/img/unit4b.jpg"
     document.getElementById("img3").src = "./assets/img/unit4c.jpg"
     document.getElementById("img4").src = "./assets/img/unit4d.jpg"
+
+    // setting view image
+    document.getElementById("img1").addEventListener("click", function(){viewImg("./assets/img/unit4a.jpg",path)});
+    document.getElementById("img2").addEventListener("click", function(){viewImg("./assets/img/unit4b.jpg",path)});
+    document.getElementById("img3").addEventListener("click", function(){viewImg("./assets/img/unit4c.jpg",path)});
+    document.getElementById("img4").addEventListener("click", function(){viewImg("./assets/img/unit4d.jpg",path)});
   }
 
   if (unit == 5) {
@@ -371,8 +413,17 @@
     document.getElementById("img2").src = "./assets/img/unit5b.jpg"
     document.getElementById("img3").src = "./assets/img/unit5c.jpg"
     document.getElementById("img4").src = "./assets/img/unit5d.jpg"
+
+    // setting view image
+    document.getElementById("img1").addEventListener("click", function(){viewImg("./assets/img/unit5a.jpg",path)});
+    document.getElementById("img2").addEventListener("click", function(){viewImg("./assets/img/unit5b.jpg",path)});
+    document.getElementById("img3").addEventListener("click", function(){viewImg("./assets/img/unit5c.jpg",path)});
+    document.getElementById("img4").addEventListener("click", function(){viewImg("./assets/img/unit5d.jpg",path)});
   }
+
 </script>
+
+
 
 <script type="module">
   import {

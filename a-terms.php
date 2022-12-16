@@ -140,7 +140,7 @@
       <div class="a-terms-container1">
         <header data-thq="thq-navbar" class="a-terms-navbar-interactive">
           <a href="index.php">
-            <img alt="image" src="public/playground_assets/logo-200h.png" class="a-terms-image" />
+            <img alt="image" src="logo-200h.png" class="a-terms-image" />
           </a>
           <div data-thq="thq-navbar-nav" data-role="Nav" class="a-terms-desktop-menu">
             <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="a-terms-nav"></nav>

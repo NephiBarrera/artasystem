@@ -132,79 +132,82 @@
 
     <div class="a-home-container">
       <header data-thq="thq-navbar" class="a-home-navbar-interactive">
-        <img alt="image" src="public/playground_assets/logo-300h.png" class="a-home-image" />
-        <div data-thq="thq-navbar-nav" data-role="Nav" class="a-home-desktop-menu">
-          <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="a-home-nav"></nav>
-        </div>
-        <div data-thq="thq-navbar-btn-group" class="a-home-btn-group" style="float: right;">
-          <a href="a-login.php">
-            <button class="a-home-login button">Login</button>
-          </a>
-          <a href="a-signup.php">
-            <button class="button">Sign Up</button>
-          </a>
+        <img alt="image" src="logo-300h.png" class="a-home-image" />
+        <div>
+
+          <div data-thq="thq-navbar-nav" data-role="Nav" class="a-home-desktop-menu">
+            <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="a-home-nav"></nav>
+          </div>
+          <div data-thq="thq-navbar-btn-group" class="a-home-btn-group" style="float: right;">
+            <a href="a-login.php">
+              <button class="a-home-login button">Login</button>
+
+            </a>
+            <a href="a-signup.php">
+              <button class="button">Sign Up</button>
+            </a>
+          </div>
         </div>
 
-        
-        <style>
-          footer {
-            width: 100%;
-          }
 
-          @media (max-width: 600px) {
-            .a-home-container3 {
-              display: none;
-              visibility: hidden;
+          <style>
+            footer {
+              width: 100%;
             }
 
-            .a-home-text22 {
-              margin-left: -12px;
-            }
+            @media (max-width: 600px) {
+              .a-home-container3 {
+                display: none;
+                visibility: hidden;
+              }
 
-            .a-home-container6 {
-              width: auto;
-              padding-right: 12px;
-              padding-left: -24px;
+              .a-home-text22 {
+                margin-left: -12px;
+              }
+
+              .a-home-container6 {
+                width: auto;
+                padding-right: 12px;
+                padding-left: -24px;
+              }
             }
-          }
-        </style>
-        <div data-thq="thq-navbar-nav" data-role="Nav" class="a-home-desktop-menu">
-          <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="a-home-nav"></nav>
-        </div>
-        <div data-thq="thq-navbar-btn-group" class="a-home-btn-group" ></div>
-        <div data-thq="thq-burger-menu" class="a-home-burger-menu">
-          <svg viewBox="0 0 1024 1024" class="a-home-icon">
-            <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
-          </svg>
-        </div>
-        <div data-thq="thq-mobile-menu" class="a-home-mobile-menu">
-          <div data-thq="thq-mobile-menu-nav" data-role="Nav" class="a-home-nav1">
-            <div class="a-home-container1">
-              <h2>APARTMENT RENTAL <br>TRACKING SYSTEM</h2>
-              <div data-thq="thq-close-menu" class="a-home-menu-close">
-                <svg viewBox="0 0 1024 1024" class="a-home-icon02">
-                  <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
-                </svg>
+          </style>
+          <div data-thq="thq-navbar-nav" data-role="Nav" class="a-home-desktop-menu">
+            <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="a-home-nav"></nav>
+          </div>
+          <div data-thq="thq-navbar-btn-group" class="a-home-btn-group"></div>
+          <div data-thq="thq-burger-menu" class="a-home-burger-menu">
+            <svg viewBox="0 0 1024 1024" class="a-home-icon">
+              <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
+            </svg>
+          </div>
+          <div data-thq="thq-mobile-menu" class="a-home-mobile-menu">
+            <div data-thq="thq-mobile-menu-nav" data-role="Nav" class="a-home-nav1">
+              <div class="a-home-container1">
+                <h2>APARTMENT RENTAL <br>TRACKING SYSTEM</h2>
+                <div data-thq="thq-close-menu" class="a-home-menu-close">
+                  <svg viewBox="0 0 1024 1024" class="a-home-icon02">
+                    <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
+                  </svg>
+                </div>
               </div>
+              
+              <nav data-thq="thq-mobile-menu-nav-links" data-role="Nav" class="a-home-nav2">
+                <a href="a-login.php" style="padding: 15px 0px;">
+                  <span class="a-home-text">LOG IN</span>
+                </a>
+                <a href="a-signup.php" style="padding: 15px 0px;">
+                  <span class="a-home-text01">SIGN UP</span>
+                </a>
+              </nav>
+
             </div>
-            <nav data-thq="thq-mobile-menu-nav-links" data-role="Nav" class="a-home-nav2">
-              <a href="a-login.php" style="padding: 15px 0px;">
-                <span class="a-home-text">LOG IN</span>
-              </a>
-              <a href="a-signup.php" style="padding: 15px 0px;">
-                <span class="a-home-text01">SIGN UP</span>
-              </a>
-            </nav>
 
           </div>
 
-        </div>
-
-
-
       </header>
       <div class="a-home-banner">
-        <img alt="image" src="public/playground_assets/logo-300h.png" class="a-home-image2" />
+        <img alt="image" src="logo-300h.png" class="a-home-image2" />
         <h1 class="a-home-text5">APARTMENT RENTAL TRACKING SYSTEM</h1>
         <div class="a-home-btn-group1">
           <a href="a-browse-apartments.php">

@@ -130,7 +130,7 @@
 
     <div class="f-inquiries-container">
       <header data-thq="thq-navbar" class="f-inquiries-navbar-interactive">
-        <img alt="image" src="public/playground_assets/logo-200h.png" class="f-inquiries-image" />
+        <img alt="image" src="logo-200h.png" class="f-inquiries-image" />
         <div data-thq="thq-navbar-nav" data-role="Nav" class="f-inquiries-desktop-menu">
           <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="f-inquiries-nav"></nav>
         </div>
@@ -140,6 +140,7 @@
             .f-inquiries-container {
               width: 100%;
             }
+
             .f-inquiries-banner {
               width: 300px;
             }
@@ -152,12 +153,14 @@
             .f-inquiries-container5 {
               width: 300px;
             }
+
             .f-inquiries-container6 {
               width: 250px;
               max-width: 300px;
               margin-left: 0;
             }
-            #list{
+
+            #list {
               width: 300px;
               max-width: 300px;
             }
@@ -165,7 +168,7 @@
             .f-inquiries-text22 {
               margin-left: -12px;
             }
-            
+
 
             .f-inquiries-container6 {
               width: auto;
@@ -254,7 +257,7 @@
             </nav>
             <div class="f-inquiries-profile">
               <img alt="image" src="https://freepngimg.com/thumb/categories/3027.png" class="f-inquiries-image2" />
-              <div class="f-inquiries-container4" >
+              <div class="f-inquiries-container4">
                 <span id="name" class="f-inquiries-text20">Name</span>
                 <span class="f-inquiries-text21">Tenant</span>
               </div>
@@ -269,7 +272,7 @@
             <span id="unit" class="f-inquiries-text25">Unit No.:</span>
             <span id="rent" class="f-inquiries-text26">Rent Fee:</span>
             <span id="status" class="f-inquiries-text27">Status:</span> -->
-            <ul id="list" style="margin-left: 50px; margin-top: 20px; margin-bottom: 20px;">
+            <ul id="list" style="margin-left: 50px; margin-top: 20px; margin-bottom: 20px; ">
             </ul>
           </div>
         </div>
@@ -401,5 +404,23 @@
     console.error(error);
   });
 </script>
+
+
+
+<style>
+  @media (max-width: 600px) {
+    /* f-inquiries-text22 */
+    #titular {
+      font-size: 20px;
+    }
+    p {
+      font-size: 12px;
+      padding-right: 100px
+    }
+    h2{
+      font-size: 14px;
+    }
+  }
+</style>
 
 </html>

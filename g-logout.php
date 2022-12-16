@@ -140,7 +140,7 @@ window.onunload = function() { void (0) }
 
     <div class="g-logout-container">
       <header data-thq="thq-navbar" class="g-logout-navbar-interactive">
-        <img alt="image" src="public/playground_assets/logo-200h.png" class="g-logout-image" />
+        <img alt="image" src="logo-200h.png" class="g-logout-image" />
         <div data-thq="thq-navbar-nav" data-role="Nav" class="g-logout-desktop-menu">
           <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="g-logout-nav"></nav>
         </div>
@@ -336,6 +336,7 @@ window.onunload = function() { void (0) }
       console.log(snapshot.val());
       var nameX = snapshot.val();
       document.getElementById("name").textContent = nameX;
+      document.getElementById("titular").textContent = nameX + " \n(Landlord)";
       // document.getElementById("fromfrom").textContent = nameX;
       // var message = document.getElementById("message").value;
       // document.getElementById("name").style.fontSize = 10;

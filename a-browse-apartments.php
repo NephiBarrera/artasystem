@@ -131,7 +131,7 @@
     <div class="a-browse-apartments-container">
       <header data-thq="thq-navbar" class="a-browse-apartments-navbar-interactive">
         <a href="index.php">
-          <img alt="image" src="public/playground_assets/logo-300h.png" class="a-browse-apartments-image" />
+          <img alt="image" src="logo-300h.png" class="a-browse-apartments-image" />
         </a>
         <div data-thq="thq-navbar-nav" data-role="Nav" class="a-browse-apartments-desktop-menu">
           <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="a-browse-apartments-nav"></nav>

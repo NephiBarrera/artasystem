@@ -130,7 +130,7 @@
 
     <div class="f-browse-apartments-container">
       <header data-thq="thq-navbar" class="f-browse-apartments-navbar-interactive">
-        <img alt="image" src="public/playground_assets/logo-200h.png" class="f-browse-apartments-image" />
+        <img alt="image" src="logo-200h.png" class="f-browse-apartments-image" />
         <div data-thq="thq-navbar-nav" data-role="Nav" class="f-browse-apartments-desktop-menu">
           <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="f-browse-apartments-nav"></nav>
         </div>

@@ -130,7 +130,7 @@
 
     <div class="g-concerns-container">
       <header data-thq="thq-navbar" class="g-concerns-navbar-interactive">
-        <img alt="image" src="public/playground_assets/logo-200h.png" class="g-concerns-image" />
+        <img alt="image" src="logo-200h.png" class="g-concerns-image" />
         <div data-thq="thq-navbar-nav" data-role="Nav" class="g-concerns-desktop-menu">
           <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="g-concerns-nav"></nav>
         </div>
@@ -325,6 +325,7 @@
       console.log(snapshot.val());
       var nameX = snapshot.val();
       document.getElementById("name").textContent = nameX;
+      document.getElementById("titular").textContent = nameX + " \n(Landlord)";
       // document.getElementById("name").style.fontSize = 10;
 
 
@@ -339,17 +340,19 @@
 
 
 
-      function addItemsToList(date, em, message) {
+      function addItemsToList(date, unitz, em, message) {
         var ul = document.getElementById("list");
         // var non =
         var header = document.createElement("h2");
 
         // var email = document.createElement("li");
         var datez = document.createElement("p");
+        var unitNo= document.createElement("p");
         var mes = document.createElement("p");
         var unit = document.createElement("textarea");
 
         header.innerHTML = em;
+        unitNo.innerHTML = "Unit " + unitz;
         datez.innerHTML = "Date: " + date;
         mes.innerHTML = "Message: ";
         unit.innerHTML = message;
@@ -364,6 +367,7 @@
         // decline.style.height="15px";
         ul.appendChild(header);
         ul.appendChild(datez);
+        ul.appendChild(unitNo);
         ul.appendChild(mes);
         ul.appendChild(unit);
 
@@ -372,27 +376,66 @@
 
       // GETTING THE LANDLORD NUMBER
       var landlordNum = 0;
-      var tenantNum;
-      if (String(nameX) == "landlord_1@gmail.com") {
-        landlordNum = 1;
-        tenantNum = "_tenant1@gmail.com"
-      }
-      if (String(nameX) == "landlord_2@gmail.com") {
-        landlordNum = 2;
-        tenantNum = "_tenant2@gmail.com"
-      }
-      if (String(nameX) == "landlord_3@gmail.com") {
-        landlordNum = 3;
-        tenantNum = "_tenant3@gmail.com"
-      }
-      if (String(nameX) == "landlord_4@gmail.com") {
-        landlordNum = 4;
-        tenantNum = "_tenant4@gmail.com"
-      }
-      if (String(nameX) == "landlord_5@gmail.com") {
-        landlordNum = 5;
-        tenantNum = "_tenant5@gmail.com"
-      }
+      if (nameX.endsWith("1landlord@gmail.com")) {
+            landlordNum = 1;
+          };
+          if (nameX.endsWith("2landlord@gmail.com")) {
+            landlordNum = 2;
+          };
+          if (nameX.endsWith("3landlord@gmail.com")) {
+            landlordNum = 3;
+          };
+          if (nameX.endsWith("4landlord@gmail.com")) {
+            landlordNum = 4;
+          };
+          if (nameX.endsWith("5landlord@gmail.com")) {
+            landlordNum = 5;
+          };
+          if (nameX.endsWith("6landlord@gmail.com")) {
+            landlordNum = 6;
+          };
+          if (nameX.endsWith("7landlord@gmail.com")) {
+            landlordNum = 7;
+          };
+          if (nameX.endsWith("8landlord@gmail.com")) {
+            landlordNum = 8;
+          };
+          if (nameX.endsWith("9landlord@gmail.com")) {
+            landlordNum = 9;
+          };
+          if (nameX.endsWith("10landlord@gmail.com")) {
+            landlordNum = 10;
+          };
+          if (nameX.endsWith("11landlord@gmail.com")) {
+            landlordNum = 11;
+          };
+          if (nameX.endsWith("12landlord@gmail.com")) {
+            landlordNum = 12;
+          };
+          if (nameX.endsWith("13landlord@gmail.com")) {
+            landlordNum = 13;
+          };
+          if (nameX.endsWith("14landlord@gmail.com")) {
+            landlordNum = 14;
+          };
+          if (nameX.endsWith("15landlord@gmail.com")) {
+            landlordNum = 15;
+          };
+          if (nameX.endsWith("16landlord@gmail.com")) {
+            landlordNum = 16;
+          };
+          if (nameX.endsWith("17landlord@gmail.com")) {
+            landlordNum = 17;
+          };
+          if (nameX.endsWith("18landlord@gmail.com")) {
+            landlordNum = 18;
+          };
+          if (nameX.endsWith("19landlord@gmail.com")) {
+            landlordNum = 19;;
+          };
+          if (nameX.endsWith("20landlord@gmail.com")) {
+            landlordNum = 20;
+          };
 
       const dbRef = query(ref(database, '/concerns'), orderByChild('date'));
       onValue(dbRef, (snapshot) => {
@@ -403,13 +446,18 @@
           // const childData = childSnapshot.val();
 
           // dateX.push(childSnapshot.val().date);
-          let em = childSnapshot.val().email;
+          let unitz = childSnapshot.val().unit;
 
-          // if (String(em).endsWith(tenantNum)) {
-          let date = childSnapshot.val().date;
-          let message = childSnapshot.val().message;
+          if(unitz == landlordNum){
 
-          addItemsToList(date, em, message);
+            let em = childSnapshot.val().email;
+            
+            // if (String(em).endsWith(tenantNum)) {
+              let date = childSnapshot.val().date;
+              let message = childSnapshot.val().message;
+              
+              addItemsToList(date, unitz, em, message);
+            }
           // }
 
         });
