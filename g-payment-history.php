@@ -247,7 +247,7 @@
         </div>
         <div class="g-payment-history-container5">
           <h1 class="g-payment-history-text22">&nbsp;PAYMENT HISTORY</h1>
-          <div class="g-payment-history-container6">
+          <div class="g-payment-history-container6" style="width: 600px;">
 
             <ul id="list" style="margin-left: 50px; margin-top: 20px; margin-bottom: 20px;">
             </ul>

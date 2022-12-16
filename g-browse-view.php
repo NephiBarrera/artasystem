@@ -210,6 +210,20 @@
             </div>
           </div>
         </div>
+        <div class="g-browse-view-container09" style="width: 250px; margin-right:-40px;">
+              <div class="g-browse-view-container10" style="width: 250px; margin-right:-40px;">
+                <div class="g-browse-view-container11" style="width: 250px; margin-right:-40px;">
+                  <h1 id="title" class="g-browse-view-text22">Title</h1>
+                  <span id="info" class="g-browse-view-text23" style="width: 250px; margin-right:-40px;">
+                    <span>Details</span>
+                    <br />
+                  </span>
+                  <button id="inquire" class="g-browse-view-button button">
+                    INQUIRE
+                  </button>
+                </div>
+              </div>
+            </div>
         <div class="g-browse-view-container05">
           <div class="g-browse-view-hero1">
             <div class="g-browse-view-container06">
@@ -222,20 +236,7 @@
                 <img id="img4" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="g-browse-view-image6" />
               </div>
             </div>
-            <div class="g-browse-view-container09">
-              <div class="g-browse-view-container10">
-                <div class="g-browse-view-container11">
-                  <h1 id="title" class="g-browse-view-text22">Title</h1>
-                  <span id="info" class="g-browse-view-text23">
-                    <span>Details</span>
-                    <br />
-                  </span>
-                  <button id="inquire" class="g-browse-view-button button">
-                    INQUIRE
-                  </button>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>

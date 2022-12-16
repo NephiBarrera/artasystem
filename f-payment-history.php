@@ -253,8 +253,8 @@
         <div class="f-payment-history-container5">
           <!-- <br><br> -->
           <h1 class="f-payment-history-text22">&nbsp;PAYMENT HISTORY</h1>
-          <div class="f-payment-history-container6">
-            <ul id="list" style="margin-left: 50px; margin-top: 20px; margin-bottom: 20px;">
+          <div class="f-payment-history-container6" style="width: 600px;">
+            <ul id="list" style="margin-left: 50px; margin-top: 20px; margin-bottom: 20px; ">
 
             </ul>
 

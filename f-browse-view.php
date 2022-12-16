@@ -203,8 +203,25 @@
             </div>
           </div>
         </div>
+
+        <div class="f-browse-view-container09" style="width: 250px; margin-right:-40px;">
+              <div class="f-browse-view-container10" style="width: 250px; margin-right:-40px;">
+                <div class="f-browse-view-container11" style="width: 250px; margin-right:-40px;">
+                  <h1 id="title" class="f-browse-view-text22">Title</h1>
+                  <span id="info" class="f-browse-view-text23" style="width: 250px; margin-right:-40px;"> 
+                    <span>Details</span>
+                    <br />
+                  </span>
+                  <button id="inquire" class="f-browse-view-button button" style="width: 200px;">
+                    INQUIRE
+                  </button>
+                </div>
+              </div>
+            </div>
+
+
         <div class="f-browse-view-container05">
-          <div class="f-browse-view-hero1" style="margin-top: 100px;">
+          <div class="f-browse-view-hero1" >
             <div class="f-browse-view-container06">
               <div class="f-browse-view-container07">
                 <img id="img1" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="f-browse-view-image3" />
@@ -215,20 +232,7 @@
                 <img id="img4" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="f-browse-view-image6" />
               </div>
             </div>
-            <div class="f-browse-view-container09">
-              <div class="f-browse-view-container10">
-                <div class="f-browse-view-container11">
-                  <h1 id="title" class="f-browse-view-text22">Title</h1>
-                  <span id="info" class="f-browse-view-text23">
-                    <span>Details</span>
-                    <br />
-                  </span>
-                  <button id="inquire" class="f-browse-view-button button">
-                    INQUIRE
-                  </button>
-                </div>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>

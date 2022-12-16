@@ -265,7 +265,7 @@
             <h1 class=" f-bills-text22">&nbsp; BILLS</h1>
 
 
-            <div class="f-bills-container6" style="height: auto;  margin-bottom: 20px;"">
+            <div class="f-bills-container6" style="height: auto;  margin-bottom: 20px; width: 600px;">
               <ul id=" list" style="margin-left: 50px; margin-top: 20px; margin-bottom: 20px;">
               <!-- <h1 id="header" class="f-bills-text23">Emal</h1> -->
               <!-- <span id="date" class="f-bills-text24">Due Date:&nbsp;</span>

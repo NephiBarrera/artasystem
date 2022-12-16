@@ -117,6 +117,8 @@
       background-color: var(--dl-color-gray-white);
 
     }
+
+
   </style>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" data-tag="font" />
   <!--This is the head section-->
@@ -214,7 +216,7 @@
 
 
 
-        
+
       </header>
       <div class="g-inquiries-hero">
         <div class="g-inquiries-container3" style="width: auto;">
@@ -256,7 +258,7 @@
         </div>
         <div class="g-inquiries-container5">
           <h1 class="g-inquiries-text22">&nbsp;INQUIRIES</h1>
-          <div class="g-inquiries-container6">
+          <div class="g-inquiries-container6" style="width: 600px;">
 
             <ul id="list" style="margin-left: 50px; margin-top: 20px; margin-bottom: 20px;">
 

@@ -23,7 +23,8 @@
       border-style: solid;
     }
 
-    p, li, 
+    p,
+    li,
     ul,
     pre,
     div,
@@ -136,18 +137,21 @@
 
 
         <style>
-                  @media (max-width: 600px) {
-                    .g-bills-banner {
-                      width: 600px;
-                    }
+          @media (max-width: 600px) {
+            .g-bills-banner {
+              width: 600px;
+            }
+
             .g-bills-container3 {
               display: none;
               visibility: hidden;
-              
+
             }
+
             .g-bills-container5 {
               width: 500px;
             }
+
             .g-bills-container6 {
               width: 400px;
             }
@@ -162,8 +166,7 @@
               padding-left: -24px;
             }
           }
-        
-          </style>
+        </style>
         <div data-thq="thq-navbar-nav" data-role="Nav" class="g-bills-desktop-menu">
           <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="g-bills-nav"></nav>
         </div>
@@ -176,7 +179,7 @@
         <div data-thq="thq-mobile-menu" class="g-bills-mobile-menu">
           <div data-thq="thq-mobile-menu-nav" data-role="Nav" class="g-bills-nav1">
             <div class="g-bills-container1">
-            <h2 id="titular">APARTMENT RENTAL <br>TRACKING SYSTEM</h2>
+              <h2 id="titular">APARTMENT RENTAL <br>TRACKING SYSTEM</h2>
               <div data-thq="thq-close-menu" class="g-bills-menu-close">
                 <svg viewBox="0 0 1024 1024" class="g-bills-icon02">
                   <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
@@ -210,8 +213,8 @@
 
         </div>
 
-          
-          
+
+
 
 
 
@@ -259,7 +262,7 @@
           </div>
           <div class="g-bills-container5">
             <h1 class="g-bills-text22">&nbsp; BILLS</h1>
-            <div class="g-bills-container6">
+            <div class="g-bills-container6" style="width: 600px;">
 
               <ul id="list" style="margin-left: 50px; margin-top: 20px; margin-bottom: 20px;">
 
@@ -436,7 +439,7 @@
       }
 
 
-      
+
       // GETTING THE LANDLORD NUMBER
       var landlordNum = 0;
       var tenantNum;

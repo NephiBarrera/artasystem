@@ -137,18 +137,21 @@
 
 
         <style>
-                  @media (max-width: 600px) {
-                    .f-inquiries-banner {
-                      width: 600px;
-                    }
+          @media (max-width: 600px) {
+            .f-inquiries-banner {
+              width: 600px;
+            }
+
             .f-inquiries-container3 {
               display: none;
               visibility: hidden;
-              
+
             }
+
             .f-inquiries-container5 {
               width: 500px;
             }
+
             .f-inquiries-container6 {
               width: 400px;
             }
@@ -163,8 +166,7 @@
               padding-left: -24px;
             }
           }
-        
-          </style>
+        </style>
         <div data-thq="thq-navbar-nav" data-role="Nav" class="f-inquiries-desktop-menu">
           <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="f-inquiries-nav"></nav>
         </div>
@@ -177,7 +179,7 @@
         <div data-thq="thq-mobile-menu" class="f-inquiries-mobile-menu">
           <div data-thq="thq-mobile-menu-nav" data-role="Nav" class="f-inquiries-nav1">
             <div class="f-inquiries-container1">
-            <h2 id="titular">APARTMENT RENTAL <br>TRACKING SYSTEM</h2>
+              <h2 id="titular">APARTMENT RENTAL <br>TRACKING SYSTEM</h2>
               <div data-thq="thq-close-menu" class="f-inquiries-menu-close">
                 <svg viewBox="0 0 1024 1024" class="f-inquiries-icon02">
                   <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
@@ -245,7 +247,7 @@
             </nav>
             <div class="f-inquiries-profile">
               <img alt="image" src="https://freepngimg.com/thumb/categories/3027.png" class="f-inquiries-image2" />
-              <div class="f-inquiries-container4">
+              <div class="f-inquiries-container4" >
                 <span id="name" class="f-inquiries-text20">Name</span>
                 <span class="f-inquiries-text21">Tenant</span>
               </div>
@@ -254,7 +256,7 @@
         </div>
         <div class="f-inquiries-container5">
           <h1 class="f-inquiries-text22">&nbsp;INQUIRIES</h1>
-          <div class="f-inquiries-container6">
+          <div class="f-inquiries-container6" style="width: 600px;">
             <!-- <h1 id="email" class="f-inquiries-text23">Email</h1>
             <span id="date" class="f-inquiries-text24">Date:&nbsp;</span>
             <span id="unit" class="f-inquiries-text25">Unit No.:</span>
@@ -316,7 +318,7 @@
       console.log(snapshot.val());
       var nameX = snapshot.val();
       document.getElementById("name").textContent = nameX;
-      document.getElementById("titular").textContent = nameX+" (Tenant)";
+      document.getElementById("titular").textContent = nameX + " (Tenant)";
       // document.getElementById("name").style.fontSize = 10;
 
 
