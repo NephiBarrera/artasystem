@@ -128,6 +128,42 @@
   <div>
     <link href="./g-browse-view.css" rel="stylesheet" />
 
+    <style>
+      
+      @media (max-width: 600px) {
+            .g-browse-view-container03 {
+              display: none;
+              visibility: hidden;
+            }
+            .g-browse-view-hero1{
+              width: 600px;
+            }
+            .g-browse-view-container11{
+              margin-top: -450px;
+              /* margin-left: -10px; */
+            }
+            .g-browse-view-text23{
+              text-align: left;
+              margin-left: -50px;
+            }
+            .g-browse-view-button button{
+            }
+            .g-browse-view-image3{
+              margin-top: 100px;
+            }
+            #inquire {
+              margin-top: 600px;
+}
+            .g-browse-view-container07{
+              margin-top: 50px;
+              margin-left: -100px;
+            }
+            .g-browse-view-container08{
+              margin-left: -100px;
+            }
+          }
+    </style>
+
     <div class="g-browse-view-container">
       <header data-thq="thq-navbar" class="g-browse-view-navbar-interactive">
         <img alt="image" src="public/playground_assets/logo-200h.png" class="g-browse-view-image" />

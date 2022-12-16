@@ -133,6 +133,88 @@
         <div data-thq="thq-navbar-nav" data-role="Nav" class="g-bills-desktop-menu">
           <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="g-bills-nav"></nav>
         </div>
+
+
+        <style>
+                  @media (max-width: 600px) {
+                    .g-bills-banner {
+                      width: 600px;
+                    }
+            .g-bills-container3 {
+              display: none;
+              visibility: hidden;
+              
+            }
+            .g-bills-container5 {
+              width: 500px;
+            }
+            .g-bills-container6 {
+              width: 400px;
+            }
+
+            .g-bills-text22 {
+              margin-left: -12px;
+            }
+
+            .g-bills-container6 {
+              width: auto;
+              padding-right: 12px;
+              padding-left: -24px;
+            }
+          }
+        
+          </style>
+        <div data-thq="thq-navbar-nav" data-role="Nav" class="g-bills-desktop-menu">
+          <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="g-bills-nav"></nav>
+        </div>
+        <div data-thq="thq-navbar-btn-group" class="g-bills-btn-group"></div>
+        <div data-thq="thq-burger-menu" class="g-bills-burger-menu">
+          <svg viewBox="0 0 1024 1024" class="g-bills-icon">
+            <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
+          </svg>
+        </div>
+        <div data-thq="thq-mobile-menu" class="g-bills-mobile-menu">
+          <div data-thq="thq-mobile-menu-nav" data-role="Nav" class="g-bills-nav1">
+            <div class="g-bills-container1">
+            <h2 id="titular">APARTMENT RENTAL <br>TRACKING SYSTEM</h2>
+              <div data-thq="thq-close-menu" class="g-bills-menu-close">
+                <svg viewBox="0 0 1024 1024" class="g-bills-icon02">
+                  <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
+                </svg>
+              </div>
+            </div>
+
+            <link rel="stylesheet" href="./g-bills.css">
+            <nav data-thq="thq-mobile-menu-nav-links" data-role="Nav" class="g-bills-nav2">
+              <a href="g-bills.php" style="padding: 15px 0px;">
+                <span class="g-bills-text">BILLS</span>
+              </a>
+              <a href="g-payment-history.php" style="padding: 15px 0px;">
+                <span class="g-bills-text01">PAYMENT HISTORY</span>
+              </a>
+              <a href="g-browse-apartments.php" style="padding: 15px 0px;">
+                <span class="g-bills-text02">BROWSE APARTMENTS</span>
+              </a>
+              <a href="g-inquiries.php" style="padding: 15px 0px;">
+                <span class="g-bills-text03">INQUIRIES</span>
+              </a>
+              <a href="g-concerns.php" style="padding: 15px 0px;">
+                <span class="g-bills-text04">CONCERNS</span>
+              </a>
+              <a href="g-logout.php" style="padding: 15px 0px;">
+                <span class="g-bills-text04">LOG OUT</span>
+              </a>
+            </nav>
+
+          </div>
+
+        </div>
+
+          
+          
+
+
+
       </header>
       <div class="g-bills-banner">
         <div class="g-bills-btn-group1"></div>

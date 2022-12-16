@@ -134,63 +134,148 @@
         <div data-thq="thq-navbar-nav" data-role="Nav" class="g-concerns-desktop-menu">
           <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="g-concerns-nav"></nav>
         </div>
-      </header>
-      <div class="g-concerns-hero">
-        <div class="g-concerns-container3" style="width: auto;">
-          <div class="g-concerns-sidebar" style="width: auto;">
-            <nav class="g-concerns-nav3" style="width: auto;">
-              <span class="g-concerns-text05"><a href="g-bills.php">BILLS</a></span>
-              <span class="g-concerns-text06"><a href="g-payment-history.php">PAYMENT HISTORY</a></span>
-              <span class="g-concerns-text07">
-                <a href="g-browse-apartments.php">
-                  <span>BROWSE</span>
-                  <br />
-                  <span>APARTMENTS</span>
-                </a>
-              </span>
-              <span class="g-concerns-text11">
 
-                <span><a href="g-inquiries.php">INQUIRIES</a></span>
-                <br />
+        <style>
+          @media (max-width: 600px) {
+            .g-concerns-banner {
+              width: 600px;
+            }
 
-              </span>
-              <span>
-                <a href="g-concerns.php">
-                  <span><b>CONCERNS</b></span>
-                  <br />
-                  <br />
-                  <br />
-                </a>
-              </span>
-              <span><a href="g-logout.php">LOG OUT</a></span>
-            </nav>
-            <div class="g-concerns-profile">
-              <img alt="image" src="https://w7.pngwing.com/pngs/526/292/png-transparent-building-management-house-apartment-kisumu-building-building-company-service.png" class="g-concerns-image2" />
-              <div class="g-concerns-container4">
-                <p id="name" class="g-concerns-text20" >Name</p>
-                <span class="g-concerns-text21">Landlord</span>
+            .g-concerns-container3 {
+              display: none;
+              visibility: hidden;
+
+            }
+
+            .g-concerns-container5 {
+              width: 500px;
+            }
+
+            .g-concerns-container6 {
+              width: 400px;
+            }
+
+            .g-concerns-text22 {
+              margin-left: -12px;
+            }
+
+            .g-concerns-container7 {
+              margin-left: -200px;
+            }
+
+            .g-concerns-container6 {
+              width: auto;
+              padding-right: 12px;
+              padding-left: -24px;
+            }
+          }
+        </style>
+
+<div data-thq="thq-navbar-nav" data-role="Nav" class="g-concerns-desktop-menu">
+          <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="g-concerns-nav"></nav>
+        </div>
+        <div data-thq="thq-navbar-btn-group" class="g-concerns-btn-group"></div>
+        <div data-thq="thq-burger-menu" class="g-concerns-burger-menu">
+          <svg viewBox="0 0 1024 1024" class="g-concerns-icon">
+            <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
+          </svg>
+        </div>
+        <div data-thq="thq-mobile-menu" class="g-concerns-mobile-menu">
+          <div data-thq="thq-mobile-menu-nav" data-role="Nav" class="g-concerns-nav1">
+            <div class="g-concerns-container1">
+              <h2 id="titular">APARTMENT RENTAL <br>TRACKING SYSTEM</h2>
+              <div data-thq="thq-close-menu" class="g-concerns-menu-close">
+                <svg viewBox="0 0 1024 1024" class="g-concerns-icon02">
+                  <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
+                </svg>
               </div>
             </div>
+            <link rel="stylesheet" href="./g-bills.css">
+            <nav data-thq="thq-mobile-menu-nav-links" data-role="Nav" class="g-bills-nav2">
+              <a href="g-bills.php" style="padding: 15px 0px;">
+                <span class="g-bills-text">BILLS</span>
+              </a>
+              <a href="g-payment-history.php" style="padding: 15px 0px;">
+                <span class="g-bills-text01">PAYMENT HISTORY</span>
+              </a>
+              <a href="g-browse-apartments.php" style="padding: 15px 0px;">
+                <span class="g-bills-text02">BROWSE APARTMENTS</span>
+              </a>
+              <a href="g-inquiries.php" style="padding: 15px 0px;">
+                <span class="g-bills-text03">INQUIRIES</span>
+              </a>
+              <a href="g-concerns.php" style="padding: 15px 0px;">
+                <span class="g-bills-text04">CONCERNS</span>
+              </a>
+              <a href="g-logout.php" style="padding: 15px 0px;">
+                <span class="g-bills-text04">LOG OUT</span>
+              </a>
+            </nav>
+
+          </div>
+
+        </div>
+
+
+
+
+  </header>
+  <div class="g-concerns-hero">
+    <div class="g-concerns-container3" style="width: auto;">
+      <div class="g-concerns-sidebar" style="width: auto;">
+        <nav class="g-concerns-nav3" style="width: auto;">
+          <span class="g-concerns-text05"><a href="g-bills.php">BILLS</a></span>
+          <span class="g-concerns-text06"><a href="g-payment-history.php">PAYMENT HISTORY</a></span>
+          <span class="g-concerns-text07">
+            <a href="g-browse-apartments.php">
+              <span>BROWSE</span>
+              <br />
+              <span>APARTMENTS</span>
+            </a>
+          </span>
+          <span class="g-concerns-text11">
+
+            <span><a href="g-inquiries.php">INQUIRIES</a></span>
+            <br />
+
+          </span>
+          <span>
+            <a href="g-concerns.php">
+              <span><b>CONCERNS</b></span>
+              <br />
+              <br />
+              <br />
+            </a>
+          </span>
+          <span><a href="g-logout.php">LOG OUT</a></span>
+        </nav>
+        <div class="g-concerns-profile">
+          <img alt="image" src="https://w7.pngwing.com/pngs/526/292/png-transparent-building-management-house-apartment-kisumu-building-building-company-service.png" class="g-concerns-image2" />
+          <div class="g-concerns-container4">
+            <p id="name" class="g-concerns-text20">Name</p>
+            <span class="g-concerns-text21">Landlord</span>
           </div>
         </div>
-        <div class="g-concerns-container5">
-          <h1 class="g-concerns-text22">&nbsp;CONCERNS</h1>
-          <div class="g-concerns-container6" style="width: 90%;">
+      </div>
+    </div>
+    <div class="g-concerns-container5">
+      <h1 class="g-concerns-text22">&nbsp;CONCERNS</h1>
+      <div class="g-concerns-container6" style="width: 90%;">
 
-            <ul id="list" style="margin-left: 50px; margin-top: 20px; margin-bottom: 20px; margin-right: 50px;">
+        <ul id="list" style="margin-left: 50px; margin-top: 20px; margin-bottom: 20px; margin-right: 50px;">
 
-            </ul>
-          </div>
-        </div>
-      </div >
-      <!-- <footer class="g-concerns-footer">
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- <footer class="g-concerns-footer">
         <span class="g-concerns-text26">
           © 2022 Apartment Rental Tracking System
         </span>
         <div class="g-concerns-icon-group1"></div>
       </footer> -->
-      <div class="g-concerns-btn-group1"></div>
-    </div>
+  <div class="g-concerns-btn-group1"></div>
+  </div>
   </div>
   <script data-section-id="navbar" src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
 </body>
@@ -269,9 +354,9 @@
         mes.innerHTML = "Message: ";
         unit.innerHTML = message;
 
-        unit.style.height="70px";
+        unit.style.height = "70px";
         // unit.style.width="400px";
-        unit.style.width="100%";
+        unit.style.width = "100%";
 
         unit.style.marginBottom = "40px";
         unit.style.marginLeft = "10px";
@@ -321,10 +406,10 @@
           let em = childSnapshot.val().email;
 
           // if (String(em).endsWith(tenantNum)) {
-            let date = childSnapshot.val().date;
-            let message = childSnapshot.val().message;
+          let date = childSnapshot.val().date;
+          let message = childSnapshot.val().message;
 
-            addItemsToList(date, em, message);
+          addItemsToList(date, em, message);
           // }
 
         });

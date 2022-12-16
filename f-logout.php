@@ -163,7 +163,6 @@
 
             }
 
-
             .f-logout-container5 {
               width: 500px;
             }
@@ -206,32 +205,32 @@
                 </svg>
               </div>
             </div>
-            <nav data-thq="thq-mobile-menu-nav-links" data-role="Nav" class="f-logout-nav2">
+
+            <link rel="stylesheet" href="./f-concerns.css">
+            <nav data-thq="thq-mobile-menu-nav-links" data-role="Nav" class="f-concerns-nav2">
               <a href="f-bills.php" style="padding: 15px 0px;">
-                <span class="f-logout-text">BILLS</span>
+                <span class="f-concerns-text">BILLS</span>
               </a>
               <a href="f-payment-history.php" style="padding: 15px 0px;">
-                <span class="f-logout-text01">PAYMENT HISTORY</span>
+                <span class="f-concerns-text01">PAYMENT HISTORY</span>
               </a>
               <a href="f-browse-apartments.php" style="padding: 15px 0px;">
-                <span class="f-logout-text02">BROWSE APARTMENTS</span>
+                <span class="f-concerns-text02">BROWSE APARTMENTS</span>
               </a>
               <a href="f-inquiries.php" style="padding: 15px 0px;">
-                <span class="f-logout-text03">INQUIRIES</span>
+                <span class="f-concerns-text03">INQUIRIES</span>
               </a>
               <a href="f-concerns.php" style="padding: 15px 0px;">
-                <span class="f-logout-text04">CONCERNS</span>
+                <span class="f-concerns-text04">CONCERNS</span>
               </a>
               <a href="f-logout.php" style="padding: 15px 0px;">
-                <span class="f-logout-text04">LOG OUT</span>
+                <span class="f-concerns-text04">LOG OUT</span>
               </a>
             </nav>
 
           </div>
 
         </div>
-
-
 
       </header>
       <div class="f-logout-hero">

@@ -134,6 +134,103 @@
         <div data-thq="thq-navbar-nav" data-role="Nav" class="g-browse-apartments-desktop-menu">
           <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="g-browse-apartments-nav"></nav>
         </div>
+
+        <style>
+          @media (max-width: 600px) {
+            .g-browse-apartments-container3 {
+              display: none;
+              visibility: hidden;
+            }
+
+            .g-browse-apartments-text22 {
+              margin-left: -12px;
+            }
+
+            .g-browse-apartments-container6 {
+              width: auto;
+              padding-right: 12px;
+              padding-left: -24px;
+            }
+
+            .g-browse-apartments-hero{
+              width: 500px;
+            }
+            
+            .g-browse-apartments-gallery{
+              display: block;
+              width: 400px;
+            }
+            .g-browse-apartments-text22{
+              font-size: 30px;
+            }
+            .gallery-card1-gallery-card gallery-card1-root-class-name{
+              width: 400px;
+              margin-bottom: 20px;
+            }
+            .gallery-card1-gallery-card gallery-card1-root-class-name1{
+              width: 400px;
+              margin-bottom: 20px;
+            }
+            .gallery-card1-gallery-card gallery-card1-root-class-name2{
+              width: 400px;
+              margin-bottom: 20px;
+            }
+            .gallery-card1-gallery-card gallery-card1-root-class-name3{
+              width: 400px;
+              margin-bottom: 20px;
+            }
+            .gallery-card1-text1{
+              margin-bottom: 50px;
+            }
+
+          }
+        </style>
+        <div data-thq="thq-navbar-nav" data-role="Nav" class="g-browse-apartments-desktop-menu">
+          <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="g-browse-apartments-nav"></nav>
+        </div>
+        <div data-thq="thq-navbar-btn-group" class="g-browse-apartments-btn-group"></div>
+        <div data-thq="thq-burger-menu" class="g-browse-apartments-burger-menu">
+          <svg viewBox="0 0 1024 1024" class="g-browse-apartments-icon">
+            <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
+          </svg>
+        </div>
+        <div data-thq="thq-mobile-menu" class="g-browse-apartments-mobile-menu">
+          <div data-thq="thq-mobile-menu-nav" data-role="Nav" class="g-browse-apartments-nav1">
+            <div class="g-browse-apartments-container1">
+            <h2 id="titular">APARTMENT RENTAL <br>TRACKING SYSTEM</h2>
+              <div data-thq="thq-close-menu" class="g-browse-apartments-menu-close">
+                <svg viewBox="0 0 1024 1024" class="g-browse-apartments-icon02">
+                  <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
+                </svg>
+              </div>
+            </div>
+            <nav data-thq="thq-mobile-menu-nav-links" data-role="Nav" class="g-browse-apartments-nav2">
+              <a href="g-bills.php" style="padding: 15px 0px;">
+                <span class="g-browse-apartments-text">BILLS</span>
+              </a>
+              <a href="g-payment-history.php" style="padding: 15px 0px;">
+                <span class="g-browse-apartments-text01">PAYMENT HISTORY</span>
+              </a>
+              <a href="g-browse-apartments.php" style="padding: 15px 0px;">
+                <span class="g-browse-apartments-text02">BROWSE APARTMENTS</span>
+              </a>
+              <a href="g-inquiries.php" style="padding: 15px 0px;">
+                <span class="g-browse-apartments-text03">INQUIRIES</span>
+              </a>
+              <a href="g-concerns.php" style="padding: 15px 0px;">
+                <span class="g-browse-apartments-text04">CONCERNS</span>
+              </a>
+              <a href="g-logout.php" style="padding: 15px 0px;">
+                <span class="g-browse-apartments-text04">LOG OUT</span>
+              </a>
+            </nav>
+
+          </div>
+
+        </div>
+
+
+        
       </header>
       <div class="g-browse-apartments-hero">
         <div class="g-browse-apartments-container3" style="width: auto;">

@@ -134,6 +134,87 @@
         <div data-thq="thq-navbar-nav" data-role="Nav" class="g-inquiries-desktop-menu">
           <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="g-inquiries-nav"></nav>
         </div>
+
+        
+        <style>
+                  @media (max-width: 600px) {
+                    .g-inquiries-banner {
+                      width: 600px;
+                    }
+            .g-inquiries-container3 {
+              display: none;
+              visibility: hidden;
+              
+            }
+            .g-inquiries-container5 {
+              width: 500px;
+            }
+            .g-inquiries-container6 {
+              width: 400px;
+            }
+
+            .g-inquiries-text22 {
+              margin-left: -12px;
+            }
+
+            .g-inquiries-container6 {
+              width: auto;
+              padding-right: 12px;
+              padding-left: -24px;
+            }
+          }
+        
+          </style>
+        <div data-thq="thq-navbar-nav" data-role="Nav" class="g-inquiries-desktop-menu">
+          <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="g-inquiries-nav"></nav>
+        </div>
+        <div data-thq="thq-navbar-btn-group" class="g-inquiries-btn-group"></div>
+        <div data-thq="thq-burger-menu" class="g-inquiries-burger-menu">
+          <svg viewBox="0 0 1024 1024" class="g-inquiries-icon">
+            <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
+          </svg>
+        </div>
+        <div data-thq="thq-mobile-menu" class="g-inquiries-mobile-menu">
+          <div data-thq="thq-mobile-menu-nav" data-role="Nav" class="g-inquiries-nav1">
+            <div class="g-inquiries-container1">
+            <h2 id="titular">APARTMENT RENTAL <br>TRACKING SYSTEM</h2>
+              <div data-thq="thq-close-menu" class="g-inquiries-menu-close">
+                <svg viewBox="0 0 1024 1024" class="g-inquiries-icon02">
+                  <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
+                </svg>
+              </div>
+            </div>
+
+            <link rel="stylesheet" href="./g-concerns.css">
+            <nav data-thq="thq-mobile-menu-nav-links" data-role="Nav" class="g-concerns-nav2">
+              <a href="g-bills.php" style="padding: 15px 0px;">
+                <span class="g-concerns-text">BILLS</span>
+              </a>
+              <a href="g-payment-history.php" style="padding: 15px 0px;">
+                <span class="g-concerns-text01">PAYMENT HISTORY</span>
+              </a>
+              <a href="g-browse-apartments.php" style="padding: 15px 0px;">
+                <span class="g-concerns-text02">BROWSE APARTMENTS</span>
+              </a>
+              <a href="g-inquiries.php" style="padding: 15px 0px;">
+                <span class="g-concerns-text03">INQUIRIES</span>
+              </a>
+              <a href="g-concerns.php" style="padding: 15px 0px;">
+                <span class="g-concerns-text04">CONCERNS</span>
+              </a>
+              <a href="g-logout.php" style="padding: 15px 0px;">
+                <span class="g-concerns-text04">LOG OUT</span>
+              </a>
+            </nav>
+
+          </div>
+
+        </div>
+
+
+
+
+        
       </header>
       <div class="g-inquiries-hero">
         <div class="g-inquiries-container3" style="width: auto;">
