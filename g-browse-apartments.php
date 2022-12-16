@@ -143,7 +143,7 @@
             }
 
             .g-browse-apartments-text22 {
-              margin-left: -12px;
+              /* margin-left: -12px; */
             }
 
             .g-browse-apartments-container6 {
@@ -152,13 +152,17 @@
               padding-left: -24px;
             }
 
-            .g-browse-apartments-hero{
-              width: 500px;
+            .g-browse-apartments-container5{
+              width: 400px;
             }
+            .g-browse-apartments-hero{
+              width: 400px;
+            }
+
             
             .g-browse-apartments-gallery{
               display: block;
-              width: 400px;
+              width: 350px;
             }
             .g-browse-apartments-text22{
               font-size: 30px;
@@ -204,30 +208,35 @@
                 </svg>
               </div>
             </div>
-            <nav data-thq="thq-mobile-menu-nav-links" data-role="Nav" class="g-browse-apartments-nav2">
+
+            <link rel="stylesheet" href="./g-concerns.css">
+            <nav data-thq="thq-mobile-menu-nav-links" data-role="Nav" class="g-concerns-nav2">
               <a href="g-bills.php" style="padding: 15px 0px;">
-                <span class="g-browse-apartments-text">BILLS</span>
+                <span class="g-concerns-text">BILLS</span>
               </a>
               <a href="g-payment-history.php" style="padding: 15px 0px;">
-                <span class="g-browse-apartments-text01">PAYMENT HISTORY</span>
+                <span class="g-concerns-text01">PAYMENT HISTORY</span>
               </a>
               <a href="g-browse-apartments.php" style="padding: 15px 0px;">
-                <span class="g-browse-apartments-text02">BROWSE APARTMENTS</span>
+                <span class="g-concerns-text02">BROWSE APARTMENTS</span>
               </a>
               <a href="g-inquiries.php" style="padding: 15px 0px;">
-                <span class="g-browse-apartments-text03">INQUIRIES</span>
+                <span class="g-concerns-text03">INQUIRIES</span>
               </a>
               <a href="g-concerns.php" style="padding: 15px 0px;">
-                <span class="g-browse-apartments-text04">CONCERNS</span>
+                <span class="g-concerns-text04">CONCERNS</span>
               </a>
               <a href="g-logout.php" style="padding: 15px 0px;">
-                <span class="g-browse-apartments-text04">LOG OUT</span>
+                <span class="g-concerns-text04">LOG OUT</span>
               </a>
             </nav>
 
           </div>
 
         </div>
+
+
+
 
 
         

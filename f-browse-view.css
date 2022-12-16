@@ -363,8 +363,15 @@
   align-items: center;
   flex-direction: row;
 }
+
+
 @media(max-width: 991px) {
+  .f-browse-view-container03 {
+    display: none;
+    visibility: hidden;
+  }
   .f-browse-view-hero {
+    
     padding: var(--dl-space-space-threeunits);
     flex-direction: column;
   }

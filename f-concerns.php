@@ -135,11 +135,13 @@
           <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="f-concerns-nav"></nav>
         </div>
 
-
         <style>
           @media (max-width: 600px) {
+            .f-concerns-hero {
+              width: 100%;
+            }
             .f-concerns-banner {
-              width: 600px;
+              width: 100%;
             }
 
             .f-concerns-container3 {
@@ -149,11 +151,11 @@
             }
 
             .f-concerns-container5 {
-              width: 500px;
+              width: 100%;
             }
 
             .f-concerns-container6 {
-              width: 400px;
+              width: 100%;
             }
 
             .f-concerns-text22 {
@@ -166,8 +168,8 @@
 
             .f-concerns-container6 {
               width: auto;
-              padding-right: 12px;
-              padding-left: -24px;
+              paddinf-right: 12px;
+              paddinf-left: -24px;
             }
           }
         </style>
@@ -191,38 +193,31 @@
                 </svg>
               </div>
             </div>
-
-            <link rel="stylesheet" href="./f-concerns.css">
-            <nav data-thq="thq-mobile-menu-nav-links" data-role="Nav" class="f-concerns-nav2">
+            <link rel="stylesheet" href="./f-bills.css">
+            <nav data-thq="thq-mobile-menu-nav-links" data-role="Nav" class="f-bills-nav2">
               <a href="f-bills.php" style="padding: 15px 0px;">
-                <span class="f-concerns-text">BILLS</span>
+                <span class="f-bills-text">BILLS</span>
               </a>
               <a href="f-payment-history.php" style="padding: 15px 0px;">
-                <span class="f-concerns-text01">PAYMENT HISTORY</span>
+                <span class="f-bills-text01">PAYMENT HISTORY</span>
               </a>
               <a href="f-browse-apartments.php" style="padding: 15px 0px;">
-                <span class="f-concerns-text02">BROWSE APARTMENTS</span>
+                <span class="f-bills-text02">BROWSE APARTMENTS</span>
               </a>
               <a href="f-inquiries.php" style="padding: 15px 0px;">
-                <span class="f-concerns-text03">INQUIRIES</span>
+                <span class="f-bills-text03">INQUIRIES</span>
               </a>
               <a href="f-concerns.php" style="padding: 15px 0px;">
-                <span class="f-concerns-text04">CONCERNS</span>
+                <span class="f-bills-text04">CONCERNS</span>
               </a>
               <a href="f-logout.php" style="padding: 15px 0px;">
-                <span class="f-concerns-text04">LOG OUT</span>
+                <span class="f-bills-text04">LOG OUT</span>
               </a>
             </nav>
 
           </div>
 
         </div>
-
-
-
-          
-          
-
 
 
 
@@ -266,6 +261,8 @@
             </div>
           </div>
         </div>
+
+
         <div class="f-concerns-container5">
           <h1 class="f-concerns-text22">&nbsp;CONCERNS</h1>
           <span id="date" class="f-concerns-text23">
@@ -279,7 +276,7 @@
           <!-- <textarea placeholder="Write your message here..." class="f-concerns-textarea textarea" id="message"></textarea> -->
           <div style="height: 700px">
 
-            <textarea cols="40" style="height: 500px; border: 2px solid black;
+            <textarea cols="30" style="height: 500px; border: 2px solid black;
             margin: 2px 50px ; border-radius:5px;
             max-height:600px; max-width: 500px">
   At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.

@@ -135,30 +135,37 @@
           <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="f-inquiries-nav"></nav>
         </div>
 
-
         <style>
           @media (max-width: 600px) {
+            .f-inquiries-container {
+              width: 100%;
+            }
             .f-inquiries-banner {
-              width: 600px;
+              width: 300px;
             }
 
             .f-inquiries-container3 {
               display: none;
               visibility: hidden;
-
             }
 
             .f-inquiries-container5 {
-              width: 500px;
+              width: 300px;
             }
-
             .f-inquiries-container6 {
-              width: 400px;
+              width: 250px;
+              max-width: 300px;
+              margin-left: 0;
+            }
+            #list{
+              width: 300px;
+              max-width: 300px;
             }
 
             .f-inquiries-text22 {
               margin-left: -12px;
             }
+            
 
             .f-inquiries-container6 {
               width: auto;

@@ -429,4 +429,34 @@
 </script>
 
 
+<style>
+            @media (max-width: 600px) {
+            .g-concerns-banner {
+              width: 100%;
+            }
+            h2{
+              font-size: 13px;
+            }
+            ul{
+              width: 300px;
+            }
+            textarea{
+              width: 200px;
+              max-width: 200px;
+            }
+            p{
+              font-size: 10px;
+            }
+            .g-concerns-container6{
+              width: 330px;
+              max-width: 330px;
+            }
+            .g-concerns-container5{
+              width: 100%;
+            }
+
+          }
+</style>
+
+
 </html>

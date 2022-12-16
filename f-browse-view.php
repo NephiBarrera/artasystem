@@ -123,42 +123,75 @@
   <!-- <style> ... </style> -->
   <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
   <div>
     <link href="./f-browse-view.css" rel="stylesheet" />
 
     <style>
-      
       @media (max-width: 600px) {
-            .f-browse-view-container03 {
-              display: none;
-              visibility: hidden;
-            }
-            .f-browse-view-hero1{
-              width: 600px;
-            }
-            .f-browse-view-container11{
-              margin-top: -550px;
-              /* margin-left: -10px; */
-            }
-            .f-browse-view-text23{
-              text-align: left;
-              margin-left: -50px;
-            }
-            .f-browse-view-button button{
-            }
-            #inquire {
-              
-              margin-top: 600px;
-}
-            .f-browse-view-container07{
-              margin-top: 50px;
-              margin-left: -100px;
-            }
-            .f-browse-view-container08{
-              margin-left: -100px;
-            }
-          }
+        .f-browse-view-container03 {
+          display: none;
+          visibility: hidden;
+        }
+        .f-browse-view-container03,
+        .f-browse-view-container09,
+        f-browse-view-container10,
+        f-browse-view-container11 {
+          width: 400px;
+        }
+
+        .f-browse-view-hero {
+          height: auto;
+          width: 400px;
+        }
+
+        .f-browse-view-hero1 {
+          width: 400px;
+        }
+
+
+        #title {
+          margin-top: 130%;
+          margin-left: 0px;
+          margin-right: 0px;
+          text-align: center;
+        }
+
+        #info {
+          width: max-content;
+          margin-left: -120px;
+        }
+
+        #inquire {
+          width: 100%;
+          margin-left: -90px;
+        }
+
+        .f-browse-view-container07 {
+          margin-top: 50px;
+          margin-left: -100px;
+        }
+
+        .f-browse-view-container08 {
+          margin-left: -100px;
+        }
+
+        .f-browse-view-image3 {
+          width: 330px;
+          margin-left: 120px;
+        }
+
+        .f-browse-view-container08 {
+          margin-left: 20px;
+        }
+
+        #img2,
+        #img3,
+        #img4 {
+          width: 110px;
+        }
+      }
     </style>
     <div class="f-browse-view-container">
       <header data-thq="thq-navbar" class="f-browse-view-navbar-interactive">
@@ -204,11 +237,12 @@
           </div>
         </div>
 
-        <div class="f-browse-view-container09" style="width: 250px; margin-right:-40px;">
+
+            <div class="f-browse-view-container09" style="width: 250px; margin-right:-40px;">
               <div class="f-browse-view-container10" style="width: 250px; margin-right:-40px;">
                 <div class="f-browse-view-container11" style="width: 250px; margin-right:-40px;">
                   <h1 id="title" class="f-browse-view-text22">Title</h1>
-                  <span id="info" class="f-browse-view-text23" style="width: 250px; margin-right:-40px;"> 
+                  <span id="info" class="f-browse-view-text23" style="width: 250px; margin-right:-40px;">
                     <span>Details</span>
                     <br />
                   </span>
@@ -218,21 +252,22 @@
                 </div>
               </div>
             </div>
+        
 
+          <div class="f-browse-view-container05">
+            <div class="f-browse-view-hero1">
+              <div class="f-browse-view-container06">
+                <div class="f-browse-view-container07">
+                  <img id="img1" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="f-browse-view-image3" />
+                </div>
+                <div class="f-browse-view-container08" style="margin-top: -100px;">
+                  <img id="img2" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="f-browse-view-image4" />
+                  <img id="img3" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="f-browse-view-image5" />
+                  <img id="img4" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="f-browse-view-image6" />
+                </div>
+              </div>
 
-        <div class="f-browse-view-container05">
-          <div class="f-browse-view-hero1" >
-            <div class="f-browse-view-container06">
-              <div class="f-browse-view-container07">
-                <img id="img1" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="f-browse-view-image3" />
-              </div>
-              <div class="f-browse-view-container08" style="margin-top: -100px;">
-                <img id="img2" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="f-browse-view-image4" />
-                <img id="img3" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="f-browse-view-image5" />
-                <img id="img4" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="f-browse-view-image6" />
-              </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -394,7 +429,7 @@
         // window.confirm(dateTime);
 
         // const dbRef2 = ref(getDatabase());
-        set(ref(database, 'inquiries/'+dateTime), {
+        set(ref(database, 'inquiries/' + dateTime), {
           email: nameX,
           date: dateTime,
           // unit: unit;
@@ -403,8 +438,8 @@
           unit: unit
         })
 
-        window.confirm("Inquiry for Unit "+unit+ " was successfully forwarded");
-        window.location.href="f-inquiries.php";
+        window.confirm("Inquiry for Unit " + unit + " was successfully forwarded");
+        window.location.href = "f-inquiries.php";
 
         // set(ref(database, 'inquiries' + dateTime), {
         //   email: nameX,

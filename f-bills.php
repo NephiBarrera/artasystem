@@ -139,34 +139,51 @@
         </div>
 
         <style>
-                  @media (max-width: 600px) {
-                    .f-bills-banner {
-                      width: 600px;
-                    }
+          @media (max-width: 600px) {
+            .f-bills-container {
+              width: 100%;
+            }
+            .f-bills-banner {
+              width: 300px;
+              margin: 0;
+            }
+
             .f-bills-container3 {
               display: none;
               visibility: hidden;
-              
             }
+
             .f-bills-container5 {
-              width: 500px;
+              width: 300px;
+              margin: 0;
             }
             .f-bills-container6 {
-              width: 400px;
+              width: 250px;
+              max-width: 300px;
+              margin-left: 0;
+              margin: 0;
+            }
+            #list{
+              width: 300px;
+              max-width: 300px;
+              margin: 0;
             }
 
             .f-bills-text22 {
               margin-left: -12px;
+              margin-left: -120px;
+              margin-top: -20px;
             }
+            
 
             .f-bills-container6 {
               width: auto;
               padding-right: 12px;
               padding-left: -24px;
+              margin-left: -100px;
             }
           }
-        
-          </style>
+        </style>
         <div data-thq="thq-navbar-nav" data-role="Nav" class="f-bills-desktop-menu">
           <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="f-bills-nav"></nav>
         </div>
@@ -179,7 +196,7 @@
         <div data-thq="thq-mobile-menu" class="f-bills-mobile-menu">
           <div data-thq="thq-mobile-menu-nav" data-role="Nav" class="f-bills-nav1">
             <div class="f-bills-container1">
-            <h2 id="titular">APARTMENT RENTAL <br>TRACKING SYSTEM</h2>
+              <h2 id="titular">APARTMENT RENTAL <br>TRACKING SYSTEM</h2>
               <div data-thq="thq-close-menu" class="f-bills-menu-close">
                 <svg viewBox="0 0 1024 1024" class="f-bills-icon02">
                   <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
@@ -214,8 +231,7 @@
         </div>
 
 
-          </style>
-          
+
 
 
 
@@ -267,8 +283,8 @@
 
             <div class="f-bills-container6" style="height: auto;  margin-bottom: 20px; width: 600px;">
               <ul id=" list" style="margin-left: 50px; margin-top: 20px; margin-bottom: 20px;">
-              <!-- <h1 id="header" class="f-bills-text23">Emal</h1> -->
-              <!-- <span id="date" class="f-bills-text24">Due Date:&nbsp;</span>
+                <!-- <h1 id="header" class="f-bills-text23">Emal</h1> -->
+                <!-- <span id="date" class="f-bills-text24">Due Date:&nbsp;</span>
                 <span id="unit" class="f-bills-text25">Unit No.:</span>
                 <span id="rent" class="f-bills-text26">Rent Fee:</span>
                 <span id="status" class="f-bills-text27">Status:</span> -->

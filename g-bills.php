@@ -138,32 +138,47 @@
 
         <style>
           @media (max-width: 600px) {
+            .g-bills-container {
+              width: 100%;
+            }
             .g-bills-banner {
-              width: 600px;
+              width: 300px;
+              margin: 0;
             }
 
             .g-bills-container3 {
               display: none;
               visibility: hidden;
-
             }
 
             .g-bills-container5 {
-              width: 500px;
+              width: 300px;
+              margin: 0;
             }
-
             .g-bills-container6 {
-              width: 400px;
+              width: 250px;
+              max-width: 300px;
+              margin-left: 0;
+              margin: 0;
+            }
+            #list{
+              width: 300px;
+              max-width: 300px;
+              margin: 0;
             }
 
             .g-bills-text22 {
               margin-left: -12px;
+              margin-left: -70px;
+              margin-top: -20px;
             }
+            
 
             .g-bills-container6 {
               width: auto;
               padding-right: 12px;
               padding-left: -24px;
+              margin-left: -50px;
             }
           }
         </style>
@@ -187,32 +202,31 @@
               </div>
             </div>
 
-            <link rel="stylesheet" href="./g-bills.css">
-            <nav data-thq="thq-mobile-menu-nav-links" data-role="Nav" class="g-bills-nav2">
+            <link rel="stylesheet" href="./g-concerns.css">
+            <nav data-thq="thq-mobile-menu-nav-links" data-role="Nav" class="g-concerns-nav2">
               <a href="g-bills.php" style="padding: 15px 0px;">
-                <span class="g-bills-text">BILLS</span>
+                <span class="g-concerns-text">BILLS</span>
               </a>
               <a href="g-payment-history.php" style="padding: 15px 0px;">
-                <span class="g-bills-text01">PAYMENT HISTORY</span>
+                <span class="g-concerns-text01">PAYMENT HISTORY</span>
               </a>
               <a href="g-browse-apartments.php" style="padding: 15px 0px;">
-                <span class="g-bills-text02">BROWSE APARTMENTS</span>
+                <span class="g-concerns-text02">BROWSE APARTMENTS</span>
               </a>
               <a href="g-inquiries.php" style="padding: 15px 0px;">
-                <span class="g-bills-text03">INQUIRIES</span>
+                <span class="g-concerns-text03">INQUIRIES</span>
               </a>
               <a href="g-concerns.php" style="padding: 15px 0px;">
-                <span class="g-bills-text04">CONCERNS</span>
+                <span class="g-concerns-text04">CONCERNS</span>
               </a>
               <a href="g-logout.php" style="padding: 15px 0px;">
-                <span class="g-bills-text04">LOG OUT</span>
+                <span class="g-concerns-text04">LOG OUT</span>
               </a>
             </nav>
 
           </div>
 
         </div>
-
 
 
 

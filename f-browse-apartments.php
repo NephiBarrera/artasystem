@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-  <title>Tenant - View Apartments</title>
-  <meta property="og:title" content="fBrowseView - Well Worn Thirsty Mole" />
+  <title>Tenant - Browse Apartements</title>
+  <meta property="og:title" content="fBrowseApartments - Well Worn Thirsty Mole" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset="utf-8" />
   <meta property="twitter:card" content="summary_large_image" />
@@ -115,8 +115,8 @@
       line-height: 1.15;
       color: var(--dl-color-gray-black);
       background-color: var(--dl-color-gray-white);
-
     }
+
   </style>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" data-tag="font" />
   <!--This is the head section-->
@@ -126,253 +126,223 @@
 
 <body>
   <div>
-    <link href="./f-browse-view.css" rel="stylesheet" />
+    <link href="./f-browse-apartments.css" rel="stylesheet" />
 
-    <style>
-      @media (max-width: 600px) {
-        .f-browse-view-container03 {
-          display: none;
-          visibility: hidden;
-        }
-        .f-browse-view-container03,
-        .f-browse-view-container09,
-        f-browse-view-container10,
-        f-browse-view-container11 {
-          width: 400px;
-        }
+    <div class="f-browse-apartments-container">
+      <header data-thq="thq-navbar" class="f-browse-apartments-navbar-interactive">
+        <img alt="image" src="public/playground_assets/logo-200h.png" class="f-browse-apartments-image" />
+        <div data-thq="thq-navbar-nav" data-role="Nav" class="f-browse-apartments-desktop-menu">
+          <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="f-browse-apartments-nav"></nav>
+        </div>
+        <div data-thq="thq-navbar-nav" data-role="Nav" class="f-browse-apartments-desktop-menu">
+          <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="f-browse-apartments-nav"></nav>
+        </div>
 
-        .f-browse-view-hero {
-          height: auto;
-          width: 400px;
-        }
+        <style>
+          @media (max-width: 600px) {
+            .f-browse-apartments-container3 {
+              display: none;
+              visibility: hidden;
+            }
+            .f-browse-apartments-hero{
+              width: 100%;
+            }
 
-        .f-browse-view-hero1 {
-          width: 400px;
-        }
+            .f-browse-apartments-text22 {
+              /* margin-left: -12px; */
+            }
+
+            .f-browse-apartments-container6 {
+              width: auto;
+              padding-right: 12px;
+              padding-left: -24px;
+            }
+
+            .f-browse-apartments-container5{
+              width: 400px;
+            }
+            .f-browse-apartments-hero{
+              width: 400px;
+            }
+            
+            .f-browse-apartments-gallery{
+              display: block;
+              width: 350px;
+            }
+            .f-browse-apartments-text22{
+              font-size: 30px;
+            }
+            .gallery-card1-gallery-card gallery-card1-root-class-name{
+              width: 400px;
+              margin-bottom: 20px;
+            }
+            .gallery-card1-gallery-card gallery-card1-root-class-name1{
+              width: 400px;
+              margin-bottom: 20px;
+            }
+            .gallery-card1-gallery-card gallery-card1-root-class-name2{
+              width: 400px;
+              margin-bottom: 20px;
+            }
+            .gallery-card1-gallery-card gallery-card1-root-class-name3{
+              width: 400px;
+              margin-bottom: 20px;
+            }
+            .gallery-card1-text1{
+              margin-bottom: 50px;
+            }
+
+          }
+        </style>
+        <div data-thq="thq-navbar-nav" data-role="Nav" class="f-browse-apartments-desktop-menu">
+          <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="f-browse-apartments-nav"></nav>
+        </div>
+        <div data-thq="thq-navbar-btn-group" class="f-browse-apartments-btn-group"></div>
+        <div data-thq="thq-burger-menu" class="f-browse-apartments-burger-menu">
+          <svg viewBox="0 0 1024 1024" class="f-browse-apartments-icon">
+            <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
+          </svg>
+        </div>
+        <div data-thq="thq-mobile-menu" class="f-browse-apartments-mobile-menu">
+          <div data-thq="thq-mobile-menu-nav" data-role="Nav" class="f-browse-apartments-nav1">
+            <div class="f-browse-apartments-container1">
+            <h2 id="titular">APARTMENT RENTAL <br>TRACKING SYSTEM</h2>
+              <div data-thq="thq-close-menu" class="f-browse-apartments-menu-close">
+                <svg viewBox="0 0 1024 1024" class="f-browse-apartments-icon02">
+                  <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
+                </svg>
+              </div>
+            </div>
+
+            <link rel="stylesheet" href="./f-concerns.css">
+            <nav data-thq="thq-mobile-menu-nav-links" data-role="Nav" class="f-concerns-nav2">
+              <a href="f-bills.php" style="padding: 15px 0px;">
+                <span class="f-concerns-text">BILLS</span>
+              </a>
+              <a href="f-payment-history.php" style="padding: 15px 0px;">
+                <span class="f-concerns-text01">PAYMENT HISTORY</span>
+              </a>
+              <a href="f-browse-apartments.php" style="padding: 15px 0px;">
+                <span class="f-concerns-text02">BROWSE APARTMENTS</span>
+              </a>
+              <a href="f-inquiries.php" style="padding: 15px 0px;">
+                <span class="f-concerns-text03">INQUIRIES</span>
+              </a>
+              <a href="f-concerns.php" style="padding: 15px 0px;">
+                <span class="f-concerns-text04">CONCERNS</span>
+              </a>
+              <a href="f-logout.php" style="padding: 15px 0px;">
+                <span class="f-concerns-text04">LOG OUT</span>
+              </a>
+            </nav>
+
+          </div>
+
+        </div>
 
 
-        #title {
-          margin-top: 130%;
-          margin-left: 0px;
-          margin-right: 0px;
-          text-align: center;
-        }
-
-        #info {
-          width: max-content;
-          margin-left: -120px;
-        }
-
-        #inquire {
-          width: 100%;
-          margin-left: -90px;
-        }
-
-        .f-browse-view-container07 {
-          margin-top: 50px;
-          margin-left: -100px;
-        }
-
-        .f-browse-view-container08 {
-          margin-left: -100px;
-        }
-
-        .f-browse-view-image3 {
-          width: 330px;
-          margin-left: 120px;
-        }
-
-        .f-browse-view-container08 {
-          margin-left: 20px;
-        }
-
-        #img2,
-        #img3,
-        #img4 {
-          width: 110px;
-        }
-      }
-    </style>
-    <div class="f-browse-view-container">
-      <header data-thq="thq-navbar" class="f-browse-view-navbar-interactive">
-        <img alt="image" src="public/playground_assets/logo-200h.png" class="f-browse-view-image" />
       </header>
-      <div class="f-browse-view-hero">
-        <div class="f-browse-view-container03" style="width: auto;">
-          <div class="f-browse-view-sidebar" style="width: auto;">
-            <nav class="f-browse-view-nav3" style="width: auto;">
-              <span class="f-bills-text05"><a href="f-bills.php">BILLS</a></span>
-              <br>
-              <span class="f-browse-view-text06"><a href="f-payment-history.php">PAYMENT HISTORY</a></span>
-              <span class="f-browse-view-text07">
-                <a href="f-browse-apartments.php">
-                  <span>BROWSE</span>
-                  <br />
-                  <span>APARTMENTS</span>
-                </a>
+      <div class="f-browse-apartments-hero">
+        <div class="f-browse-apartments-container3" style="width: auto;">
+          <div class="f-browse-apartments-sidebar" style="width: auto;">
+            <nav class="f-browse-apartments-nav3" style="width: auto;">
+              <span class="f-browse-apartments-text05"><a href="f-bills.php">BILLS</a></span>
+              <span class="f-browse-apartments-text06"><a href="f-payment-history.php">PAYMENT HISTORY</a></span>
+              <span class="f-browse-apartments-text07">
+                <a href="f-browse-apartments.php"> <span>
+                    BROWSE
+                    <br>
+                    APARTMENTS
+                  </span></a>
               </span>
-              <span class="f-browse-view-text11">
-                <a href="f-inquiries.php">
-                  <span>INQUIRIES</span>
-                  <br />
-                </a>
+              <span class="f-browse-apartments-text11">
+                <span><a href="f-inquiries.php">INQUIRIES</a></span>
+                <br />
               </span>
               <span>
-                <a href="f-browse-view.php">
-                  <span>CONCERNS</span>
-                  <br />
-                  <br />
-                  <br />
-                </a>
+                <span><a href="f-concerns.php">CONCERNS</a></span>
+                <br />
+                <br />
+                <br />
               </span>
               <span><a href="f-logout.php">LOG OUT</a></span>
             </nav>
-            <div class="f-browse-view-profile">
-              <img alt="image" src="https://freepngimg.com/thumb/categories/3027.png" class="f-browse-view-image2" />
-              <div class="f-browse-view-container04">
-                <span id="name" class="f-browse-view-text20">Name</span>
-                <span class="f-browse-view-text21">Tenant</span>
+            <div class="f-browse-apartments-profile">
+              <img alt="image" src="https://freepngimg.com/thumb/categories/3027.png" class="f-browse-apartments-image2" />
+              <div class="f-browse-apartments-container4">
+                <span id="name" class="f-browse-apartments-text20">Name</span>
+                <span class="f-browse-apartments-text21">Tenant</span>
               </div>
             </div>
           </div>
         </div>
+        <div class="f-browse-apartments-container5">
+          <h1 class="f-browse-apartments-text22">&nbsp;BROWSE APARTMENTS</h1>
+          <div class="f-browse-apartments-gallery">
 
+            <script>
+              function unit1(num) {
+                localStorage.setItem("unit", num);
+                window.location.href = "f-browse-view.php";
+                // window.alert(num);
+                return false;
+              }
+            </script>
 
-            <div class="f-browse-view-container09" style="width: 250px; margin-right:-40px;">
-              <div class="f-browse-view-container10" style="width: 250px; margin-right:-40px;">
-                <div class="f-browse-view-container11" style="width: 250px; margin-right:-40px;">
-                  <h1 id="title" class="f-browse-view-text22">Title</h1>
-                  <span id="info" class="f-browse-view-text23" style="width: 250px; margin-right:-40px;">
-                    <span>Details</span>
-                    <br />
-                  </span>
-                  <button id="inquire" class="f-browse-view-button button" style="width: 200px;">
-                    INQUIRE
-                  </button>
-                </div>
-              </div>
+            <div class="gallery-card1-gallery-card gallery-card1-root-class-name" onclick="unit1(1)">
+              <img alt="image" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4aecba63-a849-4176-8a41-2ace4ad9f62b/dt4o2a-daef74bc-09d9-4564-a83e-ef2e74f0c6c2.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRhZWNiYTYzLWE4NDktNDE3Ni04YTQxLTJhY2U0YWQ5ZjYyYlwvZHQ0bzJhLWRhZWY3NGJjLTA5ZDktNDU2NC1hODNlLWVmMmU3NGYwYzZjMi5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.mqxJ2E--knbivRcX5Rbhncnze6yFrbyMPv0rek_zCfU" class="gallery-card1-image" />
+              <h2 class="gallery-card1-text">
+                <span>Apartment Unit 1</span>
+              </h2>
+              <span class="gallery-card1-text1"><span>4-5 People</span></span>
             </div>
-        
 
-          <div class="f-browse-view-container05">
-            <div class="f-browse-view-hero1">
-              <div class="f-browse-view-container06">
-                <div class="f-browse-view-container07">
-                  <img id="img1" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="f-browse-view-image3" />
-                </div>
-                <div class="f-browse-view-container08" style="margin-top: -100px;">
-                  <img id="img2" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="f-browse-view-image4" />
-                  <img id="img3" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="f-browse-view-image5" />
-                  <img id="img4" alt="image" src="https://play.teleporthq.io/static/svg/default-img.svg" class="f-browse-view-image6" />
-                </div>
-              </div>
+            <div onclick="unit1(2)" class="gallery-card1-gallery-card gallery-card1-root-class-name1">
+              <img alt="image" src="https://friendshipvillage.org/dist/assets/img/tahoma-ko.png" class="gallery-card1-image" />
+              <h2 class="gallery-card1-text">
+                <span>Apartment Unit 2</span>
+              </h2>
+              <span class="gallery-card1-text1"><span>1-3 People</span></span>
+            </div>
 
+            <div onclick="unit1(3)" class="gallery-card1-gallery-card gallery-card1-root-class-name2">
+              <img alt="image" src="https://medialibrarycf.entrata.com/13886/MLv3/4/22/2022/3/26/16627/5af1321b671eb2.18354802219.jpg" class="gallery-card1-image" />
+              <h2 class="gallery-card1-text">
+                <span>Apartment Unit 3</span>
+              </h2>
+              <span class="gallery-card1-text1"><span>5-7 People</span></span>
+            </div>
+
+            <div onclick="unit1(4)" class="gallery-card1-gallery-card gallery-card1-root-class-name3">
+              <img alt="image" src="https://i.pinimg.com/originals/d1/da/15/d1da15bdaf357e55c623f0b049b8bba2.jpg" class="gallery-card1-image" />
+              <h2 class="gallery-card1-text">
+                <span>Apartment Unit 4</span>
+              </h2>
+              <span class="gallery-card1-text1"><span>1-3 People</span></span>
+            </div>
+
+            <div onclick="unit1(5)" class="gallery-card1-gallery-card gallery-card1-root-class-name4">
+              <img alt="image" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/54ca4138-23b5-4871-98bd-116699c62fb3/ddk5ue0-41eaf051-c739-423e-a8e7-e34b376bf897.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU0Y2E0MTM4LTIzYjUtNDg3MS05OGJkLTExNjY5OWM2MmZiM1wvZGRrNXVlMC00MWVhZjA1MS1jNzM5LTQyM2UtYThlNy1lMzRiMzc2YmY4OTcuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.uCoG5oq4uOKpK2-O1ddKkIVt4s3GiPY2Nubl0tBw3M0" class="gallery-card1-image" />
+              <h2 class="gallery-card1-text">
+                <span>Apartment Unit 5</span>
+              </h2>
+              <span class="gallery-card1-text1"><span>2-4 People</span></span>
             </div>
           </div>
         </div>
       </div>
-      <!-- <footer class="f-browse-view-footer">
-        <span class="f-browse-view-text26">
+      <!-- <footer class="f-browse-apartments-footer">
+        <span class="f-browse-apartments-text23">
           © 2022 Apartment Rental Tracking System
         </span>
-        <div class="f-browse-view-icon-group1"></div>
+        <div class="f-browse-apartments-icon-group1"></div>
       </footer> -->
-      <div class="f-browse-view-btn-group1"></div>
+      <div class="f-browse-apartments-btn-group1"></div>
     </div>
   </div>
   <script data-section-id="navbar" src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
 </body>
 
-
-<script>
-  var unit = innerHTML = localStorage.getItem("unit");
-
-  if (unit == 1) {
-    document.getElementById("title").textContent = "Unit 1";
-    var st1 = "1 Master Bedroom";
-    document.getElementById("info").textContent = "The unit has 2 Bedrooms with \n" +
-      "2 Shower Room. The area covers \n" +
-      "50 sq. meter Living Room that can accomodate \n" +
-      "4-5 person. There is a  \n" +
-      "2 stair-connected floor. The landlord is \n" +
-      "Hiyasden Labios and her contact number in \n 09297611062";
-
-    document.getElementById("img1").src = "./assets/img/unit1a.jpg"
-    document.getElementById("img2").src = "./assets/img/unit1b.jpg"
-    document.getElementById("img3").src = "./assets/img/unit1c.jpg"
-    document.getElementById("img4").src = "./assets/img/unit1d.jpg"
-
-  }
-
-  if (unit == 2) {
-    document.getElementById("title").textContent = "Unit 2";
-    var st1 = "1 Master Bedroom";
-    document.getElementById("info").textContent = "A one Master Bedroom with " +
-      "1 Shower. The has is " +
-      "20 sq. meter Living Room that can accomodate \n" +
-      "1-3 person. The apartment is  \n \n" +
-      "Studio Type. The \n" +
-      "Landlord is Mae Reyes. Her \n" +
-      "Contact number is 09557737654";
-
-    document.getElementById("img1").src = "./assets/img/unit2a.jpg"
-    document.getElementById("img2").src = "./assets/img/unit2b.jpg"
-    document.getElementById("img3").src = "./assets/img/unit2c.jpg"
-    document.getElementById("img4").src = "./assets/img/unit2d.jpg"
-  }
-
-  if (unit == 3) {
-    document.getElementById("title").textContent = "Unit 3";
-    var st1 = "1 Master Bedroom";
-    document.getElementById("info").textContent = "The unit has 2 small Bedrooms\n" +
-      " sharing a single Shower. The area is \n" +
-      "80 sq. meter Living Room that can accomododate \n" +
-      "5-7 person. \n" +
-      "There is a 2 stair floor and the landlord is\n" +
-      " JJ Borantes\n" +
-      " and her Contact number is 09552147298";
-
-    document.getElementById("img1").src = "./assets/img/unit3a.jpg"
-    document.getElementById("img2").src = "./assets/img/unit3b.jpg"
-    document.getElementById("img3").src = "./assets/img/unit3c.jpg"
-    document.getElementById("img4").src = "./assets/img/unit3d.jpg"
-
-  }
-
-  if (unit == 4) {
-    document.getElementById("title").textContent = "Unit 4";
-    var st1 = "1 Master Bedroom";
-    document.getElementById("info").textContent = "A 1 Bedroom and \n" +
-      "1 Shower unit. Spanning for \n" +
-      "30 sq. meter Living Room ideal for \n" +
-      "1-3 person. The unit is \n" +
-      "Studio Type and the \n" +
-      "Landlord is Josha Diestro and his \n" +
-      "Contact number is 09124502687";
-
-    document.getElementById("img1").src = "./assets/img/unit4a.jpg"
-    document.getElementById("img2").src = "./assets/img/unit4b.jpg"
-    document.getElementById("img3").src = "./assets/img/unit4c.jpg"
-    document.getElementById("img4").src = "./assets/img/unit4d.jpg"
-  }
-
-  if (unit == 5) {
-    document.getElementById("title").textContent = "Unit 5";
-    var st1 = "1 Master Bedroom";
-    document.getElementById("info").textContent = "A 2 Small Bedroom unit with \n" +
-      "2 Shower. The area spans up to \n" +
-      "40 sq. meters ideal for \n" +
-      "2-4 person living space. The unit is \n" +
-      "Studio Type and the \n" +
-      "Landlord is May Santos \n" +
-      "with her Contact number is 09127625153";
-
-    document.getElementById("img1").src = "./assets/img/unit5a.jpg"
-    document.getElementById("img2").src = "./assets/img/unit5b.jpg"
-    document.getElementById("img3").src = "./assets/img/unit5c.jpg"
-    document.getElementById("img4").src = "./assets/img/unit5d.jpg"
-  }
-</script>
 
 <script type="module">
   import {
@@ -383,6 +353,7 @@
     ref,
     child,
     get,
+    onValue,
     set
   } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js";
 
@@ -413,44 +384,12 @@
     if (snapshot.exists()) {
       console.log(snapshot.val());
       var nameX = snapshot.val();
-      document.getElementById("name").textContent = nameX;
+      document.getElementById("name").textContent = nameX ;
+      document.getElementById("titular").textContent = nameX + " \n(Tenant)";
+      // document.getElementById("fromfrom").textContent = nameX ;
+      // var message = document.getElementById("message").value;
       // document.getElementById("name").style.fontSize = 10;
 
-
-
-      var today = new Date();
-      // var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
-      var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
-      var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-      var dateTime = date + ' ' + time;
-
-
-      document.getElementById("inquire").addEventListener("click", function() {
-        // window.confirm(dateTime);
-
-        // const dbRef2 = ref(getDatabase());
-        set(ref(database, 'inquiries/' + dateTime), {
-          email: nameX,
-          date: dateTime,
-          // unit: unit;
-          price: "Php 15,000 (monthly)",
-          status: "Inquiry was being processed by the landlord",
-          unit: unit
-        })
-
-        window.confirm("Inquiry for Unit " + unit + " was successfully forwarded");
-        window.location.href = "f-inquiries.php";
-
-        // set(ref(database, 'inquiries' + dateTime), {
-        //   email: nameX,
-        //   date: dateTime,
-        //   price: "Php 15,000 (monthly)",
-        //   status: "Inquiry was being processed by the landlordRR",
-        //   unit: "1"
-        // });
-
-
-      })
     } else {
       console.log("No data available");
     }

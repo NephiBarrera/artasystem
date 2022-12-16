@@ -137,36 +137,7 @@
           <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="g-inquiries-nav"></nav>
         </div>
 
-        
-        <style>
-                  @media (max-width: 600px) {
-                    .g-inquiries-banner {
-                      width: 600px;
-                    }
-            .g-inquiries-container3 {
-              display: none;
-              visibility: hidden;
-              
-            }
-            .g-inquiries-container5 {
-              width: 500px;
-            }
-            .g-inquiries-container6 {
-              width: 400px;
-            }
 
-            .g-inquiries-text22 {
-              margin-left: -12px;
-            }
-
-            .g-inquiries-container6 {
-              width: auto;
-              padding-right: 12px;
-              padding-left: -24px;
-            }
-          }
-        
-          </style>
         <div data-thq="thq-navbar-nav" data-role="Nav" class="g-inquiries-desktop-menu">
           <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="g-inquiries-nav"></nav>
         </div>
@@ -179,7 +150,7 @@
         <div data-thq="thq-mobile-menu" class="g-inquiries-mobile-menu">
           <div data-thq="thq-mobile-menu-nav" data-role="Nav" class="g-inquiries-nav1">
             <div class="g-inquiries-container1">
-            <h2 id="titular">APARTMENT RENTAL <br>TRACKING SYSTEM</h2>
+              <h2 id="titular">APARTMENT RENTAL <br>TRACKING SYSTEM</h2>
               <div data-thq="thq-close-menu" class="g-inquiries-menu-close">
                 <svg viewBox="0 0 1024 1024" class="g-inquiries-icon02">
                   <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
@@ -212,6 +183,7 @@
           </div>
 
         </div>
+
 
 
 
@@ -270,6 +242,7 @@
               <span id="rent" class="g-inquiries-text26">Rent Fee:</span>
             </div>
             <span id="status" class="g-inquiries-text27">Status:</span> -->
+            
             <div class="g-inquiries-container8">
               <!-- <button id="confirm" class="g-inquiries-button button">
                 APPROVE
@@ -508,5 +481,52 @@
     console.error(error);
   });
 </script>
+
+
+<style>
+          @media (max-width: 600px) {
+            .g-inquiries-container {
+              width: 400px;
+            }
+            .g-inquiries-banner {
+              width: 300px;
+            }
+
+            .g-inquiries-container3 {
+              display: none;
+              visibility: hidden;
+            }
+
+            .g-inquiries-container5 {
+              width: 300px;
+            }
+            .g-inquiries-container6 {
+              width: 250px;
+              max-width: 300px;
+              margin-left: 0;
+            }
+
+            .g-inquiries-text22 {
+              margin-left: -12px;
+            }
+            #list{
+              width: 200px;
+              max-width: 200px;
+              font-size: 10px;
+            }
+            button{
+              font-size: 10px;
+              margin: 0;
+              margin-top: -50px;
+            }
+            
+
+            .g-inquiries-container6 {
+              width: auto;
+              padding-right: 12px;
+              padding-left: -24px;
+            }
+          }
+        </style>
 
 </html>

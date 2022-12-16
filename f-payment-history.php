@@ -148,14 +148,26 @@
             .f-payment-history-container3 {
               display: none;
               visibility: hidden;
+              width: 400px;
+              max-width: 500px;
+            }
+            .f-payment-history-hero{
+              width: 100%;
             }
 
             .f-payment-history-text22 {
               margin-left: -12px;
             }
 
+            .f-payment-history-text22 {
+              width: 250px;
+              max-width: 300px;
+            }
+
             .f-payment-history-container6 {
-              width: auto;
+              width: 250px;
+              max-width: 300px;
+              margin-left: 0;
               padding-right: 12px;
               padding-left: -24px;
             }
@@ -173,7 +185,7 @@
         <div data-thq="thq-mobile-menu" class="f-payment-history-mobile-menu">
           <div data-thq="thq-mobile-menu-nav" data-role="Nav" class="f-payment-history-nav1">
             <div class="f-payment-history-container1">
-            <h2 id="titular">APARTMENT RENTAL <br>TRACKING SYSTEM</h2>
+              <h2 id="titular">APARTMENT RENTAL <br>TRACKING SYSTEM</h2>
               <div data-thq="thq-close-menu" class="f-payment-history-menu-close">
                 <svg viewBox="0 0 1024 1024" class="f-payment-history-icon02">
                   <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
@@ -249,7 +261,7 @@
             </div>
           </div>
         </div>
-        
+
         <div class="f-payment-history-container5">
           <!-- <br><br> -->
           <h1 class="f-payment-history-text22">&nbsp;PAYMENT HISTORY</h1>
@@ -390,7 +402,7 @@
           let unitz = childSnapshot.val().unit;
           let approve = childSnapshot.val().unit;
 
-          if(em == nameX){
+          if (em == nameX) {
             console.log("jashdjhs");
             addItemsToList(em, dateDue, unitz, price, stats, app);
           }
