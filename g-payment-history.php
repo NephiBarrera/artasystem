@@ -455,8 +455,10 @@
             let stats = childSnapshot.val().status;
             let approve = childSnapshot.val().unit;
 
+            if(stats=="PAID"){
             addItemsToList(em, dateDue, unitz, price, stats, app);
           }
+        }
 
           // }
           // ...
