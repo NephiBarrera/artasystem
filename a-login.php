@@ -285,8 +285,11 @@
     } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
     import {
       getDatabase,
-      set,
-      ref
+      ref,
+      child,
+      get,
+      onValue,
+      set
     } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js";
     import {
       getAnalytics
@@ -327,6 +330,7 @@
       var email = document.getElementById("myText").value;
       var password = document.getElementById("password").value;
       var landlordNum = 0;
+
 
       if (String(email).length == 0 || String(password).length == 0) {
         window.alert("Input " + email + " necessary information." + password);
@@ -393,8 +397,11 @@
             landlordNum = 20;
           };
 
+
+          window.confirm(email + landlordNum + password);
+
           // INSERT DATA INTO DB
-          set(ref(database, 'user_log'), {
+          set(ref(database, "/user_log"), {
             email: email,
             password: password,
             landlordNum: landlordNum
