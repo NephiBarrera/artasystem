@@ -281,9 +281,9 @@
             <div class="f-logout-container8">
               <button id="stayBtn" class="f-logout-button button">STAY</button>
             </div>
-            <a href="index.php">
-              <button class="f-logout-button1 button">LOG OUT</button>
-            </a>
+
+              <button class="f-logout-button1 button" id="no">LOG OUT</button>
+
           </div>
         </div>
       </div>
@@ -334,6 +334,17 @@
   const app = initializeApp(firebaseConfig);
   const database = getDatabase(app);
   const dbRef = ref(getDatabase());
+
+  var noBtn = document.getElementById("no");
+  noBtn.addEventListener("click", function(){
+    set(ref(database, "/user_log"), {
+            email: "null",
+            password: "null",
+            landlordNum: "null"
+          })
+    window.alert("Thank You and May You Come Again");
+    window.location="index.php";
+  })
 
   get(child(dbRef, "user_log/email")).then((snapshot) => {
     if (snapshot.exists()) {
