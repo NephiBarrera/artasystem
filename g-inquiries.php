@@ -321,8 +321,6 @@
       var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
       var dateTimedue = date + ' ' + time;
 
-
-
       function addItemsToList(em, duedate, unitno, price, stat, app) {
         var ul = document.getElementById("list");
         // var non =
@@ -340,10 +338,10 @@
         // header.innerHTML = 'Bills-' + (stdNo++);
 
         header.innerHTML = em;
-        date.innerHTML = "Due Date: " + duedate;
+        date.innerHTML = "Date: " + duedate;
         unit.innerHTML = "Unit No.: " + unitno;
         rent.innerHTML = "Rent Fee: " + price;
-        status.innerHTML = "Status " + stat;
+        status.innerHTML = "Status: " + stat;
         decline.innerHTML = "DECLINE";
         approve.innerHTML = "APPROVE";
 
@@ -382,10 +380,9 @@
 
           window.confirm("Inquiry for " + em + " successfully approved");
           window.location.href = "g-bills.php";
-
+          
         })
-
-
+        
         //for the decline btn
         decline.classList.add("g-inquiries-button");
         decline.style.color = "black";
@@ -400,7 +397,12 @@
             price: price,
             status: "DECLINED"
           })
+          window.confirm("Inquiry for " + em + " successfully declined");
+          window.location.href = "g-inquiries.php";
+          
         })
+
+
         // decline.style.height="15px";
 
 
