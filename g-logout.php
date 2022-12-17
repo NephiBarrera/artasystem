@@ -277,9 +277,7 @@ window.onunload = function() { void (0) }
             <div class="g-logout-container8">
               <button id="stayBtn" class="g-logout-button button">STAY</button>
             </div>
-            <a href="index.php">
               <button id="no" class="g-logout-button1 button">LOG OUT</button>
-            </a>
           </div>
         </div>
       </div>
@@ -331,6 +329,17 @@ window.onunload = function() { void (0) }
   const database = getDatabase(app);
   const dbRef = ref(getDatabase());
 
+  var noBtn = document.getElementById("no");
+  noBtn.addEventListener("click", function(){
+    set(ref(database, "/user_log"), {
+            email: "null",
+            password: "null",
+            landlordNum: "null"
+          })
+    window.alert("Thank You and May You Come Again");
+    window.location="index.php";
+  })
+
   get(child(dbRef, "user_log/email")).then((snapshot) => {
     if (snapshot.exists()) {
       console.log(snapshot.val());
@@ -343,11 +352,7 @@ window.onunload = function() { void (0) }
 
       document.getElementById("stayBtn").addEventListener("click", function() {
         // window.confirm("aasdnsajd");
-        if (String(nameX) == "landlord_1@gmail.com" ||
-          String(nameX) == "landlord_2@gmail.com" ||
-          String(nameX) == "landlord_3@gmail.com" ||
-          String(nameX) == "landlord_4@gmail.com" ||
-          String(nameX) == "landlord_5@gmail.com") {
+        if (String(nameX).endsWith("landlord@gmail.com")) {
           window.alert("Welcome Back Landlord");
           window.location.href = "g-bills.php";
         } else {
@@ -355,7 +360,6 @@ window.onunload = function() { void (0) }
           window.location.href = "f-bills.php";
         }
       })
-
     } else {
       console.log("No data available");
     }
