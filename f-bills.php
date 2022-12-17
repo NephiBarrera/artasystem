@@ -2,13 +2,12 @@
 <html lang="en">
 
 <head>
-  <title>Tenant Bills</title>
-  <meta property="og:title" content="fBills - Well Worn Thirsty Mole" />
+  <title>Tenant - Bills</title>
+  <meta property="og:title" content="fPaymentHistory - Well Worn Thirsty Mole" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset="utf-8" />
   <meta property="twitter:card" content="summary_large_image" />
-  <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
-  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+
   <style data-tag="reset-style-sheet">
     html {
       line-height: 1.15;
@@ -125,80 +124,70 @@
   <link rel="stylesheet" href="./style.css" />
 </head>
 
-
 <body>
-
   <div>
-    <link href="./f-bills.css" rel="stylesheet" />
+    <link href="./f-payment-history.css" rel="stylesheet" />
 
-    <div class="f-bills-container">
-      <header data-thq="thq-navbar" class="f-bills-navbar-interactive">
-        <img alt="image" src="logo-200h.png" class="f-bills-image" />
-        <div data-thq="thq-navbar-nav" data-role="Nav" class="f-browse-apartments-desktop-menu">
-          <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="f-browse-apartments-nav"></nav>
+    <div class="f-payment-history-container">
+      <div class="f-payment-history-btn-group"></div>
+      <header data-thq="thq-navbar" class="f-payment-history-navbar-interactive">
+        <img alt="image" src="logo-200h.png" class="f-payment-history-image" />
+        <div data-thq="thq-navbar-nav" data-role="Nav" class="f-payment-history-desktop-menu">
+          <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="f-payment-history-nav"></nav>
+        </div>
+        <div data-thq="thq-navbar-nav" data-role="Nav" class="f-payment-history-desktop-menu">
+          <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="f-payment-history-nav"></nav>
         </div>
 
         <style>
-          @media (max-width: 600px) {
-            .f-bills-container {
-              width: 100%;
-            }
-            .f-bills-banner {
-              width: 300px;
-              margin: 0;
-            }
+          footer {
+            width: 100%;
+          }
 
-            .f-bills-container3 {
+          @media (max-width: 600px) {
+            .f-payment-history-container3 {
               display: none;
               visibility: hidden;
+              width: 400px;
+              max-width: 500px;
+            }
+            .f-payment-history-hero{
+              width: 100%;
             }
 
-            .f-bills-container5 {
-              width: 300px;
-              margin: 0;
+            .f-payment-history-text22 {
+              margin-left: -12px;
             }
-            .f-bills-container6 {
+
+            .f-payment-history-text22 {
+              width: 250px;
+              max-width: 300px;
+            }
+
+            .f-payment-history-container6 {
               width: 250px;
               max-width: 300px;
               margin-left: 0;
-              margin: 0;
-            }
-            #list{
-              width: 300px;
-              max-width: 300px;
-              margin: 0;
-            }
-
-            .f-bills-text22 {
-              margin-left: -12px;
-              margin-left: -120px;
-              margin-top: -20px;
-            }
-            
-
-            .f-bills-container6 {
-              width: auto;
               padding-right: 12px;
               padding-left: -24px;
-              margin-left: -100px;
             }
           }
         </style>
-        <div data-thq="thq-navbar-nav" data-role="Nav" class="f-bills-desktop-menu">
-          <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="f-bills-nav"></nav>
+        <div data-thq="thq-navbar-nav" data-role="Nav" class="f-payment-history-desktop-menu">
+          <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="f-payment-history-nav"></nav>
         </div>
-        <div data-thq="thq-navbar-btn-group" class="f-bills-btn-group"></div>
-        <div data-thq="thq-burger-menu" class="f-bills-burger-menu">
-          <svg viewBox="0 0 1024 1024" class="f-bills-icon">
+        <div data-thq="thq-navbar-btn-group" class="f-payment-history-btn-group"></div>
+        <div data-thq="thq-burger-menu" class="f-payment-history-burger-menu">
+          <svg viewBox="0 0 1024 1024" class="f-payment-history-icon">
             <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
           </svg>
         </div>
-        <div data-thq="thq-mobile-menu" class="f-bills-mobile-menu">
-          <div data-thq="thq-mobile-menu-nav" data-role="Nav" class="f-bills-nav1">
-            <div class="f-bills-container1">
+        <div data-thq="thq-mobile-menu" class="f-payment-history-mobile-menu">
+          <div data-thq="thq-mobile-menu-nav" data-role="Nav" class="f-payment-history-nav1">
+            <div class="f-payment-history-container1">
               <h2 id="titular">APARTMENT RENTAL <br>TRACKING SYSTEM</h2>
-              <div data-thq="thq-close-menu" class="f-bills-menu-close">
-                <svg viewBox="0 0 1024 1024" class="f-bills-icon02">
+              <div data-thq="thq-close-menu" class="f-payment-history-menu-close">
+                <svg viewBox="0 0 1024 1024" class="f-payment-history-icon02">
                   <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
                 </svg>
               </div>
@@ -207,10 +196,10 @@
             <link rel="stylesheet" href="./f-concerns.css">
             <nav data-thq="thq-mobile-menu-nav-links" data-role="Nav" class="f-concerns-nav2">
               <a href="f-bills.php" style="padding: 15px 0px;">
-                <span class="f-concerns-text">BILLS</span>
+                <span class="f-concerns-text" style="font-weight: bold;">BILLS</span>
               </a>
               <a href="f-payment-history.php" style="padding: 15px 0px;">
-                <span class="f-concerns-text01">PAYMENT HISTORY</span>
+                <span class="f-concerns-text02" style="font-weight: 400;">PAYMENT HISTORY</span>
               </a>
               <a href="f-browse-apartments.php" style="padding: 15px 0px;">
                 <span class="f-concerns-text02">BROWSE APARTMENTS</span>
@@ -233,80 +222,77 @@
 
 
 
-
-
-
       </header>
-      <div class="f-bills-banner">
-        <div class="f-bills-btn-group1"></div>
-        <div class="f-bills-hero">
-          <div class="f-bills-container3" style="width: auto;">
-            <div class="f-bills-sidebar" style="width: auto;">
-              <nav class="f-bills-nav3" style="width: auto;">
-                <span class="f-bills-text05"><a href="f-bills.php"><b>BILLS</b></a></span>
-                <span class="f-bills-text06"><a href="f-payment-history.php">PAYMENT HISTORY</a></span>
-                <span class="f-bills-text07">
-                  <a href="f-browse-apartments.php">
-                    <span>BROWSE</span>
-                    <br />
-                    <span>APARTMENTS</span>
-                  </a>
-                </span>
-                <span class="f-bills-text11">
-                  <a href="f-inquiries.php">
-                    <span>INQUIRIES</span>
-                    <br />
-                  </a>
-                </span>
-                <span>
-                  <a href="f-concerns.php">
-                    <span>CONCERNS</span>
-                    <br />
-                    <br />
-                    <br />
-                  </a>
-                </span>
-                <span><a href="f-logout.php">LOG OUT</a></span>
-              </nav>
-              <div class="f-bills-profile">
-                <img alt="image" src="https://freepngimg.com/thumb/categories/3027.png" class="f-bills-image2" />
-                <div class="f-bills-container4">
-                  <span id="name" class="f-bills-text20">Name</span>
-                  <span class="f-bills-text21">Tenant</span>
-                </div>
+      <div class="f-payment-history-hero">
+        <div class="f-payment-history-container3" style="width: auto;">
+          <div class="f-payment-history-sidebar" style="width: auto;">
+            <nav class="f-payment-history-nav3" style="width: auto;">
+              <span class="f-payment-history-text05"><a href="f-bills.php" style="font-weight: 700;">BILLS</a></span>
+              <span class="f-payment-history-text06"><a href="f-payment-history.php" style="font-weight: 400;">PAYMENT HISTORY</a></span>
+              <span class="f-payment-history-text07">
+                <a href="f-browse-apartments.php">
+                  <span>BROWSE</span>
+                  <br />
+                  <span>APARTMENTS</span>
+                </a>
+              </span>
+              <span class="f-payment-history-text11">
+                <a href="f-inquiries.php">
+                  <span>INQUIRIES</span>
+                  <br />
+                </a>
+              </span>
+              <span>
+                <a href="f-concerns.php">
+                  <span>CONCERNS</span>
+                  <br />
+                  <br />
+                  <br />
+                </a>
+              </span>
+              <span><a href="f-logout.php">LOG OUT</a></span>
+            </nav>
+            <div class="f-payment-history-profile">
+              <img alt="image" src="https://freepngimg.com/thumb/categories/3027.png" class="f-payment-history-image2" />
+              <div class="f-payment-history-container4">
+                <span id="name" class="f-payment-history-text20">Name</span>
+                <span class="f-payment-history-text21">Tenant</span>
               </div>
             </div>
           </div>
-          <div class="f-bills-container5" style=" margin-bottom: 20px;"">
-            <h1 class=" f-bills-text22">&nbsp; BILLS</h1>
+        </div>
 
+        <div class="f-payment-history-container5">
+          <!-- <br><br> -->
+          <h1 class="f-payment-history-text22">&nbsp;BILLS</h1>
+          <div class="f-payment-history-container6" style="width: 600px;">
+            <ul id="list" style="margin-left: 50px; margin-top: 20px; margin-bottom: 20px; ">
 
-            <div class="f-bills-container6" style="height: auto;  margin-bottom: 20px; width: 600px;">
-              <ul id=" list" style="margin-left: 50px; margin-top: 20px; margin-bottom: 20px;">
-                <!-- <h1 id="header" class="f-bills-text23">Emal</h1> -->
-                <!-- <span id="date" class="f-bills-text24">Due Date:&nbsp;</span>
-                <span id="unit" class="f-bills-text25">Unit No.:</span>
-                <span id="rent" class="f-bills-text26">Rent Fee:</span>
-                <span id="status" class="f-bills-text27">Status:</span> -->
-              </ul>
-              <br>
-            </div>
+            </ul>
+
+            <!-- <h1 id="email" class="f-payment-history-text23">Email</h1>
+              <span id="date" class="f-payment-history-text24">
+                Due Date:&nbsp;
+              </span>
+              <span id="unit" class="f-payment-history-text25">Unit No.:</span>
+              <span id="rent" class="f-payment-history-text26">Rent Fee:</span>
+              <span id="paid" class="f-payment-history-text27">Paid Date:</span>
+              <span id="status" class="f-payment-history-text28">Status:</span> -->
           </div>
         </div>
       </div>
-      <!-- <footer class="f-bills-footer">
-        <span class="f-bills-text28">
-          © 2022 Apartment Rental Tracking System
-        </span>
-        <div class="f-bills-icon-group1"></div>
-      </footer> -->
+      <!-- <footer class="f-payment-history-footer">
+          <span class="f-payment-history-text29">
+            © 2022 Apartment Rental Tracking System
+          </span>
+          <div class="f-payment-history-icon-group1"></div>
+        </footer> -->
     </div>
   </div>
   <script data-section-id="navbar" src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
 </body>
 
 
-<!-- FOR GETTING THE NAME -->
 <script type="module">
   import {
     initializeApp
@@ -348,7 +334,7 @@
       console.log(snapshot.val());
       var nameX = snapshot.val();
       document.getElementById("name").textContent = nameX;
-      document.getElementById("titular").textContent = nameX + " (Tenant)";
+      document.getElementById("titular").textContent = nameX + " \n(Tenant)";
       // document.getElementById("name").style.fontSize = 10;
 
 
@@ -358,15 +344,12 @@
       var today = new Date();
       // var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
       var date = today.getDate() + '-' + '1' + '-' + '2023';
-      var todaytoday = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
       var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
       var dateTimedue = date + ' ' + time;
 
-      var realDay = todaytoday + ' ' + time;
 
 
-
-      function addItemsToList(em, date, unitno, price, stat, app) {
+      function addItemsToList(em, duedate, unitno, price, stat, app) {
         var ul = document.getElementById("list");
         // var non =
         var header = document.createElement("h2");
@@ -378,62 +361,17 @@
         var status = document.createElement("p");
         var space = document.createElement("p");
         var approve = document.createElement("button");
-        // var decline = document.createElement("button");
+        var decline = document.createElement("button");
 
         // header.innerHTML = 'Bills-' + (stdNo++);
 
         header.innerHTML = em;
-        // date.innerHTML = "Date Approved: " + duedate;
-        date.innerHTML = "Due Date: " + dateTimedue;
+        date.innerHTML = "Due Date: " + duedate;
         unit.innerHTML = "Unit No.: " + unitno;
         rent.innerHTML = "Rent Fee: " + price;
         status.innerHTML = "Status " + stat;
-        approve.innerHTML = "CONFIRM PAYMENT";
-
-        // space.innerHTML = "     " + space.value;
-        status.style.color = "maroon";
-        status.style.fontWeight = "700";
-        // status.style.marginBottom = "10px";
-
-        //for the approve btn
-        approve.classList.add("g-bills-button");
-        approve.style.backgroundColor = "black";
-        approve.style.color = "white";
-        approve.style.fontSize = "20px";
-        status.style.marginBottom = "40px";
-
-        approve.addEventListener("click", function() {
-          // INSERT DATA INTO DB
-          // window.confirm(duedate);
-          set(ref(database, 'bills/' + dateTimedue), {
-            email: em,
-            date: date,
-            unit: unitno,
-            price: price,
-            status: "PAID"
-          })
-
-          //send to payment hist
-          set(ref(database, 'pay_history/' + dateTimedue), {
-            email: em,
-            paid_date: realDay,
-            due_date: dateTimedue,
-            unit: unitno,
-            price: price,
-            status: "PAID"
-          })
-
-          window.confirm("Inquiry for " + em + " successfully approved");
-          window.location.href = "g-bills.php";
-
-        })
-
-
-
 
         // decline.style.height="15px";
-
-
 
         ul.appendChild(header);
         // ul.appendChild(email);
@@ -442,8 +380,8 @@
         ul.appendChild(rent);
         ul.appendChild(status);
         // ul.appendChild(approve);
-        // ul.appendChild(approve)
-        // ul.appendChild(decline)
+        ul.appendChild(approve)
+        ul.appendChild(decline)
 
       }
 
@@ -454,17 +392,22 @@
           // const childKey = childSnapshot.key;
           // console.log(childSnapshot.val().date);
           // const childData = childSnapshot.val();
+
           let em = childSnapshot.val().email;
           // if (String(em) == String(nameX)) {
-          let date = childSnapshot.val().date;
-          // let dateDue = childSnapshot.val().due_date;
+          let paidDate = childSnapshot.val().paid_date;
+          let dateDue = childSnapshot.val().due_date;
           let price = childSnapshot.val().price;
           let stats = childSnapshot.val().status;
           let unitz = childSnapshot.val().unit;
           let approve = childSnapshot.val().unit;
 
-          if (stats != "PAID") {
-            addItemsToList(em, date, unitz, price, stats, app);
+          if (em == nameX) {
+            if(stats!="PAID"){
+              
+              console.log("jashdjhs");
+              addItemsToList(em, dateDue, unitz, price, stats, app);
+            }
           }
 
           // }
@@ -497,6 +440,5 @@
     }
   }
 </style>
-
 
 </html>
