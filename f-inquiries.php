@@ -353,7 +353,7 @@
         date.innerHTML = "Due Date: " + duedate;
         unit.innerHTML = "Unit No.: " + unitno;
         rent.innerHTML = "Rent Fee (Monthly): " + rentfee;
-        status.innerHTML = "Status " + stat;
+        status.innerHTML = "Status: " + stat;
         // space.innerHTML = "     " + space.value;
         status.style.color = "maroon";
         status.style.fontWeight = "700";
@@ -388,7 +388,10 @@
             let stats = childSnapshot.val().status;
             let unitz = childSnapshot.val().unit;
             let spec = "||||||||||||||||||||||||||";
-            addItemsToList(childSnapshot.val().email, dateDue, unitz, price, stats);
+
+            if(stats!="APPROVED"){
+              addItemsToList(childSnapshot.val().email, dateDue, unitz, price, stats);
+            }
           }
           // }
           // ...
