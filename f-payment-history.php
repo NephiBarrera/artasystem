@@ -369,7 +369,7 @@
         date.innerHTML = "Due Date: " + duedate;
         unit.innerHTML = "Unit No.: " + unitno;
         rent.innerHTML = "Rent Fee: " + price;
-        status.innerHTML = "Status " + stat;
+        status.innerHTML = "Status: " + stat;
 
         // decline.style.height="15px";
 
@@ -403,8 +403,11 @@
           let approve = childSnapshot.val().unit;
 
           if (em == nameX) {
-            console.log("jashdjhs");
-            addItemsToList(em, dateDue, unitz, price, stats, app);
+            if(stats=="PAID"){
+              
+              console.log("jashdjhs");
+              addItemsToList(em, dateDue, unitz, price, stats, app);
+            }
           }
 
           // }
